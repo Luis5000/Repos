@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmExamenes));
             this.gpbExamenes = new System.Windows.Forms.GroupBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnContinuar = new System.Windows.Forms.Button();
-            this.pcbSuerte = new System.Windows.Forms.PictureBox();
             this.comboBox10 = new System.Windows.Forms.ComboBox();
             this.comboBox11 = new System.Windows.Forms.ComboBox();
             this.comboBox12 = new System.Windows.Forms.ComboBox();
@@ -70,14 +68,12 @@
             this.lblMatematicas = new System.Windows.Forms.Label();
             this.lblInstruccion = new System.Windows.Forms.Label();
             this.gpbExamenes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbSuerte)).BeginInit();
             this.SuspendLayout();
             // 
             // gpbExamenes
             // 
             this.gpbExamenes.Controls.Add(this.btnCancelar);
             this.gpbExamenes.Controls.Add(this.btnContinuar);
-            this.gpbExamenes.Controls.Add(this.pcbSuerte);
             this.gpbExamenes.Controls.Add(this.comboBox10);
             this.gpbExamenes.Controls.Add(this.comboBox11);
             this.gpbExamenes.Controls.Add(this.comboBox12);
@@ -144,17 +140,6 @@
             this.btnContinuar.Text = "Continuar";
             this.btnContinuar.UseVisualStyleBackColor = true;
             this.btnContinuar.Click += new System.EventHandler(this.btnContinuar_Click);
-            // 
-            // pcbSuerte
-            // 
-            this.pcbSuerte.Image = ((System.Drawing.Image)(resources.GetObject("pcbSuerte.Image")));
-            this.pcbSuerte.Location = new System.Drawing.Point(2106, 549);
-            this.pcbSuerte.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.pcbSuerte.Name = "pcbSuerte";
-            this.pcbSuerte.Size = new System.Drawing.Size(595, 481);
-            this.pcbSuerte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbSuerte.TabIndex = 40;
-            this.pcbSuerte.TabStop = false;
             // 
             // comboBox10
             // 
@@ -610,7 +595,6 @@
             this.Text = "Examenes";
             this.gpbExamenes.ResumeLayout(false);
             this.gpbExamenes.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbSuerte)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -654,7 +638,6 @@
         private System.Windows.Forms.Label lblSalon2;
         private System.Windows.Forms.Label lblSalon1;
         private System.Windows.Forms.Label lblSalon;
-        private System.Windows.Forms.PictureBox pcbSuerte;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnContinuar;
     }

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace LVA07P
 {
-    public partial class frmMateria : Form
+    public partial class frmMateria : MetroFramework.Forms.MetroForm
     {
         public frmMateria()
         {

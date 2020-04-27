@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grpGenero = new System.Windows.Forms.GroupBox();
-            this.cmbGenero = new System.Windows.Forms.ComboBox();
             this.grpDatosPersonales = new System.Windows.Forms.GroupBox();
             this.txtCorreoElectrónico = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
@@ -63,38 +61,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.cmbCargo = new System.Windows.Forms.ComboBox();
             this.cmbPuesto = new System.Windows.Forms.ComboBox();
-            this.pcbDocentes = new System.Windows.Forms.PictureBox();
-            this.grpGenero.SuspendLayout();
+            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.grpDatosPersonales.SuspendLayout();
             this.grpdatosF.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbDocentes)).BeginInit();
             this.SuspendLayout();
-            // 
-            // grpGenero
-            // 
-            this.grpGenero.Controls.Add(this.cmbGenero);
-            this.grpGenero.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.grpGenero.Location = new System.Drawing.Point(38, 575);
-            this.grpGenero.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.grpGenero.Name = "grpGenero";
-            this.grpGenero.Padding = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.grpGenero.Size = new System.Drawing.Size(453, 171);
-            this.grpGenero.TabIndex = 0;
-            this.grpGenero.TabStop = false;
-            this.grpGenero.Text = "Género";
-            // 
-            // cmbGenero
-            // 
-            this.cmbGenero.FormattingEnabled = true;
-            this.cmbGenero.Items.AddRange(new object[] {
-            "Masculino",
-            "Femenino"});
-            this.cmbGenero.Location = new System.Drawing.Point(38, 63);
-            this.cmbGenero.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.cmbGenero.Name = "cmbGenero";
-            this.cmbGenero.Size = new System.Drawing.Size(365, 45);
-            this.cmbGenero.TabIndex = 22;
             // 
             // grpDatosPersonales
             // 
@@ -111,7 +83,7 @@
             this.grpDatosPersonales.Controls.Add(this.lblNombre);
             this.grpDatosPersonales.Controls.Add(this.txtNombre);
             this.grpDatosPersonales.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.grpDatosPersonales.Location = new System.Drawing.Point(38, 34);
+            this.grpDatosPersonales.Location = new System.Drawing.Point(53, 37);
             this.grpDatosPersonales.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.grpDatosPersonales.Name = "grpDatosPersonales";
             this.grpDatosPersonales.Padding = new System.Windows.Forms.Padding(10, 9, 10, 9);
@@ -299,7 +271,7 @@
             // lblIsr
             // 
             this.lblIsr.AutoSize = true;
-            this.lblIsr.BackColor = System.Drawing.Color.SandyBrown;
+            this.lblIsr.BackColor = System.Drawing.Color.White;
             this.lblIsr.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblIsr.Location = new System.Drawing.Point(67, 148);
             this.lblIsr.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
@@ -347,7 +319,7 @@
             // lblRfc
             // 
             this.lblRfc.AutoSize = true;
-            this.lblRfc.BackColor = System.Drawing.Color.SandyBrown;
+            this.lblRfc.BackColor = System.Drawing.Color.White;
             this.lblRfc.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblRfc.Location = new System.Drawing.Point(67, 74);
             this.lblRfc.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
@@ -474,45 +446,54 @@
             this.cmbPuesto.Size = new System.Drawing.Size(546, 45);
             this.cmbPuesto.TabIndex = 22;
             // 
-            // pcbDocentes
+            // metroComboBox1
             // 
-            this.pcbDocentes.Image = global::LVA07P.Properties.Resources.maestro;
-            this.pcbDocentes.Location = new System.Drawing.Point(1200, 920);
-            this.pcbDocentes.Name = "pcbDocentes";
-            this.pcbDocentes.Size = new System.Drawing.Size(1182, 970);
-            this.pcbDocentes.TabIndex = 17;
-            this.pcbDocentes.TabStop = false;
+            this.metroComboBox1.FormattingEnabled = true;
+            this.metroComboBox1.ItemHeight = 23;
+            this.metroComboBox1.Location = new System.Drawing.Point(167, 973);
+            this.metroComboBox1.Name = "metroComboBox1";
+            this.metroComboBox1.Size = new System.Drawing.Size(530, 29);
+            this.metroComboBox1.TabIndex = 18;
+            this.metroComboBox1.UseSelectable = true;
+            // 
+            // metroPanel1
+            // 
+            this.metroPanel1.HorizontalScrollbarBarColor = true;
+            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(955, 1027);
+            this.metroPanel1.Name = "metroPanel1";
+            this.metroPanel1.Size = new System.Drawing.Size(243, 136);
+            this.metroPanel1.TabIndex = 19;
+            this.metroPanel1.VerticalScrollbarBarColor = true;
+            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.VerticalScrollbarSize = 10;
             // 
             // frmDocentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SandyBrown;
             this.ClientSize = new System.Drawing.Size(3032, 2097);
-            this.Controls.Add(this.pcbDocentes);
+            this.Controls.Add(this.metroPanel1);
+            this.Controls.Add(this.metroComboBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.grpdatosF);
             this.Controls.Add(this.grpDatosPersonales);
-            this.Controls.Add(this.grpGenero);
             this.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.Name = "frmDocentes";
             this.Text = "Docentes";
-            this.grpGenero.ResumeLayout(false);
             this.grpDatosPersonales.ResumeLayout(false);
             this.grpDatosPersonales.PerformLayout();
             this.grpdatosF.ResumeLayout(false);
             this.grpdatosF.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbDocentes)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox grpGenero;
         private System.Windows.Forms.GroupBox grpDatosPersonales;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.TextBox txtNombre;
@@ -543,11 +524,11 @@
         private System.Windows.Forms.ComboBox cmbMateriasImpartidas;
         private System.Windows.Forms.Label lblEspecialización;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox cmbGenero;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox cmbCargo;
         private System.Windows.Forms.ComboBox cmbPuesto;
-        private System.Windows.Forms.PictureBox pcbDocentes;
+        private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        private MetroFramework.Controls.MetroPanel metroPanel1;
     }
 }
 

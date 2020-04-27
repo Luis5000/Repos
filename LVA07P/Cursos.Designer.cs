@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCursos));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblSub = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
@@ -36,16 +35,8 @@
             this.lblRegis = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.pcbCursosTercera = new System.Windows.Forms.PictureBox();
-            this.pcbCursosSegunda = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pcbCursosCuarta = new System.Windows.Forms.PictureBox();
-            this.pcbCursosPrimera = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbCursosTercera)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbCursosSegunda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbCursosCuarta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbCursosPrimera)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -119,28 +110,6 @@
             this.textBox2.Size = new System.Drawing.Size(308, 44);
             this.textBox2.TabIndex = 12;
             // 
-            // pcbCursosTercera
-            // 
-            this.pcbCursosTercera.Image = ((System.Drawing.Image)(resources.GetObject("pcbCursosTercera.Image")));
-            this.pcbCursosTercera.Location = new System.Drawing.Point(165, 949);
-            this.pcbCursosTercera.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.pcbCursosTercera.Name = "pcbCursosTercera";
-            this.pcbCursosTercera.Size = new System.Drawing.Size(589, 598);
-            this.pcbCursosTercera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbCursosTercera.TabIndex = 15;
-            this.pcbCursosTercera.TabStop = false;
-            // 
-            // pcbCursosSegunda
-            // 
-            this.pcbCursosSegunda.Image = ((System.Drawing.Image)(resources.GetObject("pcbCursosSegunda.Image")));
-            this.pcbCursosSegunda.Location = new System.Drawing.Point(1982, 82);
-            this.pcbCursosSegunda.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.pcbCursosSegunda.Name = "pcbCursosSegunda";
-            this.pcbCursosSegunda.Size = new System.Drawing.Size(589, 598);
-            this.pcbCursosSegunda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbCursosSegunda.TabIndex = 14;
-            this.pcbCursosSegunda.TabStop = false;
-            // 
             // pictureBox6
             // 
             this.pictureBox6.Location = new System.Drawing.Point(0, 0);
@@ -149,54 +118,24 @@
             this.pictureBox6.TabIndex = 13;
             this.pictureBox6.TabStop = false;
             // 
-            // pcbCursosCuarta
-            // 
-            this.pcbCursosCuarta.Image = ((System.Drawing.Image)(resources.GetObject("pcbCursosCuarta.Image")));
-            this.pcbCursosCuarta.Location = new System.Drawing.Point(2157, 1016);
-            this.pcbCursosCuarta.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.pcbCursosCuarta.Name = "pcbCursosCuarta";
-            this.pcbCursosCuarta.Size = new System.Drawing.Size(589, 501);
-            this.pcbCursosCuarta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbCursosCuarta.TabIndex = 5;
-            this.pcbCursosCuarta.TabStop = false;
-            // 
-            // pcbCursosPrimera
-            // 
-            this.pcbCursosPrimera.Image = ((System.Drawing.Image)(resources.GetObject("pcbCursosPrimera.Image")));
-            this.pcbCursosPrimera.Location = new System.Drawing.Point(228, 160);
-            this.pcbCursosPrimera.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.pcbCursosPrimera.Name = "pcbCursosPrimera";
-            this.pcbCursosPrimera.Size = new System.Drawing.Size(589, 598);
-            this.pcbCursosPrimera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbCursosPrimera.TabIndex = 2;
-            this.pcbCursosPrimera.TabStop = false;
-            // 
             // frmCursos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SandyBrown;
             this.ClientSize = new System.Drawing.Size(2869, 1748);
-            this.Controls.Add(this.pcbCursosTercera);
-            this.Controls.Add(this.pcbCursosSegunda);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblRegis);
             this.Controls.Add(this.lblCon);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pcbCursosCuarta);
-            this.Controls.Add(this.pcbCursosPrimera);
             this.Controls.Add(this.lblSub);
             this.Controls.Add(this.lblTitulo);
             this.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.Name = "frmCursos";
             this.Text = "Cursos";
-            ((System.ComponentModel.ISupportInitialize)(this.pcbCursosTercera)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbCursosSegunda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbCursosCuarta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbCursosPrimera)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,15 +145,11 @@
 
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblSub;
-        private System.Windows.Forms.PictureBox pcbCursosPrimera;
-        private System.Windows.Forms.PictureBox pcbCursosCuarta;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblCon;
         private System.Windows.Forms.Label lblRegis;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.PictureBox pcbCursosSegunda;
-        private System.Windows.Forms.PictureBox pcbCursosTercera;
     }
 }

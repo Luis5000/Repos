@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace LVA07P
 {
-    public partial class frmExamenes : Form
+    public partial class frmExamenes : MetroFramework.Forms.MetroForm
     {
         public frmExamenes()
         {

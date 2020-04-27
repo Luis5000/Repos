@@ -32,7 +32,6 @@
             this.txtCorreoElectronicoII = new System.Windows.Forms.TextBox();
             this.labelArroba = new System.Windows.Forms.Label();
             this.grpGenero = new System.Windows.Forms.GroupBox();
-            this.cmbGenero = new System.Windows.Forms.ComboBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.lblTelefono = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
@@ -62,18 +61,9 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnGuardarYSalir = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pcbEstudiantes = new System.Windows.Forms.PictureBox();
             this.grpDatosPersonales.SuspendLayout();
-            this.grpGenero.SuspendLayout();
             this.grpDatosEscolares.SuspendLayout();
             this.pnlGuardar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbEstudiantes)).BeginInit();
             this.SuspendLayout();
             // 
             // grpDatosPersonales
@@ -95,7 +85,7 @@
             this.grpDatosPersonales.Controls.Add(this.txtNombre);
             this.grpDatosPersonales.Controls.Add(this.lblCorreoElectronico);
             this.grpDatosPersonales.Controls.Add(this.lblNombre);
-            this.grpDatosPersonales.Location = new System.Drawing.Point(86, 71);
+            this.grpDatosPersonales.Location = new System.Drawing.Point(1422, 749);
             this.grpDatosPersonales.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.grpDatosPersonales.Name = "grpDatosPersonales";
             this.grpDatosPersonales.Padding = new System.Windows.Forms.Padding(10, 9, 10, 9);
@@ -124,7 +114,6 @@
             // 
             // grpGenero
             // 
-            this.grpGenero.Controls.Add(this.cmbGenero);
             this.grpGenero.Location = new System.Drawing.Point(29, 586);
             this.grpGenero.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.grpGenero.Name = "grpGenero";
@@ -133,18 +122,6 @@
             this.grpGenero.TabIndex = 1;
             this.grpGenero.TabStop = false;
             this.grpGenero.Text = "Género";
-            // 
-            // cmbGenero
-            // 
-            this.cmbGenero.FormattingEnabled = true;
-            this.cmbGenero.Items.AddRange(new object[] {
-            "Masculino",
-            "Femenino"});
-            this.cmbGenero.Location = new System.Drawing.Point(48, 54);
-            this.cmbGenero.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.cmbGenero.Name = "cmbGenero";
-            this.cmbGenero.Size = new System.Drawing.Size(375, 45);
-            this.cmbGenero.TabIndex = 0;
             // 
             // txtTelefono
             // 
@@ -433,49 +410,11 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pcbEstudiantes
-            // 
-            this.pcbEstudiantes.Image = global::LVA07P.Properties.Resources.listo;
-            this.pcbEstudiantes.Location = new System.Drawing.Point(982, 902);
-            this.pcbEstudiantes.Name = "pcbEstudiantes";
-            this.pcbEstudiantes.Size = new System.Drawing.Size(1581, 1197);
-            this.pcbEstudiantes.TabIndex = 4;
-            this.pcbEstudiantes.TabStop = false;
-            // 
             // frmEstudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SandyBrown;
             this.ClientSize = new System.Drawing.Size(2869, 2097);
-            this.Controls.Add(this.pcbEstudiantes);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pnlGuardar);
             this.Controls.Add(this.grpDatosEscolares);
             this.Controls.Add(this.grpDatosPersonales);
@@ -484,14 +423,9 @@
             this.Text = "-";
             this.grpDatosPersonales.ResumeLayout(false);
             this.grpDatosPersonales.PerformLayout();
-            this.grpGenero.ResumeLayout(false);
             this.grpDatosEscolares.ResumeLayout(false);
             this.grpDatosEscolares.PerformLayout();
             this.pnlGuardar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbEstudiantes)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -527,15 +461,10 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnGuardarYSalir;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.ComboBox cmbGenero;
         private System.Windows.Forms.TextBox txtCorreoElectronicoII;
         private System.Windows.Forms.Label labelArroba;
         private System.Windows.Forms.ComboBox cmbGradoAIngresar;
         private System.Windows.Forms.ComboBox cmbGradoFinalizado;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pcbEstudiantes;
     }
 }
 

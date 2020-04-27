@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace LVA07P
 {
-    public partial class frmReactivos : Form
+    public partial class frmReactivos : MetroFramework.Forms.MetroForm
     {
         public frmReactivos()
         {

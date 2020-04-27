@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReactivos));
             this.gpbMatemáticas = new System.Windows.Forms.GroupBox();
             this.cmbRespuesta2 = new System.Windows.Forms.ComboBox();
             this.txtRespuesta3 = new System.Windows.Forms.TextBox();
@@ -41,10 +40,8 @@
             this.lblPregunta1 = new System.Windows.Forms.Label();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pcbReactivos = new System.Windows.Forms.PictureBox();
             this.gpbMatemáticas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbReactivos)).BeginInit();
             this.SuspendLayout();
             // 
             // gpbMatemáticas
@@ -178,22 +175,12 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pcbReactivos
-            // 
-            this.pcbReactivos.Image = ((System.Drawing.Image)(resources.GetObject("pcbReactivos.Image")));
-            this.pcbReactivos.Location = new System.Drawing.Point(1518, 539);
-            this.pcbReactivos.Name = "pcbReactivos";
-            this.pcbReactivos.Size = new System.Drawing.Size(739, 329);
-            this.pcbReactivos.TabIndex = 10;
-            this.pcbReactivos.TabStop = false;
-            // 
             // frmReactivos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SandyBrown;
             this.ClientSize = new System.Drawing.Size(2430, 1553);
-            this.Controls.Add(this.pcbReactivos);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.gpbMatemáticas);
@@ -203,7 +190,6 @@
             this.gpbMatemáticas.ResumeLayout(false);
             this.gpbMatemáticas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbReactivos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -222,6 +208,5 @@
         private System.Windows.Forms.TextBox txtRespuesta3;
         private System.Windows.Forms.TextBox txtRespuesta1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pcbReactivos;
     }
 }
