@@ -78,13 +78,55 @@
       <DependentUpon>Enrolamiento.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\Enrollment.cs" />
+    <Compile Include="Data\Estudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\Estudiante.Designer.cs">
+      <DependentUpon>Estudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Examen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\Examen.Designer.cs">
+      <DependentUpon>Examen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data\ExamQuestion.cs" />
     <Compile Include="Data\IEntity.cs" />
     <Compile Include="Data\Exam.cs" />
+    <Compile Include="Data\Materia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\Materia.Designer.cs">
+      <DependentUpon>Materia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Pregunta de examen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\Pregunta de examen.Designer.cs">
+      <DependentUpon>Pregunta de examen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Pregunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\Pregunta.Designer.cs">
+      <DependentUpon>Pregunta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\Profesor.Designer.cs">
+      <DependentUpon>Profesor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data\Professor.cs" />
     <Compile Include="Data\Question.cs" />
     <Compile Include="Data\QuestionType.cs" />
     <Compile Include="Data\Response.cs" />
+    <Compile Include="Data\Respuesta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\Respuesta.Designer.cs">
+      <DependentUpon>Respuesta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data\Student.cs" />
     <Compile Include="Data\Subject.cs" />
     <Compile Include="Cursos.cs">
@@ -92,6 +134,12 @@
     </Compile>
     <Compile Include="Cursos.Designer.cs">
       <DependentUpon>Cursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Tipo de pregunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\Tipo de pregunta.Designer.cs">
+      <DependentUpon>Tipo de pregunta.cs</DependentUpon>
     </Compile>
     <Compile Include="Docentes.cs">
       <SubType>Form</SubType>
@@ -144,6 +192,30 @@
     <EmbeddedResource Include="Data\Enrolamiento.resx">
       <DependentUpon>Enrolamiento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Data\Estudiante.resx">
+      <DependentUpon>Estudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Examen.resx">
+      <DependentUpon>Examen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Materia.resx">
+      <DependentUpon>Materia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Pregunta de examen.resx">
+      <DependentUpon>Pregunta de examen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Pregunta.resx">
+      <DependentUpon>Pregunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Profesor.resx">
+      <DependentUpon>Profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Respuesta.resx">
+      <DependentUpon>Respuesta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Tipo de pregunta.resx">
+      <DependentUpon>Tipo de pregunta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Docentes.resx">
       <DependentUpon>Docentes.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,7 +242,14 @@
     <None Include="packages.config" />
     <None Include="Properties\DataSources\LVA07P.Data.Course.datasource" />
     <None Include="Properties\DataSources\LVA07P.Data.Enrollment.datasource" />
+    <None Include="Properties\DataSources\LVA07P.Data.Exam.datasource" />
+    <None Include="Properties\DataSources\LVA07P.Data.ExamQuestion.datasource" />
     <None Include="Properties\DataSources\LVA07P.Data.Professor.datasource" />
+    <None Include="Properties\DataSources\LVA07P.Data.Question.datasource" />
+    <None Include="Properties\DataSources\LVA07P.Data.QuestionType.datasource" />
+    <None Include="Properties\DataSources\LVA07P.Data.Response.datasource" />
+    <None Include="Properties\DataSources\LVA07P.Data.Student.datasource" />
+    <None Include="Properties\DataSources\LVA07P.Data.Subject.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
