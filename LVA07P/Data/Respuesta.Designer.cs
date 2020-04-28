@@ -33,11 +33,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.responseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.answerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.examQuestionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.responseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.responseBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -76,7 +76,8 @@
             this.metroGrid1.EnableHeadersVisualStyles = false;
             this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.Location = new System.Drawing.Point(98, 124);
+            this.metroGrid1.Location = new System.Drawing.Point(30, 69);
+            this.metroGrid1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.metroGrid1.Name = "metroGrid1";
             this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -91,12 +92,8 @@
             this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid1.RowTemplate.Height = 46;
             this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid1.Size = new System.Drawing.Size(1325, 624);
+            this.metroGrid1.Size = new System.Drawing.Size(317, 219);
             this.metroGrid1.TabIndex = 0;
-            // 
-            // responseBindingSource
-            // 
-            this.responseBindingSource.DataSource = typeof(LVA07P.Data.Response);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -131,13 +128,19 @@
             this.examQuestionDataGridViewTextBoxColumn.Name = "examQuestionDataGridViewTextBoxColumn";
             this.examQuestionDataGridViewTextBoxColumn.Width = 300;
             // 
+            // responseBindingSource
+            // 
+            this.responseBindingSource.DataSource = typeof(LVA07P.Data.Response);
+            // 
             // Respuesta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2250, 1261);
+            this.ClientSize = new System.Drawing.Size(843, 719);
             this.Controls.Add(this.metroGrid1);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "Respuesta";
+            this.Padding = new System.Windows.Forms.Padding(6, 21, 6, 7);
             this.Text = "Respuesta";
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.responseBindingSource)).EndInit();

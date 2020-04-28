@@ -16,5 +16,10 @@ namespace LVA07P.Data
         {
             InitializeComponent();
         }
+
+        private void mtlEmail_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
