@@ -45,8 +45,8 @@
             this.tbxName = new MetroFramework.Controls.MetroTextBox();
             this.tbxLevel = new MetroFramework.Controls.MetroTextBox();
             this.tbxCourses = new MetroFramework.Controls.MetroTextBox();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.btnGuardar = new MetroFramework.Controls.MetroButton();
+            this.btnCancelar = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.subjectBindingSource)).BeginInit();
             this.metroPanel1.SuspendLayout();
@@ -144,8 +144,8 @@
             // 
             // metroPanel1
             // 
-            this.metroPanel1.Controls.Add(this.metroButton2);
-            this.metroPanel1.Controls.Add(this.metroButton1);
+            this.metroPanel1.Controls.Add(this.btnCancelar);
+            this.metroPanel1.Controls.Add(this.btnGuardar);
             this.metroPanel1.Controls.Add(this.tbxCourses);
             this.metroPanel1.Controls.Add(this.tbxLevel);
             this.metroPanel1.Controls.Add(this.tbxName);
@@ -280,23 +280,23 @@
             this.tbxCourses.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.tbxCourses.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroButton1
+            // btnGuardar
             // 
-            this.metroButton1.Location = new System.Drawing.Point(79, 179);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(75, 23);
-            this.metroButton1.TabIndex = 8;
-            this.metroButton1.Text = "metroButton1";
-            this.metroButton1.UseSelectable = true;
+            this.btnGuardar.Location = new System.Drawing.Point(79, 179);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.TabIndex = 8;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseSelectable = true;
             // 
-            // metroButton2
+            // btnCancelar
             // 
-            this.metroButton2.Location = new System.Drawing.Point(196, 179);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(75, 23);
-            this.metroButton2.TabIndex = 9;
-            this.metroButton2.Text = "metroButton2";
-            this.metroButton2.UseSelectable = true;
+            this.btnCancelar.Location = new System.Drawing.Point(196, 179);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseSelectable = true;
             // 
             // Materia
             // 
@@ -326,8 +326,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn levelDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn coursesDataGridViewTextBoxColumn;
         private MetroFramework.Controls.MetroPanel metroPanel1;
-        private MetroFramework.Controls.MetroButton metroButton2;
-        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton btnCancelar;
+        private MetroFramework.Controls.MetroButton btnGuardar;
         private MetroFramework.Controls.MetroTextBox tbxCourses;
         private MetroFramework.Controls.MetroTextBox tbxLevel;
         private MetroFramework.Controls.MetroTextBox tbxName;
