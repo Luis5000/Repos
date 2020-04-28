@@ -65,6 +65,18 @@
   <ItemGroup>
     <Compile Include="DataContext.cs" />
     <Compile Include="Data\Course.cs" />
+    <Compile Include="Data\Curso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\Curso.Designer.cs">
+      <DependentUpon>Curso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Enrolamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\Enrolamiento.Designer.cs">
+      <DependentUpon>Enrolamiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data\Enrollment.cs" />
     <Compile Include="Data\ExamQuestion.cs" />
     <Compile Include="Data\IEntity.cs" />
@@ -126,6 +138,12 @@
     <EmbeddedResource Include="Cursos.resx">
       <DependentUpon>Cursos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Data\Curso.resx">
+      <DependentUpon>Curso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Enrolamiento.resx">
+      <DependentUpon>Enrolamiento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Docentes.resx">
       <DependentUpon>Docentes.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +168,8 @@
       <DependentUpon>Reactivos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\LVA07P.Data.Course.datasource" />
+    <None Include="Properties\DataSources\LVA07P.Data.Enrollment.datasource" />
     <None Include="Properties\DataSources\LVA07P.Data.Professor.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
