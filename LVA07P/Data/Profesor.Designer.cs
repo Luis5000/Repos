@@ -48,6 +48,12 @@
             this.lblPhone = new MetroFramework.Controls.MetroLabel();
             this.lblHiringDate = new MetroFramework.Controls.MetroLabel();
             this.lblCourses = new MetroFramework.Controls.MetroLabel();
+            this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
+            this.tbxName = new MetroFramework.Controls.MetroTextBox();
+            this.tbxLastName = new MetroFramework.Controls.MetroTextBox();
+            this.tbxEmail = new MetroFramework.Controls.MetroTextBox();
+            this.tbxPhone = new MetroFramework.Controls.MetroTextBox();
+            this.tbxCourses = new MetroFramework.Controls.MetroTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.professorBindingSource)).BeginInit();
             this.metroPanel1.SuspendLayout();
@@ -172,6 +178,12 @@
             // 
             // metroPanel1
             // 
+            this.metroPanel1.Controls.Add(this.tbxCourses);
+            this.metroPanel1.Controls.Add(this.tbxPhone);
+            this.metroPanel1.Controls.Add(this.tbxEmail);
+            this.metroPanel1.Controls.Add(this.tbxLastName);
+            this.metroPanel1.Controls.Add(this.tbxName);
+            this.metroPanel1.Controls.Add(this.metroDateTime1);
             this.metroPanel1.Controls.Add(this.lblCourses);
             this.metroPanel1.Controls.Add(this.lblHiringDate);
             this.metroPanel1.Controls.Add(this.lblPhone);
@@ -192,7 +204,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(75, 27);
+            this.lblName.Location = new System.Drawing.Point(101, 27);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(45, 19);
             this.lblName.TabIndex = 2;
@@ -210,7 +222,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(75, 106);
+            this.lblEmail.Location = new System.Drawing.Point(105, 106);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(41, 19);
             this.lblEmail.TabIndex = 4;
@@ -219,7 +231,7 @@
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(75, 148);
+            this.lblPhone.Location = new System.Drawing.Point(100, 147);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(46, 19);
             this.lblPhone.TabIndex = 5;
@@ -228,7 +240,7 @@
             // lblHiringDate
             // 
             this.lblHiringDate.AutoSize = true;
-            this.lblHiringDate.Location = new System.Drawing.Point(75, 190);
+            this.lblHiringDate.Location = new System.Drawing.Point(71, 190);
             this.lblHiringDate.Name = "lblHiringDate";
             this.lblHiringDate.Size = new System.Drawing.Size(75, 19);
             this.lblHiringDate.TabIndex = 6;
@@ -237,12 +249,171 @@
             // lblCourses
             // 
             this.lblCourses.AutoSize = true;
-            this.lblCourses.Location = new System.Drawing.Point(75, 233);
+            this.lblCourses.Location = new System.Drawing.Point(91, 234);
             this.lblCourses.Name = "lblCourses";
-            this.lblCourses.Size = new System.Drawing.Size(81, 19);
+            this.lblCourses.Size = new System.Drawing.Size(55, 19);
             this.lblCourses.TabIndex = 7;
-            this.lblCourses.Text = "metroLabel1";
+            this.lblCourses.Text = "Courses";
             this.lblCourses.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // metroDateTime1
+            // 
+            this.metroDateTime1.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.professorBindingSource, "HiringDate", true));
+            this.metroDateTime1.Location = new System.Drawing.Point(206, 180);
+            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime1.Name = "metroDateTime1";
+            this.metroDateTime1.Size = new System.Drawing.Size(173, 29);
+            this.metroDateTime1.TabIndex = 8;
+            // 
+            // tbxName
+            // 
+            // 
+            // 
+            // 
+            this.tbxName.CustomButton.Image = null;
+            this.tbxName.CustomButton.Location = new System.Drawing.Point(151, 1);
+            this.tbxName.CustomButton.Name = "";
+            this.tbxName.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbxName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbxName.CustomButton.TabIndex = 1;
+            this.tbxName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbxName.CustomButton.UseSelectable = true;
+            this.tbxName.CustomButton.Visible = false;
+            this.tbxName.Lines = new string[0];
+            this.tbxName.Location = new System.Drawing.Point(206, 27);
+            this.tbxName.MaxLength = 32767;
+            this.tbxName.Name = "tbxName";
+            this.tbxName.PasswordChar = '\0';
+            this.tbxName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbxName.SelectedText = "";
+            this.tbxName.SelectionLength = 0;
+            this.tbxName.SelectionStart = 0;
+            this.tbxName.ShortcutsEnabled = true;
+            this.tbxName.Size = new System.Drawing.Size(173, 23);
+            this.tbxName.TabIndex = 9;
+            this.tbxName.UseSelectable = true;
+            this.tbxName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbxName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // tbxLastName
+            // 
+            // 
+            // 
+            // 
+            this.tbxLastName.CustomButton.Image = null;
+            this.tbxLastName.CustomButton.Location = new System.Drawing.Point(151, 1);
+            this.tbxLastName.CustomButton.Name = "";
+            this.tbxLastName.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbxLastName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbxLastName.CustomButton.TabIndex = 1;
+            this.tbxLastName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbxLastName.CustomButton.UseSelectable = true;
+            this.tbxLastName.CustomButton.Visible = false;
+            this.tbxLastName.Lines = new string[0];
+            this.tbxLastName.Location = new System.Drawing.Point(206, 60);
+            this.tbxLastName.MaxLength = 32767;
+            this.tbxLastName.Name = "tbxLastName";
+            this.tbxLastName.PasswordChar = '\0';
+            this.tbxLastName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbxLastName.SelectedText = "";
+            this.tbxLastName.SelectionLength = 0;
+            this.tbxLastName.SelectionStart = 0;
+            this.tbxLastName.ShortcutsEnabled = true;
+            this.tbxLastName.Size = new System.Drawing.Size(173, 23);
+            this.tbxLastName.TabIndex = 10;
+            this.tbxLastName.UseSelectable = true;
+            this.tbxLastName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbxLastName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // tbxEmail
+            // 
+            // 
+            // 
+            // 
+            this.tbxEmail.CustomButton.Image = null;
+            this.tbxEmail.CustomButton.Location = new System.Drawing.Point(151, 1);
+            this.tbxEmail.CustomButton.Name = "";
+            this.tbxEmail.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbxEmail.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbxEmail.CustomButton.TabIndex = 1;
+            this.tbxEmail.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbxEmail.CustomButton.UseSelectable = true;
+            this.tbxEmail.CustomButton.Visible = false;
+            this.tbxEmail.Lines = new string[0];
+            this.tbxEmail.Location = new System.Drawing.Point(206, 101);
+            this.tbxEmail.MaxLength = 32767;
+            this.tbxEmail.Name = "tbxEmail";
+            this.tbxEmail.PasswordChar = '\0';
+            this.tbxEmail.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbxEmail.SelectedText = "";
+            this.tbxEmail.SelectionLength = 0;
+            this.tbxEmail.SelectionStart = 0;
+            this.tbxEmail.ShortcutsEnabled = true;
+            this.tbxEmail.Size = new System.Drawing.Size(173, 23);
+            this.tbxEmail.TabIndex = 11;
+            this.tbxEmail.UseSelectable = true;
+            this.tbxEmail.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbxEmail.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // tbxPhone
+            // 
+            // 
+            // 
+            // 
+            this.tbxPhone.CustomButton.Image = null;
+            this.tbxPhone.CustomButton.Location = new System.Drawing.Point(151, 1);
+            this.tbxPhone.CustomButton.Name = "";
+            this.tbxPhone.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbxPhone.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbxPhone.CustomButton.TabIndex = 1;
+            this.tbxPhone.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbxPhone.CustomButton.UseSelectable = true;
+            this.tbxPhone.CustomButton.Visible = false;
+            this.tbxPhone.Lines = new string[0];
+            this.tbxPhone.Location = new System.Drawing.Point(206, 142);
+            this.tbxPhone.MaxLength = 32767;
+            this.tbxPhone.Name = "tbxPhone";
+            this.tbxPhone.PasswordChar = '\0';
+            this.tbxPhone.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbxPhone.SelectedText = "";
+            this.tbxPhone.SelectionLength = 0;
+            this.tbxPhone.SelectionStart = 0;
+            this.tbxPhone.ShortcutsEnabled = true;
+            this.tbxPhone.Size = new System.Drawing.Size(173, 23);
+            this.tbxPhone.TabIndex = 12;
+            this.tbxPhone.UseSelectable = true;
+            this.tbxPhone.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbxPhone.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // tbxCourses
+            // 
+            // 
+            // 
+            // 
+            this.tbxCourses.CustomButton.Image = null;
+            this.tbxCourses.CustomButton.Location = new System.Drawing.Point(151, 1);
+            this.tbxCourses.CustomButton.Name = "";
+            this.tbxCourses.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbxCourses.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbxCourses.CustomButton.TabIndex = 1;
+            this.tbxCourses.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbxCourses.CustomButton.UseSelectable = true;
+            this.tbxCourses.CustomButton.Visible = false;
+            this.tbxCourses.Lines = new string[0];
+            this.tbxCourses.Location = new System.Drawing.Point(206, 229);
+            this.tbxCourses.MaxLength = 32767;
+            this.tbxCourses.Name = "tbxCourses";
+            this.tbxCourses.PasswordChar = '\0';
+            this.tbxCourses.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbxCourses.SelectedText = "";
+            this.tbxCourses.SelectionLength = 0;
+            this.tbxCourses.SelectionStart = 0;
+            this.tbxCourses.ShortcutsEnabled = true;
+            this.tbxCourses.Size = new System.Drawing.Size(173, 23);
+            this.tbxCourses.TabIndex = 13;
+            this.tbxCourses.UseSelectable = true;
+            this.tbxCourses.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbxCourses.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // Profesor
             // 
@@ -281,5 +452,11 @@
         private MetroFramework.Controls.MetroLabel lblCourses;
         private MetroFramework.Controls.MetroLabel lblHiringDate;
         private MetroFramework.Controls.MetroLabel lblPhone;
+        private MetroFramework.Controls.MetroTextBox tbxCourses;
+        private MetroFramework.Controls.MetroTextBox tbxPhone;
+        private MetroFramework.Controls.MetroTextBox tbxEmail;
+        private MetroFramework.Controls.MetroTextBox tbxLastName;
+        private MetroFramework.Controls.MetroTextBox tbxName;
+        private MetroFramework.Controls.MetroDateTime metroDateTime1;
     }
 }
