@@ -86,7 +86,8 @@
             this.grdDatos.EnableHeadersVisualStyles = false;
             this.grdDatos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.grdDatos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.grdDatos.Location = new System.Drawing.Point(63, 225);
+            this.grdDatos.Location = new System.Drawing.Point(20, 79);
+            this.grdDatos.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.grdDatos.Name = "grdDatos";
             this.grdDatos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -101,7 +102,7 @@
             this.grdDatos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.grdDatos.RowTemplate.Height = 46;
             this.grdDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdDatos.Size = new System.Drawing.Size(1032, 398);
+            this.grdDatos.Size = new System.Drawing.Size(326, 140);
             this.grdDatos.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn
@@ -153,32 +154,29 @@
             this.pnlDatos.Controls.Add(this.lblName);
             this.pnlDatos.HorizontalScrollbarBarColor = true;
             this.pnlDatos.HorizontalScrollbarHighlightOnWheel = false;
-            this.pnlDatos.HorizontalScrollbarSize = 28;
-            this.pnlDatos.Location = new System.Drawing.Point(1165, 225);
-            this.pnlDatos.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.pnlDatos.HorizontalScrollbarSize = 10;
+            this.pnlDatos.Location = new System.Drawing.Point(368, 79);
             this.pnlDatos.Name = "pnlDatos";
-            this.pnlDatos.Size = new System.Drawing.Size(1134, 714);
+            this.pnlDatos.Size = new System.Drawing.Size(358, 251);
             this.pnlDatos.TabIndex = 1;
             this.pnlDatos.VerticalScrollbarBarColor = true;
             this.pnlDatos.VerticalScrollbarHighlightOnWheel = false;
-            this.pnlDatos.VerticalScrollbarSize = 32;
+            this.pnlDatos.VerticalScrollbarSize = 10;
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(621, 509);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.btnCancelar.Location = new System.Drawing.Point(196, 179);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(238, 65);
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseSelectable = true;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(250, 509);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.btnGuardar.Location = new System.Drawing.Point(79, 179);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(238, 65);
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 8;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseSelectable = true;
@@ -189,18 +187,16 @@
             // 
             // 
             this.txtCourses.CustomButton.Image = null;
-            this.txtCourses.CustomButton.Location = new System.Drawing.Point(1283, 3);
-            this.txtCourses.CustomButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtCourses.CustomButton.Location = new System.Drawing.Point(40, 0);
             this.txtCourses.CustomButton.Name = "";
-            this.txtCourses.CustomButton.Size = new System.Drawing.Size(200, 179);
+            this.txtCourses.CustomButton.Size = new System.Drawing.Size(7, 7);
             this.txtCourses.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtCourses.CustomButton.TabIndex = 1;
             this.txtCourses.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtCourses.CustomButton.UseSelectable = true;
             this.txtCourses.CustomButton.Visible = false;
             this.txtCourses.Lines = new string[0];
-            this.txtCourses.Location = new System.Drawing.Point(418, 330);
-            this.txtCourses.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtCourses.Location = new System.Drawing.Point(132, 116);
             this.txtCourses.MaxLength = 32767;
             this.txtCourses.Name = "txtCourses";
             this.txtCourses.PasswordChar = '\0';
@@ -209,7 +205,7 @@
             this.txtCourses.SelectionLength = 0;
             this.txtCourses.SelectionStart = 0;
             this.txtCourses.ShortcutsEnabled = true;
-            this.txtCourses.Size = new System.Drawing.Size(469, 65);
+            this.txtCourses.Size = new System.Drawing.Size(148, 23);
             this.txtCourses.TabIndex = 7;
             this.txtCourses.UseSelectable = true;
             this.txtCourses.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -221,18 +217,16 @@
             // 
             // 
             this.txtLevel.CustomButton.Image = null;
-            this.txtLevel.CustomButton.Location = new System.Drawing.Point(1283, 3);
-            this.txtLevel.CustomButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtLevel.CustomButton.Location = new System.Drawing.Point(40, 0);
             this.txtLevel.CustomButton.Name = "";
-            this.txtLevel.CustomButton.Size = new System.Drawing.Size(200, 179);
+            this.txtLevel.CustomButton.Size = new System.Drawing.Size(7, 7);
             this.txtLevel.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtLevel.CustomButton.TabIndex = 1;
             this.txtLevel.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtLevel.CustomButton.UseSelectable = true;
             this.txtLevel.CustomButton.Visible = false;
             this.txtLevel.Lines = new string[0];
-            this.txtLevel.Location = new System.Drawing.Point(418, 194);
-            this.txtLevel.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtLevel.Location = new System.Drawing.Point(132, 68);
             this.txtLevel.MaxLength = 32767;
             this.txtLevel.Name = "txtLevel";
             this.txtLevel.PasswordChar = '\0';
@@ -241,7 +235,7 @@
             this.txtLevel.SelectionLength = 0;
             this.txtLevel.SelectionStart = 0;
             this.txtLevel.ShortcutsEnabled = true;
-            this.txtLevel.Size = new System.Drawing.Size(469, 65);
+            this.txtLevel.Size = new System.Drawing.Size(148, 23);
             this.txtLevel.TabIndex = 6;
             this.txtLevel.UseSelectable = true;
             this.txtLevel.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -253,18 +247,16 @@
             // 
             // 
             this.txtName.CustomButton.Image = null;
-            this.txtName.CustomButton.Location = new System.Drawing.Point(1283, 3);
-            this.txtName.CustomButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtName.CustomButton.Location = new System.Drawing.Point(40, 0);
             this.txtName.CustomButton.Name = "";
-            this.txtName.CustomButton.Size = new System.Drawing.Size(200, 179);
+            this.txtName.CustomButton.Size = new System.Drawing.Size(7, 7);
             this.txtName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtName.CustomButton.TabIndex = 1;
             this.txtName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtName.CustomButton.UseSelectable = true;
             this.txtName.CustomButton.Visible = false;
             this.txtName.Lines = new string[0];
-            this.txtName.Location = new System.Drawing.Point(418, 71);
-            this.txtName.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtName.Location = new System.Drawing.Point(132, 25);
             this.txtName.MaxLength = 32767;
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
@@ -273,7 +265,7 @@
             this.txtName.SelectionLength = 0;
             this.txtName.SelectionStart = 0;
             this.txtName.ShortcutsEnabled = true;
-            this.txtName.Size = new System.Drawing.Size(469, 65);
+            this.txtName.Size = new System.Drawing.Size(148, 23);
             this.txtName.TabIndex = 5;
             this.txtName.UseSelectable = true;
             this.txtName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -282,8 +274,7 @@
             // lblCourses
             // 
             this.lblCourses.AutoSize = true;
-            this.lblCourses.Location = new System.Drawing.Point(117, 330);
-            this.lblCourses.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblCourses.Location = new System.Drawing.Point(37, 116);
             this.lblCourses.Name = "lblCourses";
             this.lblCourses.Size = new System.Drawing.Size(55, 19);
             this.lblCourses.TabIndex = 4;
@@ -292,8 +283,7 @@
             // lblLevel
             // 
             this.lblLevel.AutoSize = true;
-            this.lblLevel.Location = new System.Drawing.Point(171, 205);
-            this.lblLevel.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblLevel.Location = new System.Drawing.Point(54, 72);
             this.lblLevel.Name = "lblLevel";
             this.lblLevel.Size = new System.Drawing.Size(38, 19);
             this.lblLevel.TabIndex = 3;
@@ -302,8 +292,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(149, 83);
-            this.lblName.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblName.Location = new System.Drawing.Point(47, 29);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(45, 19);
             this.lblName.TabIndex = 2;
@@ -311,13 +300,14 @@
             // 
             // frmMateria
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2549, 1884);
+            this.ClientSize = new System.Drawing.Size(818, 435);
             this.Controls.Add(this.pnlDatos);
             this.Controls.Add(this.grdDatos);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "frmMateria";
-            this.Padding = new System.Windows.Forms.Padding(19, 171, 19, 20);
+            this.Padding = new System.Windows.Forms.Padding(6, 60, 6, 7);
             this.Text = "Materia";
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.subjectBindingSource)).EndInit();
