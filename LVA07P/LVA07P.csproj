@@ -129,11 +129,11 @@
     </Compile>
     <Compile Include="Data\Student.cs" />
     <Compile Include="Data\Subject.cs" />
-    <Compile Include="Cursos.cs">
+    <Compile Include="Course.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cursos.Designer.cs">
-      <DependentUpon>Cursos.cs</DependentUpon>
+    <Compile Include="Course.Designer.cs">
+      <DependentUpon>Course.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\Tipo de pregunta.cs">
       <SubType>Form</SubType>
@@ -141,17 +141,17 @@
     <Compile Include="Data\Tipo de pregunta.Designer.cs">
       <DependentUpon>Tipo de pregunta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Docentes.cs">
+    <Compile Include="Student.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Docentes.designer.cs">
-      <DependentUpon>Docentes.cs</DependentUpon>
+    <Compile Include="Student.designer.cs">
+      <DependentUpon>Student.cs</DependentUpon>
     </Compile>
-    <Compile Include="Estudiantes.cs">
+    <Compile Include="Student.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Estudiantes.Designer.cs">
-      <DependentUpon>Estudiantes.cs</DependentUpon>
+    <Compile Include="Student.Designer.cs">
+      <DependentUpon>Student.cs</DependentUpon>
     </Compile>
     <Compile Include="Examenes.cs">
       <SubType>Form</SubType>
@@ -183,8 +183,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Cursos.resx">
-      <DependentUpon>Cursos.cs</DependentUpon>
+    <EmbeddedResource Include="Course.resx">
+      <DependentUpon>Course.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Data\Curso.resx">
       <DependentUpon>Curso.cs</DependentUpon>
@@ -216,11 +216,11 @@
     <EmbeddedResource Include="Data\Tipo de pregunta.resx">
       <DependentUpon>Tipo de pregunta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Docentes.resx">
-      <DependentUpon>Docentes.cs</DependentUpon>
+    <EmbeddedResource Include="Student.resx">
+      <DependentUpon>Student.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Estudiantes.resx">
-      <DependentUpon>Estudiantes.cs</DependentUpon>
+    <EmbeddedResource Include="Student.resx">
+      <DependentUpon>Student.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Examenes.resx">
       <DependentUpon>Examenes.cs</DependentUpon>
