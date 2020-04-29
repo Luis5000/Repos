@@ -40,11 +40,13 @@
             this.courseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.enrollmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.lblFechaDeAsignacion = new MetroFramework.Controls.MetroLabel();
             this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
+            this.lblFechaDeAsignacion = new MetroFramework.Controls.MetroLabel();
+            this.cursoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enrollmentBindingSource)).BeginInit();
             this.metroPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cursoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // metroGrid1
@@ -82,7 +84,8 @@
             this.metroGrid1.EnableHeadersVisualStyles = false;
             this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.Location = new System.Drawing.Point(81, 93);
+            this.metroGrid1.Location = new System.Drawing.Point(26, 33);
+            this.metroGrid1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.metroGrid1.Name = "metroGrid1";
             this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -97,7 +100,7 @@
             this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid1.RowTemplate.Height = 46;
             this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid1.Size = new System.Drawing.Size(1012, 606);
+            this.metroGrid1.Size = new System.Drawing.Size(320, 213);
             this.metroGrid1.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn
@@ -151,46 +154,56 @@
             this.metroPanel1.Controls.Add(this.lblFechaDeAsignacion);
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(1245, 115);
+            this.metroPanel1.HorizontalScrollbarSize = 4;
+            this.metroPanel1.Location = new System.Drawing.Point(393, 40);
+            this.metroPanel1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(980, 652);
+            this.metroPanel1.Size = new System.Drawing.Size(309, 229);
             this.metroPanel1.TabIndex = 1;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
+            this.metroPanel1.VerticalScrollbarSize = 3;
+            // 
+            // metroDateTime1
+            // 
+            this.metroDateTime1.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.enrollmentBindingSource, "DateAssignment", true));
+            this.metroDateTime1.Location = new System.Drawing.Point(60, 46);
+            this.metroDateTime1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime1.Name = "metroDateTime1";
+            this.metroDateTime1.Size = new System.Drawing.Size(66, 29);
+            this.metroDateTime1.TabIndex = 3;
             // 
             // lblFechaDeAsignacion
             // 
             this.lblFechaDeAsignacion.AutoSize = true;
-            this.lblFechaDeAsignacion.Location = new System.Drawing.Point(54, 146);
+            this.lblFechaDeAsignacion.Location = new System.Drawing.Point(17, 51);
+            this.lblFechaDeAsignacion.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblFechaDeAsignacion.Name = "lblFechaDeAsignacion";
             this.lblFechaDeAsignacion.Size = new System.Drawing.Size(129, 19);
             this.lblFechaDeAsignacion.TabIndex = 2;
             this.lblFechaDeAsignacion.Text = "Fecha de Asignación";
             // 
-            // metroDateTime1
+            // cursoBindingSource
             // 
-            this.metroDateTime1.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.enrollmentBindingSource, "DateAssignment", true));
-            this.metroDateTime1.Location = new System.Drawing.Point(189, 132);
-            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
-            this.metroDateTime1.Name = "metroDateTime1";
-            this.metroDateTime1.Size = new System.Drawing.Size(200, 44);
-            this.metroDateTime1.TabIndex = 3;
+            this.cursoBindingSource.DataSource = typeof(LVA07P.Data.Curso);
             // 
             // Enrolamiento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2345, 1336);
+            this.ClientSize = new System.Drawing.Size(617, 282);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.metroGrid1);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "Enrolamiento";
+            this.Padding = new System.Windows.Forms.Padding(6, 21, 6, 7);
             this.Text = "Enrolamiento";
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enrollmentBindingSource)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cursoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -207,5 +220,6 @@
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private MetroFramework.Controls.MetroDateTime metroDateTime1;
         private MetroFramework.Controls.MetroLabel lblFechaDeAsignacion;
+        private System.Windows.Forms.BindingSource cursoBindingSource;
     }
 }

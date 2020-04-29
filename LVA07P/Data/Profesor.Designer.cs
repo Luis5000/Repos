@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.professorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,6 +40,7 @@
             this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hiringDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.coursesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.professorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.professorBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -82,7 +82,8 @@
             this.metroGrid1.EnableHeadersVisualStyles = false;
             this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.Location = new System.Drawing.Point(90, 115);
+            this.metroGrid1.Location = new System.Drawing.Point(28, 40);
+            this.metroGrid1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.metroGrid1.Name = "metroGrid1";
             this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -97,12 +98,8 @@
             this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid1.RowTemplate.Height = 46;
             this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid1.Size = new System.Drawing.Size(1191, 674);
+            this.metroGrid1.Size = new System.Drawing.Size(376, 237);
             this.metroGrid1.TabIndex = 0;
-            // 
-            // professorBindingSource
-            // 
-            this.professorBindingSource.DataSource = typeof(LVA07P.Data.Professor);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -161,13 +158,19 @@
             this.coursesDataGridViewTextBoxColumn.Name = "coursesDataGridViewTextBoxColumn";
             this.coursesDataGridViewTextBoxColumn.Width = 300;
             // 
+            // professorBindingSource
+            // 
+            this.professorBindingSource.DataSource = typeof(LVA07P.Data.Professor);
+            // 
             // Profesor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2223, 1258);
+            this.ClientSize = new System.Drawing.Size(909, 491);
             this.Controls.Add(this.metroGrid1);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "Profesor";
+            this.Padding = new System.Windows.Forms.Padding(6, 21, 6, 7);
             this.Text = "Profesor";
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.professorBindingSource)).EndInit();
