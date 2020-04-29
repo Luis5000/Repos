@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LVA07P.Data
 {
-    public partial class Tipo_de_pregunta : MetroFramework.Forms.MetroForm
+    public partial class frmTipoDePregunta : MetroFramework.Forms.MetroForm
     {
-        public Tipo_de_pregunta()
+        public frmTipoDePregunta()
         {
             InitializeComponent();
         }

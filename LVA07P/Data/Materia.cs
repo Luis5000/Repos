@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LVA07P.Data
 {
-    public partial class Materia : MetroFramework.Forms.MetroForm
+    public partial class frmMateria : MetroFramework.Forms.MetroForm
     {
-        public Materia()
+        public frmMateria()
         {
             InitializeComponent();
         }

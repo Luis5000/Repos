@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace LVA07P.Data
 {
-    public partial class Respuesta : MetroFramework.Forms.MetroForm
+    public partial class frmRespuesta : MetroFramework.Forms.MetroForm
     {
-        public Respuesta()
+        public frmRespuesta()
         {
             InitializeComponent();
         }

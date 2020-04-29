@@ -1,6 +1,6 @@
 ﻿namespace LVA07P.Data
 {
-    partial class Tipo_de_pregunta
+    partial class frmTipoDePregunta
     {
         /// <summary>
         /// Required designer variable.
@@ -32,36 +32,36 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.questionTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.grdDatos = new MetroFramework.Controls.MetroGrid();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.levelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.openAnswerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.multipleChoiceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.closedAnswerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.questionsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.lblOpenAnswer = new MetroFramework.Controls.MetroLabel();
-            this.lblMultipleChoice = new MetroFramework.Controls.MetroLabel();
-            this.lblClosedAnswer = new MetroFramework.Controls.MetroLabel();
-            this.txbOpenAnswer = new MetroFramework.Controls.MetroTextBox();
-            this.txbMultipleChoice = new MetroFramework.Controls.MetroTextBox();
-            this.txbClosedAnswer = new MetroFramework.Controls.MetroTextBox();
-            this.btnGuardar = new MetroFramework.Controls.MetroButton();
+            this.questionTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pnlDatos = new MetroFramework.Controls.MetroPanel();
             this.btnCancelar = new MetroFramework.Controls.MetroButton();
-            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
+            this.btnGuardar = new MetroFramework.Controls.MetroButton();
+            this.txtClosedAnswer = new MetroFramework.Controls.MetroTextBox();
+            this.txtMultipleChoice = new MetroFramework.Controls.MetroTextBox();
+            this.txtOpenAnswer = new MetroFramework.Controls.MetroTextBox();
+            this.lblClosedAnswer = new MetroFramework.Controls.MetroLabel();
+            this.lblMultipleChoice = new MetroFramework.Controls.MetroLabel();
+            this.lblOpenAnswer = new MetroFramework.Controls.MetroLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.questionTypeBindingSource)).BeginInit();
-            this.metroPanel1.SuspendLayout();
+            this.pnlDatos.SuspendLayout();
             this.SuspendLayout();
             // 
-            // metroGrid1
+            // grdDatos
             // 
-            this.metroGrid1.AllowUserToResizeRows = false;
-            this.metroGrid1.AutoGenerateColumns = false;
-            this.metroGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.grdDatos.AllowUserToResizeRows = false;
+            this.grdDatos.AutoGenerateColumns = false;
+            this.grdDatos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.grdDatos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.grdDatos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.grdDatos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -69,16 +69,16 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.metroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.metroGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.grdDatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.grdDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdDatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
             this.levelDataGridViewTextBoxColumn,
             this.openAnswerDataGridViewTextBoxColumn,
             this.multipleChoiceDataGridViewTextBoxColumn,
             this.closedAnswerDataGridViewTextBoxColumn,
             this.questionsDataGridViewTextBoxColumn});
-            this.metroGrid1.DataSource = this.questionTypeBindingSource;
+            this.grdDatos.DataSource = this.questionTypeBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -86,14 +86,13 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.metroGrid1.EnableHeadersVisualStyles = false;
-            this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.Location = new System.Drawing.Point(23, 69);
-            this.metroGrid1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.metroGrid1.Name = "metroGrid1";
-            this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.grdDatos.DefaultCellStyle = dataGridViewCellStyle2;
+            this.grdDatos.EnableHeadersVisualStyles = false;
+            this.grdDatos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.grdDatos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.grdDatos.Location = new System.Drawing.Point(73, 196);
+            this.grdDatos.Name = "grdDatos";
+            this.grdDatos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -101,17 +100,13 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.metroGrid1.RowHeadersWidth = 123;
-            this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.metroGrid1.RowTemplate.Height = 46;
-            this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid1.Size = new System.Drawing.Size(387, 274);
-            this.metroGrid1.TabIndex = 0;
-            // 
-            // questionTypeBindingSource
-            // 
-            this.questionTypeBindingSource.DataSource = typeof(LVA07P.Data.QuestionType);
+            this.grdDatos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.grdDatos.RowHeadersWidth = 123;
+            this.grdDatos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.grdDatos.RowTemplate.Height = 46;
+            this.grdDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdDatos.Size = new System.Drawing.Size(1226, 780);
+            this.grdDatos.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -164,184 +159,199 @@
             this.questionsDataGridViewTextBoxColumn.Visible = false;
             this.questionsDataGridViewTextBoxColumn.Width = 50;
             // 
-            // metroPanel1
+            // questionTypeBindingSource
             // 
-            this.metroPanel1.Controls.Add(this.btnCancelar);
-            this.metroPanel1.Controls.Add(this.btnGuardar);
-            this.metroPanel1.Controls.Add(this.txbClosedAnswer);
-            this.metroPanel1.Controls.Add(this.txbMultipleChoice);
-            this.metroPanel1.Controls.Add(this.txbOpenAnswer);
-            this.metroPanel1.Controls.Add(this.lblClosedAnswer);
-            this.metroPanel1.Controls.Add(this.lblMultipleChoice);
-            this.metroPanel1.Controls.Add(this.lblOpenAnswer);
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(455, 69);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(483, 274);
-            this.metroPanel1.TabIndex = 1;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
+            this.questionTypeBindingSource.DataSource = typeof(LVA07P.Data.QuestionType);
             // 
-            // lblOpenAnswer
+            // pnlDatos
             // 
-            this.lblOpenAnswer.AutoSize = true;
-            this.lblOpenAnswer.Location = new System.Drawing.Point(46, 19);
-            this.lblOpenAnswer.Name = "lblOpenAnswer";
-            this.lblOpenAnswer.Size = new System.Drawing.Size(88, 19);
-            this.lblOpenAnswer.TabIndex = 2;
-            this.lblOpenAnswer.Text = "Open Answer";
+            this.pnlDatos.Controls.Add(this.btnCancelar);
+            this.pnlDatos.Controls.Add(this.btnGuardar);
+            this.pnlDatos.Controls.Add(this.txtClosedAnswer);
+            this.pnlDatos.Controls.Add(this.txtMultipleChoice);
+            this.pnlDatos.Controls.Add(this.txtOpenAnswer);
+            this.pnlDatos.Controls.Add(this.lblClosedAnswer);
+            this.pnlDatos.Controls.Add(this.lblMultipleChoice);
+            this.pnlDatos.Controls.Add(this.lblOpenAnswer);
+            this.pnlDatos.HorizontalScrollbarBarColor = true;
+            this.pnlDatos.HorizontalScrollbarHighlightOnWheel = false;
+            this.pnlDatos.HorizontalScrollbarSize = 28;
+            this.pnlDatos.Location = new System.Drawing.Point(1441, 196);
+            this.pnlDatos.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.pnlDatos.Name = "pnlDatos";
+            this.pnlDatos.Size = new System.Drawing.Size(1530, 780);
+            this.pnlDatos.TabIndex = 1;
+            this.pnlDatos.VerticalScrollbarBarColor = true;
+            this.pnlDatos.VerticalScrollbarHighlightOnWheel = false;
+            this.pnlDatos.VerticalScrollbarSize = 32;
             // 
-            // lblMultipleChoice
+            // btnCancelar
             // 
-            this.lblMultipleChoice.AutoSize = true;
-            this.lblMultipleChoice.Location = new System.Drawing.Point(46, 90);
-            this.lblMultipleChoice.Name = "lblMultipleChoice";
-            this.lblMultipleChoice.Size = new System.Drawing.Size(100, 19);
-            this.lblMultipleChoice.TabIndex = 3;
-            this.lblMultipleChoice.Text = "Multiple Choice";
+            this.btnCancelar.Location = new System.Drawing.Point(814, 635);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(238, 65);
+            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseSelectable = true;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(434, 635);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(238, 65);
+            this.btnGuardar.TabIndex = 8;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseSelectable = true;
+            // 
+            // txtClosedAnswer
+            // 
+            // 
+            // 
+            // 
+            this.txtClosedAnswer.CustomButton.Image = null;
+            this.txtClosedAnswer.CustomButton.Location = new System.Drawing.Point(1583, 3);
+            this.txtClosedAnswer.CustomButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtClosedAnswer.CustomButton.Name = "";
+            this.txtClosedAnswer.CustomButton.Size = new System.Drawing.Size(200, 179);
+            this.txtClosedAnswer.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtClosedAnswer.CustomButton.TabIndex = 1;
+            this.txtClosedAnswer.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtClosedAnswer.CustomButton.UseSelectable = true;
+            this.txtClosedAnswer.CustomButton.Visible = false;
+            this.txtClosedAnswer.Lines = new string[0];
+            this.txtClosedAnswer.Location = new System.Drawing.Point(592, 430);
+            this.txtClosedAnswer.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtClosedAnswer.MaxLength = 32767;
+            this.txtClosedAnswer.Name = "txtClosedAnswer";
+            this.txtClosedAnswer.PasswordChar = '\0';
+            this.txtClosedAnswer.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtClosedAnswer.SelectedText = "";
+            this.txtClosedAnswer.SelectionLength = 0;
+            this.txtClosedAnswer.SelectionStart = 0;
+            this.txtClosedAnswer.ShortcutsEnabled = true;
+            this.txtClosedAnswer.Size = new System.Drawing.Size(564, 65);
+            this.txtClosedAnswer.TabIndex = 7;
+            this.txtClosedAnswer.UseSelectable = true;
+            this.txtClosedAnswer.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtClosedAnswer.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // txtMultipleChoice
+            // 
+            // 
+            // 
+            // 
+            this.txtMultipleChoice.CustomButton.Image = null;
+            this.txtMultipleChoice.CustomButton.Location = new System.Drawing.Point(1583, 3);
+            this.txtMultipleChoice.CustomButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtMultipleChoice.CustomButton.Name = "";
+            this.txtMultipleChoice.CustomButton.Size = new System.Drawing.Size(200, 179);
+            this.txtMultipleChoice.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtMultipleChoice.CustomButton.TabIndex = 1;
+            this.txtMultipleChoice.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtMultipleChoice.CustomButton.UseSelectable = true;
+            this.txtMultipleChoice.CustomButton.Visible = false;
+            this.txtMultipleChoice.Lines = new string[0];
+            this.txtMultipleChoice.Location = new System.Drawing.Point(592, 242);
+            this.txtMultipleChoice.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtMultipleChoice.MaxLength = 32767;
+            this.txtMultipleChoice.Name = "txtMultipleChoice";
+            this.txtMultipleChoice.PasswordChar = '\0';
+            this.txtMultipleChoice.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtMultipleChoice.SelectedText = "";
+            this.txtMultipleChoice.SelectionLength = 0;
+            this.txtMultipleChoice.SelectionStart = 0;
+            this.txtMultipleChoice.ShortcutsEnabled = true;
+            this.txtMultipleChoice.Size = new System.Drawing.Size(564, 65);
+            this.txtMultipleChoice.TabIndex = 6;
+            this.txtMultipleChoice.UseSelectable = true;
+            this.txtMultipleChoice.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtMultipleChoice.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // txtOpenAnswer
+            // 
+            // 
+            // 
+            // 
+            this.txtOpenAnswer.CustomButton.Image = null;
+            this.txtOpenAnswer.CustomButton.Location = new System.Drawing.Point(1583, 3);
+            this.txtOpenAnswer.CustomButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtOpenAnswer.CustomButton.Name = "";
+            this.txtOpenAnswer.CustomButton.Size = new System.Drawing.Size(200, 179);
+            this.txtOpenAnswer.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtOpenAnswer.CustomButton.TabIndex = 1;
+            this.txtOpenAnswer.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtOpenAnswer.CustomButton.UseSelectable = true;
+            this.txtOpenAnswer.CustomButton.Visible = false;
+            this.txtOpenAnswer.Lines = new string[0];
+            this.txtOpenAnswer.Location = new System.Drawing.Point(592, 40);
+            this.txtOpenAnswer.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtOpenAnswer.MaxLength = 32767;
+            this.txtOpenAnswer.Name = "txtOpenAnswer";
+            this.txtOpenAnswer.PasswordChar = '\0';
+            this.txtOpenAnswer.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtOpenAnswer.SelectedText = "";
+            this.txtOpenAnswer.SelectionLength = 0;
+            this.txtOpenAnswer.SelectionStart = 0;
+            this.txtOpenAnswer.ShortcutsEnabled = true;
+            this.txtOpenAnswer.Size = new System.Drawing.Size(564, 65);
+            this.txtOpenAnswer.TabIndex = 5;
+            this.txtOpenAnswer.UseSelectable = true;
+            this.txtOpenAnswer.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtOpenAnswer.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // lblClosedAnswer
             // 
             this.lblClosedAnswer.AutoSize = true;
-            this.lblClosedAnswer.Location = new System.Drawing.Point(46, 156);
+            this.lblClosedAnswer.Location = new System.Drawing.Point(146, 444);
+            this.lblClosedAnswer.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.lblClosedAnswer.Name = "lblClosedAnswer";
             this.lblClosedAnswer.Size = new System.Drawing.Size(95, 19);
             this.lblClosedAnswer.TabIndex = 4;
             this.lblClosedAnswer.Text = "Closed Answer";
             // 
-            // txbOpenAnswer
+            // lblMultipleChoice
             // 
+            this.lblMultipleChoice.AutoSize = true;
+            this.lblMultipleChoice.Location = new System.Drawing.Point(146, 256);
+            this.lblMultipleChoice.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblMultipleChoice.Name = "lblMultipleChoice";
+            this.lblMultipleChoice.Size = new System.Drawing.Size(100, 19);
+            this.lblMultipleChoice.TabIndex = 3;
+            this.lblMultipleChoice.Text = "Multiple Choice";
             // 
+            // lblOpenAnswer
             // 
+            this.lblOpenAnswer.AutoSize = true;
+            this.lblOpenAnswer.Location = new System.Drawing.Point(146, 54);
+            this.lblOpenAnswer.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblOpenAnswer.Name = "lblOpenAnswer";
+            this.lblOpenAnswer.Size = new System.Drawing.Size(88, 19);
+            this.lblOpenAnswer.TabIndex = 2;
+            this.lblOpenAnswer.Text = "Open Answer";
             // 
-            this.txbOpenAnswer.CustomButton.Image = null;
-            this.txbOpenAnswer.CustomButton.Location = new System.Drawing.Point(156, 1);
-            this.txbOpenAnswer.CustomButton.Name = "";
-            this.txbOpenAnswer.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txbOpenAnswer.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txbOpenAnswer.CustomButton.TabIndex = 1;
-            this.txbOpenAnswer.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txbOpenAnswer.CustomButton.UseSelectable = true;
-            this.txbOpenAnswer.CustomButton.Visible = false;
-            this.txbOpenAnswer.Lines = new string[0];
-            this.txbOpenAnswer.Location = new System.Drawing.Point(187, 14);
-            this.txbOpenAnswer.MaxLength = 32767;
-            this.txbOpenAnswer.Name = "txbOpenAnswer";
-            this.txbOpenAnswer.PasswordChar = '\0';
-            this.txbOpenAnswer.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txbOpenAnswer.SelectedText = "";
-            this.txbOpenAnswer.SelectionLength = 0;
-            this.txbOpenAnswer.SelectionStart = 0;
-            this.txbOpenAnswer.ShortcutsEnabled = true;
-            this.txbOpenAnswer.Size = new System.Drawing.Size(178, 23);
-            this.txbOpenAnswer.TabIndex = 5;
-            this.txbOpenAnswer.UseSelectable = true;
-            this.txbOpenAnswer.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txbOpenAnswer.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // frmTipoDePregunta
             // 
-            // txbMultipleChoice
-            // 
-            // 
-            // 
-            // 
-            this.txbMultipleChoice.CustomButton.Image = null;
-            this.txbMultipleChoice.CustomButton.Location = new System.Drawing.Point(156, 1);
-            this.txbMultipleChoice.CustomButton.Name = "";
-            this.txbMultipleChoice.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txbMultipleChoice.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txbMultipleChoice.CustomButton.TabIndex = 1;
-            this.txbMultipleChoice.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txbMultipleChoice.CustomButton.UseSelectable = true;
-            this.txbMultipleChoice.CustomButton.Visible = false;
-            this.txbMultipleChoice.Lines = new string[0];
-            this.txbMultipleChoice.Location = new System.Drawing.Point(187, 85);
-            this.txbMultipleChoice.MaxLength = 32767;
-            this.txbMultipleChoice.Name = "txbMultipleChoice";
-            this.txbMultipleChoice.PasswordChar = '\0';
-            this.txbMultipleChoice.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txbMultipleChoice.SelectedText = "";
-            this.txbMultipleChoice.SelectionLength = 0;
-            this.txbMultipleChoice.SelectionStart = 0;
-            this.txbMultipleChoice.ShortcutsEnabled = true;
-            this.txbMultipleChoice.Size = new System.Drawing.Size(178, 23);
-            this.txbMultipleChoice.TabIndex = 6;
-            this.txbMultipleChoice.UseSelectable = true;
-            this.txbMultipleChoice.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txbMultipleChoice.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // txbClosedAnswer
-            // 
-            // 
-            // 
-            // 
-            this.txbClosedAnswer.CustomButton.Image = null;
-            this.txbClosedAnswer.CustomButton.Location = new System.Drawing.Point(156, 1);
-            this.txbClosedAnswer.CustomButton.Name = "";
-            this.txbClosedAnswer.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txbClosedAnswer.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txbClosedAnswer.CustomButton.TabIndex = 1;
-            this.txbClosedAnswer.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txbClosedAnswer.CustomButton.UseSelectable = true;
-            this.txbClosedAnswer.CustomButton.Visible = false;
-            this.txbClosedAnswer.Lines = new string[0];
-            this.txbClosedAnswer.Location = new System.Drawing.Point(187, 151);
-            this.txbClosedAnswer.MaxLength = 32767;
-            this.txbClosedAnswer.Name = "txbClosedAnswer";
-            this.txbClosedAnswer.PasswordChar = '\0';
-            this.txbClosedAnswer.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txbClosedAnswer.SelectedText = "";
-            this.txbClosedAnswer.SelectionLength = 0;
-            this.txbClosedAnswer.SelectionStart = 0;
-            this.txbClosedAnswer.ShortcutsEnabled = true;
-            this.txbClosedAnswer.Size = new System.Drawing.Size(178, 23);
-            this.txbClosedAnswer.TabIndex = 7;
-            this.txbClosedAnswer.UseSelectable = true;
-            this.txbClosedAnswer.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txbClosedAnswer.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Location = new System.Drawing.Point(137, 223);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
-            this.btnGuardar.TabIndex = 8;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseSelectable = true;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(257, 223);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 9;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseSelectable = true;
-            // 
-            // Tipo_de_pregunta
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1001, 739);
-            this.Controls.Add(this.metroPanel1);
-            this.Controls.Add(this.metroGrid1);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.Name = "Tipo_de_pregunta";
-            this.Padding = new System.Windows.Forms.Padding(6, 21, 6, 7);
+            this.ClientSize = new System.Drawing.Size(3170, 2103);
+            this.Controls.Add(this.pnlDatos);
+            this.Controls.Add(this.grdDatos);
+            this.Name = "frmTipoDePregunta";
+            this.Padding = new System.Windows.Forms.Padding(19, 171, 19, 20);
             this.Text = "Tipo_de_pregunta";
-            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.questionTypeBindingSource)).EndInit();
-            this.metroPanel1.ResumeLayout(false);
-            this.metroPanel1.PerformLayout();
+            this.pnlDatos.ResumeLayout(false);
+            this.pnlDatos.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private MetroFramework.Controls.MetroGrid metroGrid1;
+        private MetroFramework.Controls.MetroGrid grdDatos;
         private System.Windows.Forms.BindingSource questionTypeBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn levelDataGridViewTextBoxColumn;
@@ -349,12 +359,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn multipleChoiceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn closedAnswerDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn questionsDataGridViewTextBoxColumn;
-        private MetroFramework.Controls.MetroPanel metroPanel1;
+        private MetroFramework.Controls.MetroPanel pnlDatos;
         private MetroFramework.Controls.MetroButton btnCancelar;
         private MetroFramework.Controls.MetroButton btnGuardar;
-        private MetroFramework.Controls.MetroTextBox txbClosedAnswer;
-        private MetroFramework.Controls.MetroTextBox txbMultipleChoice;
-        private MetroFramework.Controls.MetroTextBox txbOpenAnswer;
+        private MetroFramework.Controls.MetroTextBox txtClosedAnswer;
+        private MetroFramework.Controls.MetroTextBox txtMultipleChoice;
+        private MetroFramework.Controls.MetroTextBox txtOpenAnswer;
         private MetroFramework.Controls.MetroLabel lblClosedAnswer;
         private MetroFramework.Controls.MetroLabel lblMultipleChoice;
         private MetroFramework.Controls.MetroLabel lblOpenAnswer;
