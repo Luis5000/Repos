@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class frmEstudiantes
+    partial class frmStudent
     {
         /// <summary>
         /// Variable del diseñador requerida.
@@ -8,9 +8,9 @@
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén utilizando.
+        /// Limpiar los reCourse que se estén utilizando.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben eliminar; false en caso contrario.</param>
+        /// <param name="disposing">true si los reCourse administrados se deben eliminar; false en caso contrario.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -410,7 +410,7 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             // 
-            // frmEstudiantes
+            // frmStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -419,7 +419,7 @@
             this.Controls.Add(this.grpDatosEscolares);
             this.Controls.Add(this.grpDatosPersonales);
             this.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.Name = "frmEstudiantes";
+            this.Name = "frmStudent";
             this.Text = "-";
             this.grpDatosPersonales.ResumeLayout(false);
             this.grpDatosPersonales.PerformLayout();

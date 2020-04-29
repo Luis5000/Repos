@@ -1,6 +1,6 @@
 ﻿namespace LVA07P
 {
-    partial class frmCursos
+    partial class frmCourse
     {
         /// <summary>
         /// Required designer variable.
@@ -118,7 +118,7 @@
             this.pictureBox6.TabIndex = 13;
             this.pictureBox6.TabStop = false;
             // 
-            // frmCursos
+            // frmCourse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -133,8 +133,8 @@
             this.Controls.Add(this.lblSub);
             this.Controls.Add(this.lblTitulo);
             this.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.Name = "frmCursos";
-            this.Text = "Cursos";
+            this.Name = "frmCourse";
+            this.Text = "Course";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
