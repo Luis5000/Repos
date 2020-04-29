@@ -16,14 +16,14 @@ namespace LVA07P.Data
         {
             InitializeComponent();
         }
-         private void frmEnrolamiento_Load(object sender, EventArgs e)
+        private void frmEnrolamiento_Load(object sender, EventArgs e)
         {
             using (DataContext dataContext = new DataContext())
             {
                 EnrollmentBindingSource.DataSource =
                     dataContext.Enrollment.ToList();
             }
-            
+
         }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -62,5 +62,7 @@ namespace LVA07P.Data
             else
                 pctFoto.Image = null;
 
+        }
     }
 }
+

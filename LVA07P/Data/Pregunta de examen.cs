@@ -23,7 +23,7 @@ namespace LVA07P.Data
                 ExamQuestionBindingSource.DataSource =
                     dataContext.ExamQuestion.ToList();
             }
-            
+
         }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -61,5 +61,6 @@ namespace LVA07P.Data
                 pctFoto.Image = Image.FromFile(ExamQuestion.ImageUrl);
             else
                 pctFoto.Image = null;
+        }
     }
 }

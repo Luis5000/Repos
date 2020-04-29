@@ -16,14 +16,14 @@ namespace LVA07P.Data
         {
             InitializeComponent();
         }
-         private void frmTipo_de_pregunta_Load(object sender, EventArgs e)
+        private void frmTipo_de_pregunta_Load(object sender, EventArgs e)
         {
             using (DataContext dataContext = new DataContext())
             {
                 QuestionTypeBindingSource.DataSource =
                     dataContext.QuestionType.ToList();
             }
-            
+
         }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -61,5 +61,6 @@ namespace LVA07P.Data
                 pctFoto.Image = Image.FromFile(QuestionType.ImageUrl);
             else
                 pctFoto.Image = null;
+        }
     }
 }

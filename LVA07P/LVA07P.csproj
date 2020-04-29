@@ -50,7 +50,9 @@
     <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -129,33 +131,13 @@
     </Compile>
     <Compile Include="Data\Student.cs" />
     <Compile Include="Data\Subject.cs" />
-    <Compile Include="Course.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Course.Designer.cs">
-      <DependentUpon>Course.cs</DependentUpon>
-    </Compile>
     <Compile Include="Data\Tipo de pregunta.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Data\Tipo de pregunta.Designer.cs">
       <DependentUpon>Tipo de pregunta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Student.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Student.designer.cs">
-      <DependentUpon>Student.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Student.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Student.Designer.cs">
-      <DependentUpon>Student.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Examenes.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Examenes.cs" />
     <Compile Include="Examenes.Designer.cs">
       <DependentUpon>Examenes.cs</DependentUpon>
     </Compile>
@@ -183,9 +165,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Course.resx">
-      <DependentUpon>Course.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Data\Curso.resx">
       <DependentUpon>Curso.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,12 +194,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Data\Tipo de pregunta.resx">
       <DependentUpon>Tipo de pregunta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Student.resx">
-      <DependentUpon>Student.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Student.resx">
-      <DependentUpon>Student.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Examenes.resx">
       <DependentUpon>Examenes.cs</DependentUpon>

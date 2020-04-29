@@ -23,7 +23,7 @@ namespace LVA07P.Data
                 SubjectBindingSource.DataSource =
                     dataContext.Subject.ToList();
             }
-            
+
         }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -59,5 +59,7 @@ namespace LVA07P.Data
                 pctFoto.Image = Image.FromFile(Subject.ImageUrl);
             else
                 pctFoto.Image = null;
+        }
     }
 }
+

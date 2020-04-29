@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,14 +17,14 @@ namespace LVA07P.Data
         {
             InitializeComponent();
         }
-         private void frmRespuesta_Load(object sender, EventArgs e)
+        private void frmRespuesta_Load(object sender, EventArgs e)
         {
             using (DataContext dataContext = new DataContext())
             {
                 ResponseBindingSource.DataSource =
                     dataContext.Response.ToList();
             }
-            
+
         }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -61,5 +62,6 @@ namespace LVA07P.Data
                 pctFoto.Image = Image.FromFile(Response.ImageUrl);
             else
                 pctFoto.Image = null;
+        }
     }
 }
