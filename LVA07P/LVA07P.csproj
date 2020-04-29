@@ -137,10 +137,6 @@
     <Compile Include="Data\Tipo de pregunta.Designer.cs">
       <DependentUpon>Tipo de pregunta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Examenes.cs" />
-    <Compile Include="Examenes.Designer.cs">
-      <DependentUpon>Examenes.cs</DependentUpon>
-    </Compile>
     <Compile Include="Materias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,9 +190,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Data\Tipo de pregunta.resx">
       <DependentUpon>Tipo de pregunta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Examenes.resx">
-      <DependentUpon>Examenes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Materias.resx">
       <DependentUpon>Materias.cs</DependentUpon>

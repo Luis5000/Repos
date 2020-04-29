@@ -10,15 +10,15 @@ using System.Windows.Forms;
 
 namespace LVA07P.Data
 {
-    public partial class Examen : MetroFramework.Forms.MetroForm
+    public partial class frmExamen : MetroFramework.Forms.MetroForm
     {
-        public Examen()
+        public frmExamen()
         {
             InitializeComponent();
         }
-        public partial class frmExamen : MetroFramework.Forms.MetroForm
+        public partial class FrmExamen : MetroFramework.Forms.MetroForm
         {
-            public frmExamenes()
+            public FrmExamen()
             {
                 InitializeComponent();
             }
@@ -71,10 +71,6 @@ namespace LVA07P.Data
             private void grdDatos_CellClick(object sender, DataGridViewCellEventArgs e)
             {
                 Exam Exam = ExamBindingSource.Current as Course;
-                if (Exam != null && Exam.ImageUrl != null)
-                    pctFoto.Image = Image.FromFile(Exam.ImageUrl);
-                else
-                    pctFoto.Image = null;
             }
         }
     }

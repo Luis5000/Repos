@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace LVA07P.Data
 {
-    public partial class Estudiante : MetroFramework.Forms.MetroForm
+    public partial class frmEstudiante : MetroFramework.Forms.MetroForm
     {
-        public Estudiante()
+        public frmEstudiante()
         {
             InitializeComponent();
         }
 
-        private void mtlEmail_Click(object sender, EventArgs e)
+        private void MtlEmail_Click(object sender, EventArgs e)
         {
 
         }
-        public partial class frmEstudiantes : MetroFramework.Forms.MetroForm
+        public partial class FrmEstudiantes : MetroFramework.Forms.MetroForm
         {
-            public frmEstudiantes()
+            public FrmEstudiantes()
             {
                 InitializeComponent();
             }
-            private void frmEstudiantes_Load(object sender, EventArgs e)
+            private void FrmEstudiantes_Load(object sender, EventArgs e)
             {
                 using (DataContext dataContext = new DataContext())
                 {
@@ -42,20 +42,19 @@ namespace LVA07P.Data
                     pctFoto.Image = null;
             }
 
-            private void btnAgregar_Click(object sender, EventArgs e)
+            private void BtnAgregar_Click(object sender, EventArgs e)
             {
                 pnlDatos.Enabled = true;
                 pctFoto.Image = null;
                 StudentBindingSource.Add(new Student());
                 StudentBindingSource.MoveLast();
-                txtNombre.Focus();
+                txtName.Focus();
             }
             private void btnEditar_Click(object sender, EventArgs e)
             {
                 pnlDatos.Enabled = true;
-                txtNombre.Focus();
-                Student Student =
-                    StudentBindingSource.Current as Student;
+                txtName.Focus();
+                Student Student = StudentBindingSource.Current as Student;
             }
 
             private void btnEliminar_Click(object sender, EventArgs e)
@@ -89,7 +88,7 @@ namespace LVA07P.Data
             {
                 pnlDatos.Enabled = false;
                 StudentBindingSource.ResetBindings(false);
-                frmEstudiantes_Load(sender, e);
+                FrmEstudiantes_Load(sender, e);
             }
 
             private void btnGuardar_Click(object sender, EventArgs e)
@@ -122,6 +121,11 @@ namespace LVA07P.Data
                 else
                     pctFoto.Image = null;
             }
+        }
+
+        private void pctFoto_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

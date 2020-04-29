@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LVA07P.Data
 {
-    public partial class Enrolamiento : MetroFramework.Forms.MetroForm
+    public partial class frmEnrolamiento : MetroFramework.Forms.MetroForm
     {
-        public Enrolamiento()
+        public frmEnrolamiento()
         {
             InitializeComponent();
         }
