@@ -9,6 +9,8 @@
         public string Email { get; set; }
         public string Phone { get; set; }
         public string Address { get; set; }
+        public string ImageUrl { get; set; }
+
 
         public ICollection <Response> Responses { get; set; }
         public ICollection <Enrollment> Enrollments { get; set; }

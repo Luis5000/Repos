@@ -46,7 +46,7 @@
             this.courseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pnlDatos = new MetroFramework.Controls.MetroPanel();
             this.btnRead = new MetroFramework.Controls.MetroButton();
-            this.btnDelete = new MetroFramework.Controls.MetroButton();
+            this.btnCancel = new MetroFramework.Controls.MetroButton();
             this.btnCreate = new MetroFramework.Controls.MetroButton();
             this.btnUpdate = new MetroFramework.Controls.MetroButton();
             this.txtSubject = new MetroFramework.Controls.MetroTextBox();
@@ -59,6 +59,7 @@
             this.lblDateBegin = new MetroFramework.Controls.MetroLabel();
             this.txtName = new MetroFramework.Controls.MetroTextBox();
             this.lblName = new MetroFramework.Controls.MetroLabel();
+            this.btnDelete = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).BeginInit();
             this.pnlDatos.SuspendLayout();
@@ -205,8 +206,9 @@
             // 
             // pnlDatos
             // 
-            this.pnlDatos.Controls.Add(this.btnRead);
             this.pnlDatos.Controls.Add(this.btnDelete);
+            this.pnlDatos.Controls.Add(this.btnRead);
+            this.pnlDatos.Controls.Add(this.btnCancel);
             this.pnlDatos.Controls.Add(this.btnCreate);
             this.pnlDatos.Controls.Add(this.btnUpdate);
             this.pnlDatos.Controls.Add(this.txtSubject);
@@ -240,14 +242,14 @@
             this.btnRead.Text = "Leer";
             this.btnRead.UseSelectable = true;
             // 
-            // btnDelete
+            // btnCancel
             // 
-            this.btnDelete.Location = new System.Drawing.Point(301, 248);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(91, 29);
-            this.btnDelete.TabIndex = 14;
-            this.btnDelete.Text = "Borrar";
-            this.btnDelete.UseSelectable = true;
+            this.btnCancel.Location = new System.Drawing.Point(301, 248);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(91, 29);
+            this.btnCancel.TabIndex = 14;
+            this.btnCancel.Text = "Cancelar";
+            this.btnCancel.UseSelectable = true;
             // 
             // btnCreate
             // 
@@ -434,6 +436,16 @@
             this.lblName.TabIndex = 2;
             this.lblName.Text = "Name";
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(155, 283);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(91, 29);
+            this.btnDelete.TabIndex = 16;
+            this.btnDelete.Text = "Borrar";
+            this.btnDelete.UseSelectable = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // frmCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -479,8 +491,9 @@
         private MetroFramework.Controls.MetroDateTime dtmDateBegin;
         private MetroFramework.Controls.MetroTextBox txtProfessor;
         private MetroFramework.Controls.MetroButton btnRead;
-        private MetroFramework.Controls.MetroButton btnDelete;
+        private MetroFramework.Controls.MetroButton btnCancel;
         private MetroFramework.Controls.MetroButton btnCreate;
         private MetroFramework.Controls.MetroButton btnUpdate;
+        private MetroFramework.Controls.MetroButton btnDelete;
     }
 }

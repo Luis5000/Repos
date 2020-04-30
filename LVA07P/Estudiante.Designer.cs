@@ -121,6 +121,7 @@
             this.grdDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdDatos.Size = new System.Drawing.Size(323, 207);
             this.grdDatos.TabIndex = 0;
+            this.grdDatos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDatos_CellClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -230,6 +231,7 @@
             this.btnGuardar.TabIndex = 17;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseSelectable = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // pctFoto
             // 
@@ -238,7 +240,6 @@
             this.pctFoto.Size = new System.Drawing.Size(138, 152);
             this.pctFoto.TabIndex = 16;
             this.pctFoto.TabStop = false;
-            this.pctFoto.Click += new System.EventHandler(this.pctFoto_Click);
             // 
             // btnCancelar
             // 
@@ -248,6 +249,7 @@
             this.btnCancelar.TabIndex = 15;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseSelectable = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnEditar
             // 
@@ -257,6 +259,7 @@
             this.btnEditar.TabIndex = 14;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseSelectable = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnEliminar
             // 
@@ -266,6 +269,7 @@
             this.btnEliminar.TabIndex = 13;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseSelectable = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnAgregar
             // 
@@ -275,6 +279,7 @@
             this.btnAgregar.TabIndex = 12;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseSelectable = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // txtAddress
             // 
@@ -395,7 +400,6 @@
             this.lblEmail.Size = new System.Drawing.Size(41, 19);
             this.lblEmail.TabIndex = 6;
             this.lblEmail.Text = "Email";
-            this.lblEmail.Click += new System.EventHandler(this.MtlEmail_Click);
             // 
             // txtLastName
             // 
@@ -488,6 +492,7 @@
             this.Name = "frmEstudiante";
             this.Padding = new System.Windows.Forms.Padding(6, 60, 6, 7);
             this.Text = "Estudiante";
+            this.Load += new System.EventHandler(this.frmEstudiante_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).EndInit();
             this.pnlDatos.ResumeLayout(false);

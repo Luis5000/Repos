@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -15,25 +16,25 @@ namespace LVA07P.Data
             {
                 using (DataContext dataContext = new DataContext())
                 {
-                    ProfessorBindingSource.DataSource =
-                        dataContext.Professor.ToList();
+                    professorBindingSource.DataSource =
+                        dataContext.Professors.ToList();
                 }
                 pnlDatos.Enabled = false;
-                Professor Professor = ProfessorBindingSource.Current as Professor;
+                Professor Professor = professorBindingSource.Current as Professor;
             }
             private void btnAgregar_Click(object sender, EventArgs e)
             {
                 pnlDatos.Enabled = true;
-                ProfessorBindingSource.Add(new Student());
-                ProfessorBindingSource.MoveLast();
-                txtNombre.Focus();
+                professorBindingSource.Add(new Student());
+                professorBindingSource.MoveLast();
+                txtName.Focus();
             }
             private void btnEditar_Click(object sender, EventArgs e)
             {
                 pnlDatos.Enabled = true;
-                txtNombre.Focus();
+                txtName.Focus();
                 Professor Professor =
-                    ProfessorBindingSource.Current as Professor;
+                    professorBindingSource.Current as Professor;
             }
             private void btnEliminar_Click(object sender, EventArgs e)
             {
@@ -46,7 +47,7 @@ namespace LVA07P.Data
                     using (DataContext dataContext = new DataContext())
                     {
                         Professor Professor =
-                            ProfessorBindingSource.Current as Professor;
+                            professorBindingSource.Current as Professor;
                         if (Professor != null)
                         {
                             if (dataContext.Entry<Professor>(Professor).State == EntityState.Detached)
@@ -54,7 +55,7 @@ namespace LVA07P.Data
                             dataContext.Entry<Professor>(Professor).State = EntityState.Deleted;
                             dataContext.SaveChanges();
                             MetroFramework.MetroMessageBox.Show(this, "Docente eliminado");
-                            ProfessorBindingSource.RemoveCurrent();
+                            professorBindingSource.RemoveCurrent();
                             pnlDatos.Enabled = false;
                         }
                     }
@@ -64,7 +65,7 @@ namespace LVA07P.Data
             private void btnCancelar_Click(object sender, EventArgs e)
             {
                 pnlDatos.Enabled = false;
-                ProfessorBindingSource.ResetBindings(false);
+                professorBindingSource.ResetBindings(false);
                 frmProfesor_Load(sender, e);
             }
             private void btnGuardar_Click(object sender, EventArgs e)
@@ -72,12 +73,12 @@ namespace LVA07P.Data
                 using (DataContext dataContext = new DataContext())
                 {
                     Professor Professor =
-                        ProfessorBindingSource.Current as Student;
+                        professorBindingSource.Current as Professor;
                     if (Professor != null)
                     {
                         if (dataContext.Entry<Professor>(Professor).State == EntityState.Detached)
                             dataContext.Set<Professor>().Attach(Professor);
-                        if (Student.Id == 0)
+                        if (Professor.Id == 0)
                             dataContext.Entry<Professor>(Professor).State = EntityState.Added;
                         else
                             dataContext.Entry<Professor>(Professor).State = EntityState.Modified;
@@ -90,7 +91,7 @@ namespace LVA07P.Data
             }
             private void grdDatos_CellClick(object sender, DataGridViewCellEventArgs e)
             {
-                Professor Professor = ProfessorBindingSource.Current as Professor;
+                Professor Professor = professorBindingSource.Current as Professor;
             }
     }
 }

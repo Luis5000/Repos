@@ -6,18 +6,16 @@
     {
         public DataContext() : base("name = con")
         {
-
-
         }
-        DbSet <Student> Students { get; set; }
-        DbSet <Professor> Professors { get; set; }
-        DbSet <Course> Courses { get; set; }
-        DbSet <Exam> Exams { get; set; }
-        DbSet <Subject> Subjects { get; set; }
-        DbSet <Enrollment> Enrollments { get; set; }
-        DbSet <ExamQuestion> ExamQuestions { get; set; }
-        DbSet <Question> Questions { get; set; }
-        DbSet <Response> Responses { get; set; }
-        DbSet <QuestionType> QuestionTypes { get; set; }
+        public DbSet <Student> Students { get; set; }
+        public DbSet<Professor> Professors { get; set; }
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Exam> Exams { get; set; }
+        public DbSet<Subject> Subjects { get; set; }
+        public DbSet<Enrollment> Enrollments { get; set; }
+        public DbSet<ExamQuestion> ExamQuestions { get; set; }
+        public DbSet<Question> Questions { get; set; }
+        public DbSet<Response> Responses { get; set; }
+        public DbSet<QuestionType> QuestionTypes { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -15,8 +16,8 @@ namespace LVA07P.Data
             {
                 using (DataContext dataContext = new DataContext())
                 {
-                    CourseBindingSource.DataSource =
-                        dataContext.Course.ToList();
+                    courseBindingSource.DataSource =
+                        dataContext.Courses.ToList();
                 }
             }
             private void btnUpdate_Click(object sender, EventArgs e)
@@ -24,7 +25,7 @@ namespace LVA07P.Data
                 using (DataContext dataContext = new DataContext())
                 {
                     Course Course =
-                        CourseBindingSource.Current as Course;
+                        courseBindingSource.Current as Course;
                     if (Course != null)
                     {
                         if (dataContext.Entry<Course>(Course).State == EntityState.Detached)
@@ -40,15 +41,45 @@ namespace LVA07P.Data
                     }
                 }
             }
-            private void btnDelete_Click(object sender, EventArgs e)
+            private void btnCancel_Click(object sender, EventArgs e)
             {
                 pnlDatos.Enabled = false;
-                CourseBindingSource.ResetBindings(false);
-                frmCurso(sender, e);
+                courseBindingSource.ResetBindings(false);
+                frmCursos_Load(sender, e);
             }
             private void grdDatos_CellClick(object sender, DataGridViewCellEventArgs e)
             {
-                Course Course = CourseBindingSource.Current as Course;
+                Course Course = courseBindingSource.Current as Course;
             }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (MetroFramework.MetroMessageBox.Show(this,
+                "¿Quieres eliminar el registro?",
+                "Eliminar",
+                MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                using (DataContext dataContext = new DataContext())
+                {
+                    Employee employee =
+                        employeeBindingSource.Current as Employee;
+                    if (employee != null)
+                    {
+                        if (dataContext.Entry<Course>(employee).State == EntityState.Detached)
+                            dataContext.Set<Course>().Attach(employee);
+                        dataContext.Entry<Course>(employee).State = EntityState.Deleted;
+                        dataContext.SaveChanges();
+                        MetroFramework.MetroMessageBox.Show(this, "Empleado eliminado");
+                        courseBindingSource.RemoveCurrent();
+                        pctFoto.Image = null;
+                        pnlDatos.Enabled = false;
+                    }
+                }
+            }
+        }
+
+
     }
+}
 }
