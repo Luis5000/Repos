@@ -95,7 +95,7 @@
             this.grdDatos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.grdDatos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.grdDatos.Location = new System.Drawing.Point(22, 61);
-            this.grdDatos.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.grdDatos.Margin = new System.Windows.Forms.Padding(1);
             this.grdDatos.Name = "grdDatos";
             this.grdDatos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -198,14 +198,15 @@
             // 
             // 
             this.txtResponse.CustomButton.Image = null;
-            this.txtResponse.CustomButton.Location = new System.Drawing.Point(39, 0);
+            this.txtResponse.CustomButton.Location = new System.Drawing.Point(123, 1);
             this.txtResponse.CustomButton.Name = "";
-            this.txtResponse.CustomButton.Size = new System.Drawing.Size(7, 7);
+            this.txtResponse.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtResponse.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtResponse.CustomButton.TabIndex = 1;
             this.txtResponse.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtResponse.CustomButton.UseSelectable = true;
             this.txtResponse.CustomButton.Visible = false;
+            this.txtResponse.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.examQuestionBindingSource, "Responses", true));
             this.txtResponse.Lines = new string[0];
             this.txtResponse.Location = new System.Drawing.Point(209, 189);
             this.txtResponse.MaxLength = 32767;
@@ -255,14 +256,15 @@
             // 
             // 
             this.txtQuestion.CustomButton.Image = null;
-            this.txtQuestion.CustomButton.Location = new System.Drawing.Point(39, 0);
+            this.txtQuestion.CustomButton.Location = new System.Drawing.Point(123, 1);
             this.txtQuestion.CustomButton.Name = "";
-            this.txtQuestion.CustomButton.Size = new System.Drawing.Size(7, 7);
+            this.txtQuestion.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtQuestion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtQuestion.CustomButton.TabIndex = 1;
             this.txtQuestion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtQuestion.CustomButton.UseSelectable = true;
             this.txtQuestion.CustomButton.Visible = false;
+            this.txtQuestion.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.examQuestionBindingSource, "Question", true));
             this.txtQuestion.Lines = new string[0];
             this.txtQuestion.Location = new System.Drawing.Point(209, 145);
             this.txtQuestion.MaxLength = 32767;
@@ -285,14 +287,15 @@
             // 
             // 
             this.txtExam.CustomButton.Image = null;
-            this.txtExam.CustomButton.Location = new System.Drawing.Point(39, 0);
+            this.txtExam.CustomButton.Location = new System.Drawing.Point(123, 1);
             this.txtExam.CustomButton.Name = "";
-            this.txtExam.CustomButton.Size = new System.Drawing.Size(7, 7);
+            this.txtExam.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtExam.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtExam.CustomButton.TabIndex = 1;
             this.txtExam.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtExam.CustomButton.UseSelectable = true;
             this.txtExam.CustomButton.Visible = false;
+            this.txtExam.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.examQuestionBindingSource, "Exam", true));
             this.txtExam.Lines = new string[0];
             this.txtExam.Location = new System.Drawing.Point(209, 101);
             this.txtExam.MaxLength = 32767;
@@ -315,14 +318,15 @@
             // 
             // 
             this.txtContent.CustomButton.Image = null;
-            this.txtContent.CustomButton.Location = new System.Drawing.Point(39, 0);
+            this.txtContent.CustomButton.Location = new System.Drawing.Point(123, 1);
             this.txtContent.CustomButton.Name = "";
-            this.txtContent.CustomButton.Size = new System.Drawing.Size(7, 7);
+            this.txtContent.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtContent.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtContent.CustomButton.TabIndex = 1;
             this.txtContent.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtContent.CustomButton.UseSelectable = true;
             this.txtContent.CustomButton.Visible = false;
+            this.txtContent.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.examQuestionBindingSource, "Content", true));
             this.txtContent.Lines = new string[0];
             this.txtContent.Location = new System.Drawing.Point(209, 58);
             this.txtContent.MaxLength = 32767;
@@ -345,14 +349,15 @@
             // 
             // 
             this.txtQuestionNumber.CustomButton.Image = null;
-            this.txtQuestionNumber.CustomButton.Location = new System.Drawing.Point(39, 0);
+            this.txtQuestionNumber.CustomButton.Location = new System.Drawing.Point(123, 1);
             this.txtQuestionNumber.CustomButton.Name = "";
-            this.txtQuestionNumber.CustomButton.Size = new System.Drawing.Size(7, 7);
+            this.txtQuestionNumber.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtQuestionNumber.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtQuestionNumber.CustomButton.TabIndex = 1;
             this.txtQuestionNumber.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtQuestionNumber.CustomButton.UseSelectable = true;
             this.txtQuestionNumber.CustomButton.Visible = false;
+            this.txtQuestionNumber.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.examQuestionBindingSource, "QuestionNumber", true));
             this.txtQuestionNumber.Lines = new string[0];
             this.txtQuestionNumber.Location = new System.Drawing.Point(209, 18);
             this.txtQuestionNumber.MaxLength = 32767;
@@ -412,11 +417,10 @@
             this.ClientSize = new System.Drawing.Size(906, 417);
             this.Controls.Add(this.pnlDatos);
             this.Controls.Add(this.grdDatos);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "frmPreguntaDeExamen";
             this.Padding = new System.Windows.Forms.Padding(6, 60, 6, 7);
-            this.Text = "Pregunta_de_examen";
-            this.Load += new System.EventHandler(this.frmPreguntaDeExamen_Load);
+            this.Text = "Pregunta de examen";
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.examQuestionBindingSource)).EndInit();
             this.pnlDatos.ResumeLayout(false);

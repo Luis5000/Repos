@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grdDatos = new MetroFramework.Controls.MetroGrid();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,14 +73,14 @@
             this.grdDatos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.grdDatos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.grdDatos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdDatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdDatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.grdDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdDatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -92,14 +92,14 @@
             this.responsesDataGridViewTextBoxColumn,
             this.enrollmentsDataGridViewTextBoxColumn});
             this.grdDatos.DataSource = this.studentBindingSource;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grdDatos.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grdDatos.DefaultCellStyle = dataGridViewCellStyle2;
             this.grdDatos.EnableHeadersVisualStyles = false;
             this.grdDatos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.grdDatos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -107,19 +107,19 @@
             this.grdDatos.Margin = new System.Windows.Forms.Padding(1);
             this.grdDatos.Name = "grdDatos";
             this.grdDatos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdDatos.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdDatos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.grdDatos.RowHeadersWidth = 123;
             this.grdDatos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.grdDatos.RowTemplate.Height = 46;
             this.grdDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdDatos.Size = new System.Drawing.Size(454, 257);
+            this.grdDatos.Size = new System.Drawing.Size(323, 207);
             this.grdDatos.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn
@@ -129,7 +129,7 @@
             this.idDataGridViewTextBoxColumn.MinimumWidth = 15;
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idDataGridViewTextBoxColumn.Width = 50;
+            this.idDataGridViewTextBoxColumn.Width = 150;
             // 
             // nameDataGridViewTextBoxColumn
             // 
@@ -137,7 +137,7 @@
             this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
             this.nameDataGridViewTextBoxColumn.MinimumWidth = 15;
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.Width = 50;
+            this.nameDataGridViewTextBoxColumn.Width = 150;
             // 
             // lastNameDataGridViewTextBoxColumn
             // 
@@ -145,7 +145,7 @@
             this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
             this.lastNameDataGridViewTextBoxColumn.MinimumWidth = 15;
             this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-            this.lastNameDataGridViewTextBoxColumn.Width = 50;
+            this.lastNameDataGridViewTextBoxColumn.Width = 150;
             // 
             // emailDataGridViewTextBoxColumn
             // 
@@ -153,7 +153,7 @@
             this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
             this.emailDataGridViewTextBoxColumn.MinimumWidth = 15;
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.Width = 50;
+            this.emailDataGridViewTextBoxColumn.Width = 150;
             // 
             // phoneDataGridViewTextBoxColumn
             // 
@@ -161,7 +161,7 @@
             this.phoneDataGridViewTextBoxColumn.HeaderText = "Phone";
             this.phoneDataGridViewTextBoxColumn.MinimumWidth = 15;
             this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
-            this.phoneDataGridViewTextBoxColumn.Width = 50;
+            this.phoneDataGridViewTextBoxColumn.Width = 150;
             // 
             // addressDataGridViewTextBoxColumn
             // 
@@ -169,7 +169,7 @@
             this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
             this.addressDataGridViewTextBoxColumn.MinimumWidth = 15;
             this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            this.addressDataGridViewTextBoxColumn.Width = 50;
+            this.addressDataGridViewTextBoxColumn.Width = 150;
             // 
             // responsesDataGridViewTextBoxColumn
             // 
@@ -178,7 +178,7 @@
             this.responsesDataGridViewTextBoxColumn.MinimumWidth = 15;
             this.responsesDataGridViewTextBoxColumn.Name = "responsesDataGridViewTextBoxColumn";
             this.responsesDataGridViewTextBoxColumn.Visible = false;
-            this.responsesDataGridViewTextBoxColumn.Width = 50;
+            this.responsesDataGridViewTextBoxColumn.Width = 150;
             // 
             // enrollmentsDataGridViewTextBoxColumn
             // 
@@ -187,7 +187,7 @@
             this.enrollmentsDataGridViewTextBoxColumn.MinimumWidth = 15;
             this.enrollmentsDataGridViewTextBoxColumn.Name = "enrollmentsDataGridViewTextBoxColumn";
             this.enrollmentsDataGridViewTextBoxColumn.Visible = false;
-            this.enrollmentsDataGridViewTextBoxColumn.Width = 50;
+            this.enrollmentsDataGridViewTextBoxColumn.Width = 150;
             // 
             // studentBindingSource
             // 
@@ -214,7 +214,7 @@
             this.pnlDatos.HorizontalScrollbarBarColor = true;
             this.pnlDatos.HorizontalScrollbarHighlightOnWheel = false;
             this.pnlDatos.HorizontalScrollbarSize = 10;
-            this.pnlDatos.Location = new System.Drawing.Point(488, 65);
+            this.pnlDatos.Location = new System.Drawing.Point(373, 65);
             this.pnlDatos.Name = "pnlDatos";
             this.pnlDatos.Size = new System.Drawing.Size(530, 292);
             this.pnlDatos.TabIndex = 1;
@@ -292,7 +292,7 @@
             this.txtAddress.CustomButton.Visible = false;
             this.txtAddress.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.studentBindingSource, "Address", true));
             this.txtAddress.Lines = new string[0];
-            this.txtAddress.Location = new System.Drawing.Point(278, 173);
+            this.txtAddress.Location = new System.Drawing.Point(278, 184);
             this.txtAddress.MaxLength = 32767;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.PasswordChar = '\0';
@@ -310,7 +310,7 @@
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(198, 178);
+            this.lblAddress.Location = new System.Drawing.Point(189, 188);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(56, 19);
             this.lblAddress.TabIndex = 10;
@@ -350,7 +350,7 @@
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(208, 139);
+            this.lblPhone.Location = new System.Drawing.Point(189, 143);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(46, 19);
             this.lblPhone.TabIndex = 8;
@@ -390,7 +390,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(213, 101);
+            this.lblEmail.Location = new System.Drawing.Point(189, 101);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(41, 19);
             this.lblEmail.TabIndex = 6;
@@ -431,7 +431,7 @@
             // lblLastName
             // 
             this.lblLastName.AutoSize = true;
-            this.lblLastName.Location = new System.Drawing.Point(183, 62);
+            this.lblLastName.Location = new System.Drawing.Point(189, 62);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(71, 19);
             this.lblLastName.TabIndex = 4;
@@ -453,7 +453,7 @@
             this.txtName.CustomButton.Visible = false;
             this.txtName.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.studentBindingSource, "Name", true));
             this.txtName.Lines = new string[0];
-            this.txtName.Location = new System.Drawing.Point(278, 23);
+            this.txtName.Location = new System.Drawing.Point(278, 14);
             this.txtName.MaxLength = 32767;
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
@@ -471,7 +471,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(209, 23);
+            this.lblName.Location = new System.Drawing.Point(189, 18);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(45, 19);
             this.lblName.TabIndex = 2;
@@ -481,7 +481,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1057, 737);
+            this.ClientSize = new System.Drawing.Size(940, 398);
             this.Controls.Add(this.pnlDatos);
             this.Controls.Add(this.grdDatos);
             this.Margin = new System.Windows.Forms.Padding(1);
@@ -501,14 +501,6 @@
 
         private MetroFramework.Controls.MetroGrid grdDatos;
         private System.Windows.Forms.BindingSource studentBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn responsesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn enrollmentsDataGridViewTextBoxColumn;
         private MetroFramework.Controls.MetroPanel pnlDatos;
         private MetroFramework.Controls.MetroTextBox txtPhone;
         private MetroFramework.Controls.MetroLabel lblPhone;
@@ -526,5 +518,13 @@
         private MetroFramework.Controls.MetroButton btnEditar;
         private MetroFramework.Controls.MetroButton btnEliminar;
         private MetroFramework.Controls.MetroButton btnAgregar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn responsesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enrollmentsDataGridViewTextBoxColumn;
     }
 }

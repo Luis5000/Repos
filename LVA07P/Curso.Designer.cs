@@ -237,7 +237,7 @@
             this.btnRead.Name = "btnRead";
             this.btnRead.Size = new System.Drawing.Size(91, 29);
             this.btnRead.TabIndex = 15;
-            this.btnRead.Text = "Read";
+            this.btnRead.Text = "Leer";
             this.btnRead.UseSelectable = true;
             // 
             // btnDelete
@@ -246,7 +246,7 @@
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(91, 29);
             this.btnDelete.TabIndex = 14;
-            this.btnDelete.Text = "Delete";
+            this.btnDelete.Text = "Borrar";
             this.btnDelete.UseSelectable = true;
             // 
             // btnCreate
@@ -255,7 +255,7 @@
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(91, 29);
             this.btnCreate.TabIndex = 13;
-            this.btnCreate.Text = "Create";
+            this.btnCreate.Text = "Crear";
             this.btnCreate.UseSelectable = true;
             // 
             // btnUpdate
@@ -264,7 +264,7 @@
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(91, 29);
             this.btnUpdate.TabIndex = 12;
-            this.btnUpdate.Text = "Update";
+            this.btnUpdate.Text = "Actualizar";
             this.btnUpdate.UseSelectable = true;
             // 
             // txtSubject
@@ -282,6 +282,7 @@
             this.txtSubject.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtSubject.CustomButton.UseSelectable = true;
             this.txtSubject.CustomButton.Visible = false;
+            this.txtSubject.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.courseBindingSource, "Subject", true));
             this.txtSubject.Lines = new string[0];
             this.txtSubject.Location = new System.Drawing.Point(107, 178);
             this.txtSubject.Margin = new System.Windows.Forms.Padding(1);
@@ -311,6 +312,7 @@
             // 
             // dtmDateEnd
             // 
+            this.dtmDateEnd.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.courseBindingSource, "DateEnd", true));
             this.dtmDateEnd.Location = new System.Drawing.Point(107, 132);
             this.dtmDateEnd.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtmDateEnd.Name = "dtmDateEnd";
@@ -319,6 +321,7 @@
             // 
             // dtmDateBegin
             // 
+            this.dtmDateBegin.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.courseBindingSource, "DateBegin", true));
             this.dtmDateBegin.Location = new System.Drawing.Point(107, 95);
             this.dtmDateBegin.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtmDateBegin.Name = "dtmDateBegin";
@@ -340,6 +343,7 @@
             this.txtProfessor.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtProfessor.CustomButton.UseSelectable = true;
             this.txtProfessor.CustomButton.Visible = false;
+            this.txtProfessor.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.courseBindingSource, "Professor", true));
             this.txtProfessor.Lines = new string[0];
             this.txtProfessor.Location = new System.Drawing.Point(107, 63);
             this.txtProfessor.Margin = new System.Windows.Forms.Padding(1);
@@ -402,6 +406,7 @@
             this.txtName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtName.CustomButton.UseSelectable = true;
             this.txtName.CustomButton.Visible = false;
+            this.txtName.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.courseBindingSource, "Name", true));
             this.txtName.Lines = new string[0];
             this.txtName.Location = new System.Drawing.Point(89, 22);
             this.txtName.Margin = new System.Windows.Forms.Padding(1);

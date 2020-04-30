@@ -42,6 +42,11 @@
             this.coursesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.professorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pnlDatos = new MetroFramework.Controls.MetroPanel();
+            this.btnEditar = new MetroFramework.Controls.MetroButton();
+            this.btnEliminar = new MetroFramework.Controls.MetroButton();
+            this.btnGuardar = new MetroFramework.Controls.MetroButton();
+            this.btnCancelar = new MetroFramework.Controls.MetroButton();
+            this.btnAgregar = new MetroFramework.Controls.MetroButton();
             this.txtCourses = new MetroFramework.Controls.MetroTextBox();
             this.txtPhone = new MetroFramework.Controls.MetroTextBox();
             this.txtEmail = new MetroFramework.Controls.MetroTextBox();
@@ -54,11 +59,6 @@
             this.lblEmail = new MetroFramework.Controls.MetroLabel();
             this.lblLastName = new MetroFramework.Controls.MetroLabel();
             this.lblName = new MetroFramework.Controls.MetroLabel();
-            this.btnAgregar = new MetroFramework.Controls.MetroButton();
-            this.btnCancelar = new MetroFramework.Controls.MetroButton();
-            this.btnGuardar = new MetroFramework.Controls.MetroButton();
-            this.btnEliminar = new MetroFramework.Controls.MetroButton();
-            this.btnEditar = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.professorBindingSource)).BeginInit();
             this.pnlDatos.SuspendLayout();
@@ -102,7 +102,7 @@
             this.grdDatos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.grdDatos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.grdDatos.Location = new System.Drawing.Point(21, 62);
-            this.grdDatos.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.grdDatos.Margin = new System.Windows.Forms.Padding(1);
             this.grdDatos.Name = "grdDatos";
             this.grdDatos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -211,20 +211,66 @@
             this.pnlDatos.VerticalScrollbarHighlightOnWheel = false;
             this.pnlDatos.VerticalScrollbarSize = 10;
             // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(207, 275);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(89, 26);
+            this.btnEditar.TabIndex = 18;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseSelectable = true;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(112, 275);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(89, 26);
+            this.btnEliminar.TabIndex = 17;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseSelectable = true;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(302, 275);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(89, 26);
+            this.btnGuardar.TabIndex = 16;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseSelectable = true;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(397, 275);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(89, 26);
+            this.btnCancelar.TabIndex = 15;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseSelectable = true;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(17, 275);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(89, 26);
+            this.btnAgregar.TabIndex = 14;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseSelectable = true;
+            // 
             // txtCourses
             // 
             // 
             // 
             // 
             this.txtCourses.CustomButton.Image = null;
-            this.txtCourses.CustomButton.Location = new System.Drawing.Point(48, 0);
+            this.txtCourses.CustomButton.Location = new System.Drawing.Point(151, 1);
             this.txtCourses.CustomButton.Name = "";
-            this.txtCourses.CustomButton.Size = new System.Drawing.Size(7, 7);
+            this.txtCourses.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtCourses.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtCourses.CustomButton.TabIndex = 1;
             this.txtCourses.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtCourses.CustomButton.UseSelectable = true;
             this.txtCourses.CustomButton.Visible = false;
+            this.txtCourses.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.professorBindingSource, "Courses", true));
             this.txtCourses.Lines = new string[0];
             this.txtCourses.Location = new System.Drawing.Point(206, 229);
             this.txtCourses.MaxLength = 32767;
@@ -247,14 +293,15 @@
             // 
             // 
             this.txtPhone.CustomButton.Image = null;
-            this.txtPhone.CustomButton.Location = new System.Drawing.Point(48, 0);
+            this.txtPhone.CustomButton.Location = new System.Drawing.Point(151, 1);
             this.txtPhone.CustomButton.Name = "";
-            this.txtPhone.CustomButton.Size = new System.Drawing.Size(7, 7);
+            this.txtPhone.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtPhone.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtPhone.CustomButton.TabIndex = 1;
             this.txtPhone.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtPhone.CustomButton.UseSelectable = true;
             this.txtPhone.CustomButton.Visible = false;
+            this.txtPhone.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.professorBindingSource, "Phone", true));
             this.txtPhone.Lines = new string[0];
             this.txtPhone.Location = new System.Drawing.Point(206, 142);
             this.txtPhone.MaxLength = 32767;
@@ -277,14 +324,15 @@
             // 
             // 
             this.txtEmail.CustomButton.Image = null;
-            this.txtEmail.CustomButton.Location = new System.Drawing.Point(48, 0);
+            this.txtEmail.CustomButton.Location = new System.Drawing.Point(151, 1);
             this.txtEmail.CustomButton.Name = "";
-            this.txtEmail.CustomButton.Size = new System.Drawing.Size(7, 7);
+            this.txtEmail.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtEmail.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtEmail.CustomButton.TabIndex = 1;
             this.txtEmail.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtEmail.CustomButton.UseSelectable = true;
             this.txtEmail.CustomButton.Visible = false;
+            this.txtEmail.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.professorBindingSource, "Email", true));
             this.txtEmail.Lines = new string[0];
             this.txtEmail.Location = new System.Drawing.Point(206, 101);
             this.txtEmail.MaxLength = 32767;
@@ -307,14 +355,15 @@
             // 
             // 
             this.txtLastName.CustomButton.Image = null;
-            this.txtLastName.CustomButton.Location = new System.Drawing.Point(48, 0);
+            this.txtLastName.CustomButton.Location = new System.Drawing.Point(151, 1);
             this.txtLastName.CustomButton.Name = "";
-            this.txtLastName.CustomButton.Size = new System.Drawing.Size(7, 7);
+            this.txtLastName.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtLastName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtLastName.CustomButton.TabIndex = 1;
             this.txtLastName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtLastName.CustomButton.UseSelectable = true;
             this.txtLastName.CustomButton.Visible = false;
+            this.txtLastName.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.professorBindingSource, "LastName", true));
             this.txtLastName.Lines = new string[0];
             this.txtLastName.Location = new System.Drawing.Point(206, 60);
             this.txtLastName.MaxLength = 32767;
@@ -337,14 +386,15 @@
             // 
             // 
             this.txtName.CustomButton.Image = null;
-            this.txtName.CustomButton.Location = new System.Drawing.Point(48, 0);
+            this.txtName.CustomButton.Location = new System.Drawing.Point(151, 1);
             this.txtName.CustomButton.Name = "";
-            this.txtName.CustomButton.Size = new System.Drawing.Size(7, 7);
+            this.txtName.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtName.CustomButton.TabIndex = 1;
             this.txtName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtName.CustomButton.UseSelectable = true;
             this.txtName.CustomButton.Visible = false;
+            this.txtName.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.professorBindingSource, "Name", true));
             this.txtName.Lines = new string[0];
             this.txtName.Location = new System.Drawing.Point(206, 27);
             this.txtName.MaxLength = 32767;
@@ -425,51 +475,6 @@
             this.lblName.TabIndex = 2;
             this.lblName.Text = "Name";
             // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Location = new System.Drawing.Point(17, 275);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(89, 26);
-            this.btnAgregar.TabIndex = 14;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseSelectable = true;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(397, 275);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(89, 26);
-            this.btnCancelar.TabIndex = 15;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseSelectable = true;
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Location = new System.Drawing.Point(302, 275);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(89, 26);
-            this.btnGuardar.TabIndex = 16;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseSelectable = true;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Location = new System.Drawing.Point(112, 275);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(89, 26);
-            this.btnEliminar.TabIndex = 17;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseSelectable = true;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Location = new System.Drawing.Point(207, 275);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(89, 26);
-            this.btnEditar.TabIndex = 18;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseSelectable = true;
-            // 
             // frmProfesor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -477,7 +482,7 @@
             this.ClientSize = new System.Drawing.Size(1096, 461);
             this.Controls.Add(this.pnlDatos);
             this.Controls.Add(this.grdDatos);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "frmProfesor";
             this.Padding = new System.Windows.Forms.Padding(6, 60, 6, 7);
             this.Text = "Profesor";

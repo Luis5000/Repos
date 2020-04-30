@@ -11,8 +11,6 @@ namespace LVA07P.Data
         {
             InitializeComponent();
         }
-        public partial class frmCurso : MetroFramework.Forms.MetroForm
-        {
             private void frmCursos_Load(object sender, EventArgs e)
             {
                 using (DataContext dataContext = new DataContext())
@@ -21,7 +19,7 @@ namespace LVA07P.Data
                         dataContext.Course.ToList();
                 }
             }
-            private void btnGuardar_Click(object sender, EventArgs e)
+            private void btnUpdate_Click(object sender, EventArgs e)
             {
                 using (DataContext dataContext = new DataContext())
                 {
@@ -42,7 +40,7 @@ namespace LVA07P.Data
                     }
                 }
             }
-            private void btnCancelar_Click(object sender, EventArgs e)
+            private void btnDelete_Click(object sender, EventArgs e)
             {
                 pnlDatos.Enabled = false;
                 CourseBindingSource.ResetBindings(false);
@@ -51,9 +49,6 @@ namespace LVA07P.Data
             private void grdDatos_CellClick(object sender, DataGridViewCellEventArgs e)
             {
                 Course Course = CourseBindingSource.Current as Course;
-
             }
-
-        }
     }
 }

@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LVA07P.Data
@@ -23,7 +18,6 @@ namespace LVA07P.Data
                 SubjectBindingSource.DataSource =
                     dataContext.Subject.ToList();
             }
-
         }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -55,10 +49,6 @@ namespace LVA07P.Data
         private void grdDatos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             Subject Subject = SubjectBindingSource.Current as Subject;
-            if (Subject != null && frmCurso.ImageUrl != null)
-                pctFoto.Image = Image.FromFile(Subject.ImageUrl);
-            else
-                pctFoto.Image = null;
         }
     }
 }

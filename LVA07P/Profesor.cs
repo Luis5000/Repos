@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LVA07P.Data
@@ -16,13 +11,6 @@ namespace LVA07P.Data
         {
             InitializeComponent();
         }
-        public partial class frmProfesor : MetroFramework.Forms.MetroForm
-        {
-            public frmProfesor()
-            {
-                InitializeComponent();
-            }
-
             private void frmProfesor_Load(object sender, EventArgs e)
             {
                 using (DataContext dataContext = new DataContext())
@@ -32,16 +20,10 @@ namespace LVA07P.Data
                 }
                 pnlDatos.Enabled = false;
                 Professor Professor = ProfessorBindingSource.Current as Professor;
-                if (Professor != null && Professor.ImageUrl != null)
-                    pctFoto.Image = Image.FromFile(Professor.ImageUrl);
-                else
-                    pctFoto.Image = null;
             }
-
             private void btnAgregar_Click(object sender, EventArgs e)
             {
                 pnlDatos.Enabled = true;
-                pctFoto.Image = null;
                 ProfessorBindingSource.Add(new Student());
                 ProfessorBindingSource.MoveLast();
                 txtNombre.Focus();
@@ -53,7 +35,6 @@ namespace LVA07P.Data
                 Professor Professor =
                     ProfessorBindingSource.Current as Professor;
             }
-
             private void btnEliminar_Click(object sender, EventArgs e)
             {
                 if (MetroFramework.MetroMessageBox.Show(this,
@@ -74,7 +55,6 @@ namespace LVA07P.Data
                             dataContext.SaveChanges();
                             MetroFramework.MetroMessageBox.Show(this, "Docente eliminado");
                             ProfessorBindingSource.RemoveCurrent();
-                            pctFoto.Image = null;
                             pnlDatos.Enabled = false;
                         }
                     }
@@ -85,9 +65,8 @@ namespace LVA07P.Data
             {
                 pnlDatos.Enabled = false;
                 ProfessorBindingSource.ResetBindings(false);
-                frmDocentes_Load(sender, e);
+                frmProfesor_Load(sender, e);
             }
-
             private void btnGuardar_Click(object sender, EventArgs e)
             {
                 using (DataContext dataContext = new DataContext())
@@ -109,16 +88,9 @@ namespace LVA07P.Data
                     }
                 }
             }
-
             private void grdDatos_CellClick(object sender, DataGridViewCellEventArgs e)
             {
                 Professor Professor = ProfessorBindingSource.Current as Professor;
-                if (Professor != null && Professor.ImageUrl != null)
-                    pctFoto.Image = Image.FromFile(Professor.ImageUrl);
-                else
-                    pctFoto.Image = null;
-
             }
-        }
     }
 }

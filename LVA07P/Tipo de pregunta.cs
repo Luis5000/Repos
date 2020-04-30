@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LVA07P.Data
@@ -16,20 +11,19 @@ namespace LVA07P.Data
         {
             InitializeComponent();
         }
-        private void frmTipo_de_pregunta_Load(object sender, EventArgs e)
+        private void FrmTipoDePregunta_Load(object sender, EventArgs e)
         {
             using (DataContext dataContext = new DataContext())
             {
                 QuestionTypeBindingSource.DataSource =
                     dataContext.QuestionType.ToList();
             }
-
         }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             pnlDatos.Enabled = false;
             QuestionTypeBindingSource.ResetBindings(false);
-            frmTipo_de_pregunta_Load(sender, e);
+            FrmTipoDePregunta_Load(sender, e);
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -53,14 +47,9 @@ namespace LVA07P.Data
                 }
             }
         }
-
         private void grdDatos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             QuestionType QuestionType = QuestionTypeBindingSource.Current as QuestionType;
-            if (QuestionType != null && QuestionType.ImageUrl != null)
-                pctFoto.Image = Image.FromFile(QuestionType.ImageUrl);
-            else
-                pctFoto.Image = null;
         }
     }
 }

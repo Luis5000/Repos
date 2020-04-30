@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LVA07P.Data;
+using System;
 using System.Windows.Forms;
 
 namespace LVA07P
@@ -13,7 +14,7 @@ namespace LVA07P
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmReactivos());
+            Application.Run(new frmEstudiante());
         }
     }
 }

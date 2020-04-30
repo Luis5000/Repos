@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LVA07P.Data
@@ -16,18 +10,6 @@ namespace LVA07P.Data
         {
             InitializeComponent();
         }
-        public partial class FrmExamen : MetroFramework.Forms.MetroForm
-        {
-            public FrmExamen()
-            {
-                InitializeComponent();
-            }
-
-            private void gpbExamen_Enter(object sender, EventArgs e)
-            {
-
-            }
-
             private void btnContinuar_Click(object sender, EventArgs e)
             {
                 MessageBox.Show("Examen programado con éxito", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -39,7 +21,6 @@ namespace LVA07P.Data
                     ExamBindingSource.DataSource =
                         dataContext.Exam.ToList();
                 }
-
             }
             private void btnGuardar_Click(object sender, EventArgs e)
             {
@@ -72,6 +53,5 @@ namespace LVA07P.Data
             {
                 Exam Exam = ExamBindingSource.Current as Course;
             }
-        }
     }
 }

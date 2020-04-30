@@ -67,81 +67,75 @@
   <ItemGroup>
     <Compile Include="DataContext.cs" />
     <Compile Include="Data\Course.cs" />
-    <Compile Include="Data\Curso.cs">
+    <Compile Include="Curso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Data\Curso.Designer.cs">
+    <Compile Include="Curso.Designer.cs">
       <DependentUpon>Curso.cs</DependentUpon>
     </Compile>
-    <Compile Include="Data\Enrolamiento.cs">
+    <Compile Include="Enrolamiento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Data\Enrolamiento.Designer.cs">
+    <Compile Include="Enrolamiento.Designer.cs">
       <DependentUpon>Enrolamiento.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\Enrollment.cs" />
-    <Compile Include="Data\Estudiante.cs">
+    <Compile Include="Estudiante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Data\Estudiante.Designer.cs">
+    <Compile Include="Estudiante.Designer.cs">
       <DependentUpon>Estudiante.cs</DependentUpon>
     </Compile>
-    <Compile Include="Data\Examen.cs">
+    <Compile Include="Examen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Data\Examen.Designer.cs">
+    <Compile Include="Examen.Designer.cs">
       <DependentUpon>Examen.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\ExamQuestion.cs" />
     <Compile Include="Data\IEntity.cs" />
     <Compile Include="Data\Exam.cs" />
-    <Compile Include="Data\Materia.cs">
+    <Compile Include="Materia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Data\Materia.Designer.cs">
+    <Compile Include="Materia.Designer.cs">
       <DependentUpon>Materia.cs</DependentUpon>
     </Compile>
-    <Compile Include="Data\Pregunta de examen.cs">
+    <Compile Include="Pregunta de examen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Data\Pregunta de examen.Designer.cs">
+    <Compile Include="Pregunta de examen.Designer.cs">
       <DependentUpon>Pregunta de examen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Data\Pregunta.cs">
+    <Compile Include="Pregunta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Data\Pregunta.Designer.cs">
+    <Compile Include="Pregunta.Designer.cs">
       <DependentUpon>Pregunta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Data\Profesor.cs">
+    <Compile Include="Profesor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Data\Profesor.Designer.cs">
+    <Compile Include="Profesor.Designer.cs">
       <DependentUpon>Profesor.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\Professor.cs" />
     <Compile Include="Data\Question.cs" />
     <Compile Include="Data\QuestionType.cs" />
     <Compile Include="Data\Response.cs" />
-    <Compile Include="Data\Respuesta.cs">
+    <Compile Include="Respuesta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Data\Respuesta.Designer.cs">
+    <Compile Include="Respuesta.Designer.cs">
       <DependentUpon>Respuesta.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\Student.cs" />
     <Compile Include="Data\Subject.cs" />
-    <Compile Include="Data\Tipo de pregunta.cs">
+    <Compile Include="Tipo de pregunta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Data\Tipo de pregunta.Designer.cs">
+    <Compile Include="Tipo de pregunta.Designer.cs">
       <DependentUpon>Tipo de pregunta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Materias.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Materias.Designer.cs">
-      <DependentUpon>Materias.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202003171715476_FinalMigration.cs" />
     <Compile Include="Migrations\202003171715476_FinalMigration.designer.cs">
@@ -153,46 +147,37 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Reactivos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reactivos.Designer.cs">
-      <DependentUpon>Reactivos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Data\Curso.resx">
+    <EmbeddedResource Include="Curso.resx">
       <DependentUpon>Curso.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Data\Enrolamiento.resx">
+    <EmbeddedResource Include="Enrolamiento.resx">
       <DependentUpon>Enrolamiento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Data\Estudiante.resx">
+    <EmbeddedResource Include="Estudiante.resx">
       <DependentUpon>Estudiante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Data\Examen.resx">
+    <EmbeddedResource Include="Examen.resx">
       <DependentUpon>Examen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Data\Materia.resx">
+    <EmbeddedResource Include="Materia.resx">
       <DependentUpon>Materia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Data\Pregunta de examen.resx">
+    <EmbeddedResource Include="Pregunta de examen.resx">
       <DependentUpon>Pregunta de examen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Data\Pregunta.resx">
+    <EmbeddedResource Include="Pregunta.resx">
       <DependentUpon>Pregunta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Data\Profesor.resx">
+    <EmbeddedResource Include="Profesor.resx">
       <DependentUpon>Profesor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Data\Respuesta.resx">
+    <EmbeddedResource Include="Respuesta.resx">
       <DependentUpon>Respuesta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Data\Tipo de pregunta.resx">
+    <EmbeddedResource Include="Tipo de pregunta.resx">
       <DependentUpon>Tipo de pregunta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Materias.resx">
-      <DependentUpon>Materias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202003171715476_FinalMigration.resx">
       <DependentUpon>202003171715476_FinalMigration.cs</DependentUpon>
@@ -201,9 +186,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reactivos.resx">
-      <DependentUpon>Reactivos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\LVA07P.Data.Course.datasource" />

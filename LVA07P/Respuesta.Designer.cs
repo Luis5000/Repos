@@ -87,7 +87,7 @@
             this.grdDatos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.grdDatos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.grdDatos.Location = new System.Drawing.Point(30, 69);
-            this.grdDatos.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.grdDatos.Margin = new System.Windows.Forms.Padding(1);
             this.grdDatos.Name = "grdDatos";
             this.grdDatos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -187,14 +187,15 @@
             // 
             // 
             this.txtExamQuestion.CustomButton.Image = null;
-            this.txtExamQuestion.CustomButton.Location = new System.Drawing.Point(34, 0);
+            this.txtExamQuestion.CustomButton.Location = new System.Drawing.Point(108, 1);
             this.txtExamQuestion.CustomButton.Name = "";
-            this.txtExamQuestion.CustomButton.Size = new System.Drawing.Size(7, 7);
+            this.txtExamQuestion.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtExamQuestion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtExamQuestion.CustomButton.TabIndex = 1;
             this.txtExamQuestion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtExamQuestion.CustomButton.UseSelectable = true;
             this.txtExamQuestion.CustomButton.Visible = false;
+            this.txtExamQuestion.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.responseBindingSource, "ExamQuestion", true));
             this.txtExamQuestion.Lines = new string[0];
             this.txtExamQuestion.Location = new System.Drawing.Point(233, 146);
             this.txtExamQuestion.MaxLength = 32767;
@@ -217,14 +218,15 @@
             // 
             // 
             this.txtStudent.CustomButton.Image = null;
-            this.txtStudent.CustomButton.Location = new System.Drawing.Point(34, 0);
+            this.txtStudent.CustomButton.Location = new System.Drawing.Point(108, 1);
             this.txtStudent.CustomButton.Name = "";
-            this.txtStudent.CustomButton.Size = new System.Drawing.Size(7, 7);
+            this.txtStudent.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtStudent.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtStudent.CustomButton.TabIndex = 1;
             this.txtStudent.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtStudent.CustomButton.UseSelectable = true;
             this.txtStudent.CustomButton.Visible = false;
+            this.txtStudent.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.responseBindingSource, "Student", true));
             this.txtStudent.Lines = new string[0];
             this.txtStudent.Location = new System.Drawing.Point(233, 91);
             this.txtStudent.MaxLength = 32767;
@@ -247,14 +249,15 @@
             // 
             // 
             this.txtAnswer.CustomButton.Image = null;
-            this.txtAnswer.CustomButton.Location = new System.Drawing.Point(34, 0);
+            this.txtAnswer.CustomButton.Location = new System.Drawing.Point(108, 1);
             this.txtAnswer.CustomButton.Name = "";
-            this.txtAnswer.CustomButton.Size = new System.Drawing.Size(7, 7);
+            this.txtAnswer.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtAnswer.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtAnswer.CustomButton.TabIndex = 1;
             this.txtAnswer.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtAnswer.CustomButton.UseSelectable = true;
             this.txtAnswer.CustomButton.Visible = false;
+            this.txtAnswer.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.responseBindingSource, "Answer", true));
             this.txtAnswer.Lines = new string[0];
             this.txtAnswer.Location = new System.Drawing.Point(233, 36);
             this.txtAnswer.MaxLength = 32767;
@@ -305,7 +308,7 @@
             this.ClientSize = new System.Drawing.Size(1032, 375);
             this.Controls.Add(this.pnlDatos);
             this.Controls.Add(this.grdDatos);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "frmRespuesta";
             this.Padding = new System.Windows.Forms.Padding(6, 60, 6, 7);
             this.Text = "Respuesta";

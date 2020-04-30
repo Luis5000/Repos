@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
 
 namespace LVA07P.Data
 {
@@ -16,17 +12,12 @@ namespace LVA07P.Data
         {
             InitializeComponent();
         }
-
         private void MtlEmail_Click(object sender, EventArgs e)
         {
 
         }
         public partial class FrmEstudiantes : MetroFramework.Forms.MetroForm
         {
-            public FrmEstudiantes()
-            {
-                InitializeComponent();
-            }
             private void FrmEstudiantes_Load(object sender, EventArgs e)
             {
                 using (DataContext dataContext = new DataContext())
@@ -41,7 +32,6 @@ namespace LVA07P.Data
                 else
                     pctFoto.Image = null;
             }
-
             private void BtnAgregar_Click(object sender, EventArgs e)
             {
                 pnlDatos.Enabled = true;
@@ -56,7 +46,6 @@ namespace LVA07P.Data
                 txtName.Focus();
                 Student Student = StudentBindingSource.Current as Student;
             }
-
             private void btnEliminar_Click(object sender, EventArgs e)
             {
                 if (MetroFramework.MetroMessageBox.Show(this,
@@ -83,14 +72,12 @@ namespace LVA07P.Data
                     }
                 }
             }
-
             private void btnCancelar_Click(object sender, EventArgs e)
             {
                 pnlDatos.Enabled = false;
                 StudentBindingSource.ResetBindings(false);
                 FrmEstudiantes_Load(sender, e);
             }
-
             private void btnGuardar_Click(object sender, EventArgs e)
             {
                 using (DataContext dataContext = new DataContext())
@@ -112,7 +99,6 @@ namespace LVA07P.Data
                     }
                 }
             }
-
             private void grdDatos_CellClick(object sender, DataGridViewCellEventArgs e)
             {
                 Student Student = StudentBindingSource.Current as Student;
@@ -122,7 +108,6 @@ namespace LVA07P.Data
                     pctFoto.Image = null;
             }
         }
-
         private void pctFoto_Click(object sender, EventArgs e)
         {
 
