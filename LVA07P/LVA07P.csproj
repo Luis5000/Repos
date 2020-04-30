@@ -211,27 +211,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\biologia.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bios.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\examen.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\algebra.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sistema.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\listo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\maestro.gif" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
