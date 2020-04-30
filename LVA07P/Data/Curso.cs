@@ -5,18 +5,14 @@ using System.Windows.Forms;
 
 namespace LVA07P.Data
 {
-    public partial class Curso : MetroFramework.Forms.MetroForm
+    public partial class frmCurso : MetroFramework.Forms.MetroForm
     {
-        public Curso()
+        public frmCurso()
         {
             InitializeComponent();
         }
-        public partial class frmCursos : MetroFramework.Forms.MetroForm
+        public partial class frmCurso : MetroFramework.Forms.MetroForm
         {
-            public frmCursos()
-            {
-                InitializeComponent();
-            }
             private void frmCursos_Load(object sender, EventArgs e)
             {
                 using (DataContext dataContext = new DataContext())
@@ -24,7 +20,6 @@ namespace LVA07P.Data
                     CourseBindingSource.DataSource =
                         dataContext.Course.ToList();
                 }
-
             }
             private void btnGuardar_Click(object sender, EventArgs e)
             {
@@ -51,15 +46,12 @@ namespace LVA07P.Data
             {
                 pnlDatos.Enabled = false;
                 CourseBindingSource.ResetBindings(false);
-                frmCursos(sender, e);
+                frmCurso(sender, e);
             }
             private void grdDatos_CellClick(object sender, DataGridViewCellEventArgs e)
             {
                 Course Course = CourseBindingSource.Current as Course;
-                if (Course != null && Curso.ImageUrl != null)
-                    pctFoto.Image = Image.FromFile(Curso.ImageUrl);
-                else
-                    pctFoto.Image = null;
+
             }
 
         }

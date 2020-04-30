@@ -54,6 +54,11 @@
             this.lblEmail = new MetroFramework.Controls.MetroLabel();
             this.lblLastName = new MetroFramework.Controls.MetroLabel();
             this.lblName = new MetroFramework.Controls.MetroLabel();
+            this.btnAgregar = new MetroFramework.Controls.MetroButton();
+            this.btnCancelar = new MetroFramework.Controls.MetroButton();
+            this.btnGuardar = new MetroFramework.Controls.MetroButton();
+            this.btnEliminar = new MetroFramework.Controls.MetroButton();
+            this.btnEditar = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.professorBindingSource)).BeginInit();
             this.pnlDatos.SuspendLayout();
@@ -96,7 +101,8 @@
             this.grdDatos.EnableHeadersVisualStyles = false;
             this.grdDatos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.grdDatos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.grdDatos.Location = new System.Drawing.Point(67, 176);
+            this.grdDatos.Location = new System.Drawing.Point(21, 62);
+            this.grdDatos.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.grdDatos.Name = "grdDatos";
             this.grdDatos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -111,7 +117,7 @@
             this.grdDatos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.grdDatos.RowTemplate.Height = 46;
             this.grdDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdDatos.Size = new System.Drawing.Size(1520, 1386);
+            this.grdDatos.Size = new System.Drawing.Size(480, 487);
             this.grdDatos.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn
@@ -177,6 +183,11 @@
             // 
             // pnlDatos
             // 
+            this.pnlDatos.Controls.Add(this.btnEditar);
+            this.pnlDatos.Controls.Add(this.btnEliminar);
+            this.pnlDatos.Controls.Add(this.btnGuardar);
+            this.pnlDatos.Controls.Add(this.btnCancelar);
+            this.pnlDatos.Controls.Add(this.btnAgregar);
             this.pnlDatos.Controls.Add(this.txtCourses);
             this.pnlDatos.Controls.Add(this.txtPhone);
             this.pnlDatos.Controls.Add(this.txtEmail);
@@ -191,15 +202,14 @@
             this.pnlDatos.Controls.Add(this.lblName);
             this.pnlDatos.HorizontalScrollbarBarColor = true;
             this.pnlDatos.HorizontalScrollbarHighlightOnWheel = false;
-            this.pnlDatos.HorizontalScrollbarSize = 28;
-            this.pnlDatos.Location = new System.Drawing.Point(1666, 176);
-            this.pnlDatos.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.pnlDatos.HorizontalScrollbarSize = 10;
+            this.pnlDatos.Location = new System.Drawing.Point(540, 37);
             this.pnlDatos.Name = "pnlDatos";
-            this.pnlDatos.Size = new System.Drawing.Size(1618, 1386);
+            this.pnlDatos.Size = new System.Drawing.Size(503, 340);
             this.pnlDatos.TabIndex = 1;
             this.pnlDatos.VerticalScrollbarBarColor = true;
             this.pnlDatos.VerticalScrollbarHighlightOnWheel = false;
-            this.pnlDatos.VerticalScrollbarSize = 32;
+            this.pnlDatos.VerticalScrollbarSize = 10;
             // 
             // txtCourses
             // 
@@ -207,18 +217,16 @@
             // 
             // 
             this.txtCourses.CustomButton.Image = null;
-            this.txtCourses.CustomButton.Location = new System.Drawing.Point(1533, 3);
-            this.txtCourses.CustomButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtCourses.CustomButton.Location = new System.Drawing.Point(48, 0);
             this.txtCourses.CustomButton.Name = "";
-            this.txtCourses.CustomButton.Size = new System.Drawing.Size(200, 179);
+            this.txtCourses.CustomButton.Size = new System.Drawing.Size(7, 7);
             this.txtCourses.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtCourses.CustomButton.TabIndex = 1;
             this.txtCourses.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtCourses.CustomButton.UseSelectable = true;
             this.txtCourses.CustomButton.Visible = false;
             this.txtCourses.Lines = new string[0];
-            this.txtCourses.Location = new System.Drawing.Point(652, 652);
-            this.txtCourses.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtCourses.Location = new System.Drawing.Point(206, 229);
             this.txtCourses.MaxLength = 32767;
             this.txtCourses.Name = "txtCourses";
             this.txtCourses.PasswordChar = '\0';
@@ -227,7 +235,7 @@
             this.txtCourses.SelectionLength = 0;
             this.txtCourses.SelectionStart = 0;
             this.txtCourses.ShortcutsEnabled = true;
-            this.txtCourses.Size = new System.Drawing.Size(548, 65);
+            this.txtCourses.Size = new System.Drawing.Size(173, 23);
             this.txtCourses.TabIndex = 13;
             this.txtCourses.UseSelectable = true;
             this.txtCourses.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -239,18 +247,16 @@
             // 
             // 
             this.txtPhone.CustomButton.Image = null;
-            this.txtPhone.CustomButton.Location = new System.Drawing.Point(1533, 3);
-            this.txtPhone.CustomButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtPhone.CustomButton.Location = new System.Drawing.Point(48, 0);
             this.txtPhone.CustomButton.Name = "";
-            this.txtPhone.CustomButton.Size = new System.Drawing.Size(200, 179);
+            this.txtPhone.CustomButton.Size = new System.Drawing.Size(7, 7);
             this.txtPhone.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtPhone.CustomButton.TabIndex = 1;
             this.txtPhone.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtPhone.CustomButton.UseSelectable = true;
             this.txtPhone.CustomButton.Visible = false;
             this.txtPhone.Lines = new string[0];
-            this.txtPhone.Location = new System.Drawing.Point(652, 404);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtPhone.Location = new System.Drawing.Point(206, 142);
             this.txtPhone.MaxLength = 32767;
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '\0';
@@ -259,7 +265,7 @@
             this.txtPhone.SelectionLength = 0;
             this.txtPhone.SelectionStart = 0;
             this.txtPhone.ShortcutsEnabled = true;
-            this.txtPhone.Size = new System.Drawing.Size(548, 65);
+            this.txtPhone.Size = new System.Drawing.Size(173, 23);
             this.txtPhone.TabIndex = 12;
             this.txtPhone.UseSelectable = true;
             this.txtPhone.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -271,18 +277,16 @@
             // 
             // 
             this.txtEmail.CustomButton.Image = null;
-            this.txtEmail.CustomButton.Location = new System.Drawing.Point(1533, 3);
-            this.txtEmail.CustomButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtEmail.CustomButton.Location = new System.Drawing.Point(48, 0);
             this.txtEmail.CustomButton.Name = "";
-            this.txtEmail.CustomButton.Size = new System.Drawing.Size(200, 179);
+            this.txtEmail.CustomButton.Size = new System.Drawing.Size(7, 7);
             this.txtEmail.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtEmail.CustomButton.TabIndex = 1;
             this.txtEmail.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtEmail.CustomButton.UseSelectable = true;
             this.txtEmail.CustomButton.Visible = false;
             this.txtEmail.Lines = new string[0];
-            this.txtEmail.Location = new System.Drawing.Point(652, 287);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtEmail.Location = new System.Drawing.Point(206, 101);
             this.txtEmail.MaxLength = 32767;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
@@ -291,7 +295,7 @@
             this.txtEmail.SelectionLength = 0;
             this.txtEmail.SelectionStart = 0;
             this.txtEmail.ShortcutsEnabled = true;
-            this.txtEmail.Size = new System.Drawing.Size(548, 65);
+            this.txtEmail.Size = new System.Drawing.Size(173, 23);
             this.txtEmail.TabIndex = 11;
             this.txtEmail.UseSelectable = true;
             this.txtEmail.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -303,18 +307,16 @@
             // 
             // 
             this.txtLastName.CustomButton.Image = null;
-            this.txtLastName.CustomButton.Location = new System.Drawing.Point(1533, 3);
-            this.txtLastName.CustomButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtLastName.CustomButton.Location = new System.Drawing.Point(48, 0);
             this.txtLastName.CustomButton.Name = "";
-            this.txtLastName.CustomButton.Size = new System.Drawing.Size(200, 179);
+            this.txtLastName.CustomButton.Size = new System.Drawing.Size(7, 7);
             this.txtLastName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtLastName.CustomButton.TabIndex = 1;
             this.txtLastName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtLastName.CustomButton.UseSelectable = true;
             this.txtLastName.CustomButton.Visible = false;
             this.txtLastName.Lines = new string[0];
-            this.txtLastName.Location = new System.Drawing.Point(652, 171);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtLastName.Location = new System.Drawing.Point(206, 60);
             this.txtLastName.MaxLength = 32767;
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.PasswordChar = '\0';
@@ -323,7 +325,7 @@
             this.txtLastName.SelectionLength = 0;
             this.txtLastName.SelectionStart = 0;
             this.txtLastName.ShortcutsEnabled = true;
-            this.txtLastName.Size = new System.Drawing.Size(548, 65);
+            this.txtLastName.Size = new System.Drawing.Size(173, 23);
             this.txtLastName.TabIndex = 10;
             this.txtLastName.UseSelectable = true;
             this.txtLastName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -335,18 +337,16 @@
             // 
             // 
             this.txtName.CustomButton.Image = null;
-            this.txtName.CustomButton.Location = new System.Drawing.Point(1533, 3);
-            this.txtName.CustomButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtName.CustomButton.Location = new System.Drawing.Point(48, 0);
             this.txtName.CustomButton.Name = "";
-            this.txtName.CustomButton.Size = new System.Drawing.Size(200, 179);
+            this.txtName.CustomButton.Size = new System.Drawing.Size(7, 7);
             this.txtName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtName.CustomButton.TabIndex = 1;
             this.txtName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtName.CustomButton.UseSelectable = true;
             this.txtName.CustomButton.Visible = false;
             this.txtName.Lines = new string[0];
-            this.txtName.Location = new System.Drawing.Point(652, 77);
-            this.txtName.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtName.Location = new System.Drawing.Point(206, 27);
             this.txtName.MaxLength = 32767;
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
@@ -355,7 +355,7 @@
             this.txtName.SelectionLength = 0;
             this.txtName.SelectionStart = 0;
             this.txtName.ShortcutsEnabled = true;
-            this.txtName.Size = new System.Drawing.Size(548, 65);
+            this.txtName.Size = new System.Drawing.Size(173, 23);
             this.txtName.TabIndex = 9;
             this.txtName.UseSelectable = true;
             this.txtName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -364,18 +364,16 @@
             // dtmHiringDate
             // 
             this.dtmHiringDate.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.professorBindingSource, "HiringDate", true));
-            this.dtmHiringDate.Location = new System.Drawing.Point(652, 512);
-            this.dtmHiringDate.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.dtmHiringDate.Location = new System.Drawing.Point(206, 180);
             this.dtmHiringDate.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtmHiringDate.Name = "dtmHiringDate";
-            this.dtmHiringDate.Size = new System.Drawing.Size(539, 44);
+            this.dtmHiringDate.Size = new System.Drawing.Size(173, 29);
             this.dtmHiringDate.TabIndex = 8;
             // 
             // lblCourses
             // 
             this.lblCourses.AutoSize = true;
-            this.lblCourses.Location = new System.Drawing.Point(288, 666);
-            this.lblCourses.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblCourses.Location = new System.Drawing.Point(91, 234);
             this.lblCourses.Name = "lblCourses";
             this.lblCourses.Size = new System.Drawing.Size(55, 19);
             this.lblCourses.TabIndex = 7;
@@ -385,8 +383,7 @@
             // lblHiringDate
             // 
             this.lblHiringDate.AutoSize = true;
-            this.lblHiringDate.Location = new System.Drawing.Point(225, 541);
-            this.lblHiringDate.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblHiringDate.Location = new System.Drawing.Point(71, 190);
             this.lblHiringDate.Name = "lblHiringDate";
             this.lblHiringDate.Size = new System.Drawing.Size(75, 19);
             this.lblHiringDate.TabIndex = 6;
@@ -395,8 +392,7 @@
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(317, 418);
-            this.lblPhone.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblPhone.Location = new System.Drawing.Point(100, 147);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(46, 19);
             this.lblPhone.TabIndex = 5;
@@ -405,8 +401,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(333, 302);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblEmail.Location = new System.Drawing.Point(105, 106);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(41, 19);
             this.lblEmail.TabIndex = 4;
@@ -415,8 +410,7 @@
             // lblLastName
             // 
             this.lblLastName.AutoSize = true;
-            this.lblLastName.Location = new System.Drawing.Point(238, 182);
-            this.lblLastName.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblLastName.Location = new System.Drawing.Point(75, 64);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(71, 19);
             this.lblLastName.TabIndex = 3;
@@ -425,22 +419,67 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(320, 77);
-            this.lblName.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblName.Location = new System.Drawing.Point(101, 27);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(45, 19);
             this.lblName.TabIndex = 2;
             this.lblName.Text = "Name";
             // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(17, 275);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(89, 26);
+            this.btnAgregar.TabIndex = 14;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseSelectable = true;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(397, 275);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(89, 26);
+            this.btnCancelar.TabIndex = 15;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseSelectable = true;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(302, 275);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(89, 26);
+            this.btnGuardar.TabIndex = 16;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseSelectable = true;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(112, 275);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(89, 26);
+            this.btnEliminar.TabIndex = 17;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseSelectable = true;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(207, 275);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(89, 26);
+            this.btnEditar.TabIndex = 18;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseSelectable = true;
+            // 
             // frmProfesor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(3436, 2115);
+            this.ClientSize = new System.Drawing.Size(1096, 461);
             this.Controls.Add(this.pnlDatos);
             this.Controls.Add(this.grdDatos);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "frmProfesor";
-            this.Padding = new System.Windows.Forms.Padding(19, 171, 19, 20);
+            this.Padding = new System.Windows.Forms.Padding(6, 60, 6, 7);
             this.Text = "Profesor";
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.professorBindingSource)).EndInit();
@@ -474,5 +513,10 @@
         private MetroFramework.Controls.MetroTextBox txtLastName;
         private MetroFramework.Controls.MetroTextBox txtName;
         private MetroFramework.Controls.MetroDateTime dtmHiringDate;
+        private MetroFramework.Controls.MetroButton btnAgregar;
+        private MetroFramework.Controls.MetroButton btnEliminar;
+        private MetroFramework.Controls.MetroButton btnGuardar;
+        private MetroFramework.Controls.MetroButton btnCancelar;
+        private MetroFramework.Controls.MetroButton btnEditar;
     }
 }

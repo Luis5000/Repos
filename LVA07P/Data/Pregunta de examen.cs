@@ -62,5 +62,10 @@ namespace LVA07P.Data
             else
                 pctFoto.Image = null;
         }
+
+        private void frmPreguntaDeExamen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

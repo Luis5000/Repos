@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grdDatos = new MetroFramework.Controls.MetroGrid();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.questionNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,14 +66,14 @@
             this.grdDatos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.grdDatos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.grdDatos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdDatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdDatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.grdDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdDatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -83,33 +83,34 @@
             this.questionDataGridViewTextBoxColumn,
             this.responsesDataGridViewTextBoxColumn});
             this.grdDatos.DataSource = this.examQuestionBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grdDatos.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grdDatos.DefaultCellStyle = dataGridViewCellStyle5;
             this.grdDatos.EnableHeadersVisualStyles = false;
             this.grdDatos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.grdDatos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.grdDatos.Location = new System.Drawing.Point(70, 174);
+            this.grdDatos.Location = new System.Drawing.Point(22, 61);
+            this.grdDatos.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.grdDatos.Name = "grdDatos";
             this.grdDatos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdDatos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdDatos.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.grdDatos.RowHeadersWidth = 123;
             this.grdDatos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.grdDatos.RowTemplate.Height = 46;
             this.grdDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdDatos.Size = new System.Drawing.Size(1526, 746);
+            this.grdDatos.Size = new System.Drawing.Size(482, 262);
             this.grdDatos.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn
@@ -182,15 +183,14 @@
             this.pnlDatos.Controls.Add(this.lblQuestionNumber);
             this.pnlDatos.HorizontalScrollbarBarColor = true;
             this.pnlDatos.HorizontalScrollbarHighlightOnWheel = false;
-            this.pnlDatos.HorizontalScrollbarSize = 28;
-            this.pnlDatos.Location = new System.Drawing.Point(1780, 174);
-            this.pnlDatos.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.pnlDatos.HorizontalScrollbarSize = 10;
+            this.pnlDatos.Location = new System.Drawing.Point(430, 61);
             this.pnlDatos.Name = "pnlDatos";
-            this.pnlDatos.Size = new System.Drawing.Size(1245, 862);
+            this.pnlDatos.Size = new System.Drawing.Size(393, 303);
             this.pnlDatos.TabIndex = 1;
             this.pnlDatos.VerticalScrollbarBarColor = true;
             this.pnlDatos.VerticalScrollbarHighlightOnWheel = false;
-            this.pnlDatos.VerticalScrollbarSize = 32;
+            this.pnlDatos.VerticalScrollbarSize = 10;
             // 
             // txtResponse
             // 
@@ -198,18 +198,16 @@
             // 
             // 
             this.txtResponse.CustomButton.Image = null;
-            this.txtResponse.CustomButton.Location = new System.Drawing.Point(1251, 3);
-            this.txtResponse.CustomButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtResponse.CustomButton.Location = new System.Drawing.Point(39, 0);
             this.txtResponse.CustomButton.Name = "";
-            this.txtResponse.CustomButton.Size = new System.Drawing.Size(200, 179);
+            this.txtResponse.CustomButton.Size = new System.Drawing.Size(7, 7);
             this.txtResponse.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtResponse.CustomButton.TabIndex = 1;
             this.txtResponse.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtResponse.CustomButton.UseSelectable = true;
             this.txtResponse.CustomButton.Visible = false;
             this.txtResponse.Lines = new string[0];
-            this.txtResponse.Location = new System.Drawing.Point(662, 538);
-            this.txtResponse.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtResponse.Location = new System.Drawing.Point(209, 189);
             this.txtResponse.MaxLength = 32767;
             this.txtResponse.Name = "txtResponse";
             this.txtResponse.PasswordChar = '\0';
@@ -218,7 +216,7 @@
             this.txtResponse.SelectionLength = 0;
             this.txtResponse.SelectionStart = 0;
             this.txtResponse.ShortcutsEnabled = true;
-            this.txtResponse.Size = new System.Drawing.Size(459, 65);
+            this.txtResponse.Size = new System.Drawing.Size(145, 23);
             this.txtResponse.TabIndex = 13;
             this.txtResponse.UseSelectable = true;
             this.txtResponse.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -227,8 +225,7 @@
             // lblResponse
             // 
             this.lblResponse.AutoSize = true;
-            this.lblResponse.Location = new System.Drawing.Point(295, 552);
-            this.lblResponse.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblResponse.Location = new System.Drawing.Point(93, 194);
             this.lblResponse.Name = "lblResponse";
             this.lblResponse.Size = new System.Drawing.Size(64, 19);
             this.lblResponse.TabIndex = 12;
@@ -236,20 +233,18 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(792, 689);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.btnCancelar.Location = new System.Drawing.Point(250, 242);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(238, 65);
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 11;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseSelectable = true;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(367, 689);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.btnGuardar.Location = new System.Drawing.Point(116, 242);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(238, 65);
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 10;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseSelectable = true;
@@ -260,18 +255,16 @@
             // 
             // 
             this.txtQuestion.CustomButton.Image = null;
-            this.txtQuestion.CustomButton.Location = new System.Drawing.Point(1251, 3);
-            this.txtQuestion.CustomButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtQuestion.CustomButton.Location = new System.Drawing.Point(39, 0);
             this.txtQuestion.CustomButton.Name = "";
-            this.txtQuestion.CustomButton.Size = new System.Drawing.Size(200, 179);
+            this.txtQuestion.CustomButton.Size = new System.Drawing.Size(7, 7);
             this.txtQuestion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtQuestion.CustomButton.TabIndex = 1;
             this.txtQuestion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtQuestion.CustomButton.UseSelectable = true;
             this.txtQuestion.CustomButton.Visible = false;
             this.txtQuestion.Lines = new string[0];
-            this.txtQuestion.Location = new System.Drawing.Point(662, 413);
-            this.txtQuestion.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtQuestion.Location = new System.Drawing.Point(209, 145);
             this.txtQuestion.MaxLength = 32767;
             this.txtQuestion.Name = "txtQuestion";
             this.txtQuestion.PasswordChar = '\0';
@@ -280,7 +273,7 @@
             this.txtQuestion.SelectionLength = 0;
             this.txtQuestion.SelectionStart = 0;
             this.txtQuestion.ShortcutsEnabled = true;
-            this.txtQuestion.Size = new System.Drawing.Size(459, 65);
+            this.txtQuestion.Size = new System.Drawing.Size(145, 23);
             this.txtQuestion.TabIndex = 9;
             this.txtQuestion.UseSelectable = true;
             this.txtQuestion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -292,18 +285,16 @@
             // 
             // 
             this.txtExam.CustomButton.Image = null;
-            this.txtExam.CustomButton.Location = new System.Drawing.Point(1251, 3);
-            this.txtExam.CustomButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtExam.CustomButton.Location = new System.Drawing.Point(39, 0);
             this.txtExam.CustomButton.Name = "";
-            this.txtExam.CustomButton.Size = new System.Drawing.Size(200, 179);
+            this.txtExam.CustomButton.Size = new System.Drawing.Size(7, 7);
             this.txtExam.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtExam.CustomButton.TabIndex = 1;
             this.txtExam.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtExam.CustomButton.UseSelectable = true;
             this.txtExam.CustomButton.Visible = false;
             this.txtExam.Lines = new string[0];
-            this.txtExam.Location = new System.Drawing.Point(662, 287);
-            this.txtExam.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtExam.Location = new System.Drawing.Point(209, 101);
             this.txtExam.MaxLength = 32767;
             this.txtExam.Name = "txtExam";
             this.txtExam.PasswordChar = '\0';
@@ -312,7 +303,7 @@
             this.txtExam.SelectionLength = 0;
             this.txtExam.SelectionStart = 0;
             this.txtExam.ShortcutsEnabled = true;
-            this.txtExam.Size = new System.Drawing.Size(459, 65);
+            this.txtExam.Size = new System.Drawing.Size(145, 23);
             this.txtExam.TabIndex = 8;
             this.txtExam.UseSelectable = true;
             this.txtExam.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -324,18 +315,16 @@
             // 
             // 
             this.txtContent.CustomButton.Image = null;
-            this.txtContent.CustomButton.Location = new System.Drawing.Point(1251, 3);
-            this.txtContent.CustomButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtContent.CustomButton.Location = new System.Drawing.Point(39, 0);
             this.txtContent.CustomButton.Name = "";
-            this.txtContent.CustomButton.Size = new System.Drawing.Size(200, 179);
+            this.txtContent.CustomButton.Size = new System.Drawing.Size(7, 7);
             this.txtContent.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtContent.CustomButton.TabIndex = 1;
             this.txtContent.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtContent.CustomButton.UseSelectable = true;
             this.txtContent.CustomButton.Visible = false;
             this.txtContent.Lines = new string[0];
-            this.txtContent.Location = new System.Drawing.Point(662, 165);
-            this.txtContent.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtContent.Location = new System.Drawing.Point(209, 58);
             this.txtContent.MaxLength = 32767;
             this.txtContent.Name = "txtContent";
             this.txtContent.PasswordChar = '\0';
@@ -344,7 +333,7 @@
             this.txtContent.SelectionLength = 0;
             this.txtContent.SelectionStart = 0;
             this.txtContent.ShortcutsEnabled = true;
-            this.txtContent.Size = new System.Drawing.Size(459, 65);
+            this.txtContent.Size = new System.Drawing.Size(145, 23);
             this.txtContent.TabIndex = 7;
             this.txtContent.UseSelectable = true;
             this.txtContent.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -356,18 +345,16 @@
             // 
             // 
             this.txtQuestionNumber.CustomButton.Image = null;
-            this.txtQuestionNumber.CustomButton.Location = new System.Drawing.Point(1251, 3);
-            this.txtQuestionNumber.CustomButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtQuestionNumber.CustomButton.Location = new System.Drawing.Point(39, 0);
             this.txtQuestionNumber.CustomButton.Name = "";
-            this.txtQuestionNumber.CustomButton.Size = new System.Drawing.Size(200, 179);
+            this.txtQuestionNumber.CustomButton.Size = new System.Drawing.Size(7, 7);
             this.txtQuestionNumber.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtQuestionNumber.CustomButton.TabIndex = 1;
             this.txtQuestionNumber.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtQuestionNumber.CustomButton.UseSelectable = true;
             this.txtQuestionNumber.CustomButton.Visible = false;
             this.txtQuestionNumber.Lines = new string[0];
-            this.txtQuestionNumber.Location = new System.Drawing.Point(662, 51);
-            this.txtQuestionNumber.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtQuestionNumber.Location = new System.Drawing.Point(209, 18);
             this.txtQuestionNumber.MaxLength = 32767;
             this.txtQuestionNumber.Name = "txtQuestionNumber";
             this.txtQuestionNumber.PasswordChar = '\0';
@@ -376,7 +363,7 @@
             this.txtQuestionNumber.SelectionLength = 0;
             this.txtQuestionNumber.SelectionStart = 0;
             this.txtQuestionNumber.ShortcutsEnabled = true;
-            this.txtQuestionNumber.Size = new System.Drawing.Size(459, 65);
+            this.txtQuestionNumber.Size = new System.Drawing.Size(145, 23);
             this.txtQuestionNumber.TabIndex = 6;
             this.txtQuestionNumber.UseSelectable = true;
             this.txtQuestionNumber.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -385,8 +372,7 @@
             // lblQuestion
             // 
             this.lblQuestion.AutoSize = true;
-            this.lblQuestion.Location = new System.Drawing.Point(304, 427);
-            this.lblQuestion.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblQuestion.Location = new System.Drawing.Point(96, 150);
             this.lblQuestion.Name = "lblQuestion";
             this.lblQuestion.Size = new System.Drawing.Size(61, 19);
             this.lblQuestion.TabIndex = 5;
@@ -395,8 +381,7 @@
             // lblExam
             // 
             this.lblExam.AutoSize = true;
-            this.lblExam.Location = new System.Drawing.Point(367, 302);
-            this.lblExam.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblExam.Location = new System.Drawing.Point(116, 106);
             this.lblExam.Name = "lblExam";
             this.lblExam.Size = new System.Drawing.Size(41, 19);
             this.lblExam.TabIndex = 4;
@@ -405,8 +390,7 @@
             // lblContent
             // 
             this.lblContent.AutoSize = true;
-            this.lblContent.Location = new System.Drawing.Point(323, 179);
-            this.lblContent.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblContent.Location = new System.Drawing.Point(102, 63);
             this.lblContent.Name = "lblContent";
             this.lblContent.Size = new System.Drawing.Size(55, 19);
             this.lblContent.TabIndex = 3;
@@ -415,8 +399,7 @@
             // lblQuestionNumber
             // 
             this.lblQuestionNumber.AutoSize = true;
-            this.lblQuestionNumber.Location = new System.Drawing.Point(136, 65);
-            this.lblQuestionNumber.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblQuestionNumber.Location = new System.Drawing.Point(43, 23);
             this.lblQuestionNumber.Name = "lblQuestionNumber";
             this.lblQuestionNumber.Size = new System.Drawing.Size(114, 19);
             this.lblQuestionNumber.TabIndex = 2;
@@ -424,14 +407,16 @@
             // 
             // frmPreguntaDeExamen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(3328, 2015);
+            this.ClientSize = new System.Drawing.Size(906, 417);
             this.Controls.Add(this.pnlDatos);
             this.Controls.Add(this.grdDatos);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "frmPreguntaDeExamen";
-            this.Padding = new System.Windows.Forms.Padding(19, 171, 19, 20);
+            this.Padding = new System.Windows.Forms.Padding(6, 60, 6, 7);
             this.Text = "Pregunta_de_examen";
+            this.Load += new System.EventHandler(this.frmPreguntaDeExamen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.examQuestionBindingSource)).EndInit();
             this.pnlDatos.ResumeLayout(false);

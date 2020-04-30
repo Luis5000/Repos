@@ -1,6 +1,6 @@
 ﻿namespace LVA07P.Data
 {
-    partial class Curso
+    partial class frmCurso
     {
         /// <summary>
         /// Required designer variable.
@@ -33,10 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grdDatos = new MetroFramework.Controls.MetroGrid();
-            this.courseBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pnlDatos = new MetroFramework.Controls.MetroPanel();
-            this.txtName = new MetroFramework.Controls.MetroTextBox();
-            this.lblName = new MetroFramework.Controls.MetroLabel();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.levelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,18 +43,22 @@
             this.subjectDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.examsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.enrollmentsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblDateBegin = new MetroFramework.Controls.MetroLabel();
-            this.lblDateEnd = new MetroFramework.Controls.MetroLabel();
-            this.lblProfessor = new MetroFramework.Controls.MetroLabel();
-            this.txtProfessor = new MetroFramework.Controls.MetroTextBox();
-            this.dtmDateBegin = new MetroFramework.Controls.MetroDateTime();
-            this.dtmDateEnd = new MetroFramework.Controls.MetroDateTime();
-            this.lblSubject = new MetroFramework.Controls.MetroLabel();
-            this.txtSubject = new MetroFramework.Controls.MetroTextBox();
-            this.btnUpdate = new MetroFramework.Controls.MetroButton();
-            this.btnCreate = new MetroFramework.Controls.MetroButton();
-            this.btnDelete = new MetroFramework.Controls.MetroButton();
+            this.courseBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pnlDatos = new MetroFramework.Controls.MetroPanel();
             this.btnRead = new MetroFramework.Controls.MetroButton();
+            this.btnDelete = new MetroFramework.Controls.MetroButton();
+            this.btnCreate = new MetroFramework.Controls.MetroButton();
+            this.btnUpdate = new MetroFramework.Controls.MetroButton();
+            this.txtSubject = new MetroFramework.Controls.MetroTextBox();
+            this.lblSubject = new MetroFramework.Controls.MetroLabel();
+            this.dtmDateEnd = new MetroFramework.Controls.MetroDateTime();
+            this.dtmDateBegin = new MetroFramework.Controls.MetroDateTime();
+            this.txtProfessor = new MetroFramework.Controls.MetroTextBox();
+            this.lblProfessor = new MetroFramework.Controls.MetroLabel();
+            this.lblDateEnd = new MetroFramework.Controls.MetroLabel();
+            this.lblDateBegin = new MetroFramework.Controls.MetroLabel();
+            this.txtName = new MetroFramework.Controls.MetroTextBox();
+            this.lblName = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).BeginInit();
             this.pnlDatos.SuspendLayout();
@@ -105,7 +105,7 @@
             this.grdDatos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.grdDatos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.grdDatos.Location = new System.Drawing.Point(27, 77);
-            this.grdDatos.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.grdDatos.Margin = new System.Windows.Forms.Padding(1);
             this.grdDatos.Name = "grdDatos";
             this.grdDatos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -122,80 +122,6 @@
             this.grdDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdDatos.Size = new System.Drawing.Size(417, 197);
             this.grdDatos.TabIndex = 0;
-            // 
-            // courseBindingSource
-            // 
-            this.courseBindingSource.DataSource = typeof(LVA07P.Data.Course);
-            // 
-            // pnlDatos
-            // 
-            this.pnlDatos.Controls.Add(this.btnRead);
-            this.pnlDatos.Controls.Add(this.btnDelete);
-            this.pnlDatos.Controls.Add(this.btnCreate);
-            this.pnlDatos.Controls.Add(this.btnUpdate);
-            this.pnlDatos.Controls.Add(this.txtSubject);
-            this.pnlDatos.Controls.Add(this.lblSubject);
-            this.pnlDatos.Controls.Add(this.dtmDateEnd);
-            this.pnlDatos.Controls.Add(this.dtmDateBegin);
-            this.pnlDatos.Controls.Add(this.txtProfessor);
-            this.pnlDatos.Controls.Add(this.lblProfessor);
-            this.pnlDatos.Controls.Add(this.lblDateEnd);
-            this.pnlDatos.Controls.Add(this.lblDateBegin);
-            this.pnlDatos.Controls.Add(this.txtName);
-            this.pnlDatos.Controls.Add(this.lblName);
-            this.pnlDatos.HorizontalScrollbarBarColor = true;
-            this.pnlDatos.HorizontalScrollbarHighlightOnWheel = false;
-            this.pnlDatos.HorizontalScrollbarSize = 4;
-            this.pnlDatos.Location = new System.Drawing.Point(467, 77);
-            this.pnlDatos.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.pnlDatos.Name = "pnlDatos";
-            this.pnlDatos.Size = new System.Drawing.Size(405, 334);
-            this.pnlDatos.TabIndex = 1;
-            this.pnlDatos.VerticalScrollbarBarColor = true;
-            this.pnlDatos.VerticalScrollbarHighlightOnWheel = false;
-            this.pnlDatos.VerticalScrollbarSize = 3;
-            // 
-            // txtName
-            // 
-            // 
-            // 
-            // 
-            this.txtName.CustomButton.Image = null;
-            this.txtName.CustomButton.Location = new System.Drawing.Point(278, 2);
-            this.txtName.CustomButton.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.txtName.CustomButton.Name = "";
-            this.txtName.CustomButton.Size = new System.Drawing.Size(15, 15);
-            this.txtName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtName.CustomButton.TabIndex = 1;
-            this.txtName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtName.CustomButton.UseSelectable = true;
-            this.txtName.CustomButton.Visible = false;
-            this.txtName.Lines = new string[0];
-            this.txtName.Location = new System.Drawing.Point(89, 22);
-            this.txtName.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.txtName.MaxLength = 32767;
-            this.txtName.Name = "txtName";
-            this.txtName.PasswordChar = '\0';
-            this.txtName.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtName.SelectedText = "";
-            this.txtName.SelectionLength = 0;
-            this.txtName.SelectionStart = 0;
-            this.txtName.ShortcutsEnabled = true;
-            this.txtName.Size = new System.Drawing.Size(296, 20);
-            this.txtName.TabIndex = 3;
-            this.txtName.UseSelectable = true;
-            this.txtName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(28, 22);
-            this.lblName.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(45, 19);
-            this.lblName.TabIndex = 2;
-            this.lblName.Text = "Name";
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -273,92 +199,73 @@
             this.enrollmentsDataGridViewTextBoxColumn.Name = "enrollmentsDataGridViewTextBoxColumn";
             this.enrollmentsDataGridViewTextBoxColumn.Visible = false;
             // 
-            // lblDateBegin
+            // courseBindingSource
             // 
-            this.lblDateBegin.AutoSize = true;
-            this.lblDateBegin.Location = new System.Drawing.Point(28, 105);
-            this.lblDateBegin.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblDateBegin.Name = "lblDateBegin";
-            this.lblDateBegin.Size = new System.Drawing.Size(73, 19);
-            this.lblDateBegin.TabIndex = 4;
-            this.lblDateBegin.Text = "Date Begin";
-            // lblDateEnd
+            this.courseBindingSource.DataSource = typeof(LVA07P.Data.Course);
             // 
-            this.lblDateEnd.AutoSize = true;
-            this.lblDateEnd.Location = new System.Drawing.Point(28, 142);
-            this.lblDateEnd.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblDateEnd.Name = "lblDateEnd";
-            this.lblDateEnd.Size = new System.Drawing.Size(62, 19);
-            this.lblDateEnd.TabIndex = 5;
-            this.lblDateEnd.Text = "Date End";
+            // pnlDatos
             // 
-            // lblProfessor
+            this.pnlDatos.Controls.Add(this.btnRead);
+            this.pnlDatos.Controls.Add(this.btnDelete);
+            this.pnlDatos.Controls.Add(this.btnCreate);
+            this.pnlDatos.Controls.Add(this.btnUpdate);
+            this.pnlDatos.Controls.Add(this.txtSubject);
+            this.pnlDatos.Controls.Add(this.lblSubject);
+            this.pnlDatos.Controls.Add(this.dtmDateEnd);
+            this.pnlDatos.Controls.Add(this.dtmDateBegin);
+            this.pnlDatos.Controls.Add(this.txtProfessor);
+            this.pnlDatos.Controls.Add(this.lblProfessor);
+            this.pnlDatos.Controls.Add(this.lblDateEnd);
+            this.pnlDatos.Controls.Add(this.lblDateBegin);
+            this.pnlDatos.Controls.Add(this.txtName);
+            this.pnlDatos.Controls.Add(this.lblName);
+            this.pnlDatos.HorizontalScrollbarBarColor = true;
+            this.pnlDatos.HorizontalScrollbarHighlightOnWheel = false;
+            this.pnlDatos.HorizontalScrollbarSize = 4;
+            this.pnlDatos.Location = new System.Drawing.Point(467, 77);
+            this.pnlDatos.Margin = new System.Windows.Forms.Padding(1);
+            this.pnlDatos.Name = "pnlDatos";
+            this.pnlDatos.Size = new System.Drawing.Size(405, 334);
+            this.pnlDatos.TabIndex = 1;
+            this.pnlDatos.VerticalScrollbarBarColor = true;
+            this.pnlDatos.VerticalScrollbarHighlightOnWheel = false;
+            this.pnlDatos.VerticalScrollbarSize = 3;
             // 
-            this.lblProfessor.AutoSize = true;
-            this.lblProfessor.Location = new System.Drawing.Point(28, 63);
-            this.lblProfessor.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblProfessor.Name = "lblProfessor";
-            this.lblProfessor.Size = new System.Drawing.Size(64, 19);
-            this.lblProfessor.TabIndex = 6;
-            this.lblProfessor.Text = "Professor";
+            // btnRead
             // 
-            // txtProfessor
+            this.btnRead.Location = new System.Drawing.Point(204, 248);
+            this.btnRead.Name = "btnRead";
+            this.btnRead.Size = new System.Drawing.Size(91, 29);
+            this.btnRead.TabIndex = 15;
+            this.btnRead.Text = "Read";
+            this.btnRead.UseSelectable = true;
             // 
+            // btnDelete
             // 
+            this.btnDelete.Location = new System.Drawing.Point(301, 248);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(91, 29);
+            this.btnDelete.TabIndex = 14;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseSelectable = true;
             // 
+            // btnCreate
             // 
-            this.txtProfessor.CustomButton.Image = null;
-            this.txtProfessor.CustomButton.Location = new System.Drawing.Point(260, 2);
-            this.txtProfessor.CustomButton.Margin = new System.Windows.Forms.Padding(1);
-            this.txtProfessor.CustomButton.Name = "";
-            this.txtProfessor.CustomButton.Size = new System.Drawing.Size(15, 15);
-            this.txtProfessor.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtProfessor.CustomButton.TabIndex = 1;
-            this.txtProfessor.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtProfessor.CustomButton.UseSelectable = true;
-            this.txtProfessor.CustomButton.Visible = false;
-            this.txtProfessor.Lines = new string[0];
-            this.txtProfessor.Location = new System.Drawing.Point(107, 63);
-            this.txtProfessor.Margin = new System.Windows.Forms.Padding(1);
-            this.txtProfessor.MaxLength = 32767;
-            this.txtProfessor.Name = "txtProfessor";
-            this.txtProfessor.PasswordChar = '\0';
-            this.txtProfessor.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtProfessor.SelectedText = "";
-            this.txtProfessor.SelectionLength = 0;
-            this.txtProfessor.SelectionStart = 0;
-            this.txtProfessor.ShortcutsEnabled = true;
-            this.txtProfessor.Size = new System.Drawing.Size(278, 20);
-            this.txtProfessor.TabIndex = 7;
-            this.txtProfessor.UseSelectable = true;
-            this.txtProfessor.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtProfessor.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.btnCreate.Location = new System.Drawing.Point(107, 248);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(91, 29);
+            this.btnCreate.TabIndex = 13;
+            this.btnCreate.Text = "Create";
+            this.btnCreate.UseSelectable = true;
             // 
-            // dtmDateBegin
+            // btnUpdate
             // 
-            this.dtmDateBegin.Location = new System.Drawing.Point(107, 95);
-            this.dtmDateBegin.MinimumSize = new System.Drawing.Size(0, 29);
-            this.dtmDateBegin.Name = "dtmDateBegin";
-            this.dtmDateBegin.Size = new System.Drawing.Size(200, 29);
-            this.dtmDateBegin.TabIndex = 8;
-            // 
-            // dtmDateEnd
-            // 
-            this.dtmDateEnd.Location = new System.Drawing.Point(107, 132);
-            this.dtmDateEnd.MinimumSize = new System.Drawing.Size(0, 29);
-            this.dtmDateEnd.Name = "dtmDateEnd";
-            this.dtmDateEnd.Size = new System.Drawing.Size(200, 29);
-            this.dtmDateEnd.TabIndex = 9;
-            // 
-            // lblSubject
-            // 
-            this.lblSubject.AutoSize = true;
-            this.lblSubject.Location = new System.Drawing.Point(28, 178);
-            this.lblSubject.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblSubject.Name = "lblSubject";
-            this.lblSubject.Size = new System.Drawing.Size(51, 19);
-            this.lblSubject.TabIndex = 10;
-            this.lblSubject.Text = "Subject";
+            this.btnUpdate.Location = new System.Drawing.Point(10, 248);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(91, 29);
+            this.btnUpdate.TabIndex = 12;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseSelectable = true;
             // 
             // txtSubject
             // 
@@ -392,41 +299,135 @@
             this.txtSubject.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtSubject.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // btnUpdate
+            // lblSubject
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(10, 248);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(91, 29);
-            this.btnUpdate.TabIndex = 12;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseSelectable = true;
+            this.lblSubject.AutoSize = true;
+            this.lblSubject.Location = new System.Drawing.Point(28, 178);
+            this.lblSubject.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblSubject.Name = "lblSubject";
+            this.lblSubject.Size = new System.Drawing.Size(51, 19);
+            this.lblSubject.TabIndex = 10;
+            this.lblSubject.Text = "Subject";
             // 
-            // btnCreate
+            // dtmDateEnd
             // 
-            this.btnCreate.Location = new System.Drawing.Point(107, 248);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(91, 29);
-            this.btnCreate.TabIndex = 13;
-            this.btnCreate.Text = "Create";
-            this.btnCreate.UseSelectable = true;
+            this.dtmDateEnd.Location = new System.Drawing.Point(107, 132);
+            this.dtmDateEnd.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dtmDateEnd.Name = "dtmDateEnd";
+            this.dtmDateEnd.Size = new System.Drawing.Size(200, 29);
+            this.dtmDateEnd.TabIndex = 9;
             // 
-            // btnDelete
+            // dtmDateBegin
             // 
-            this.btnDelete.Location = new System.Drawing.Point(301, 248);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(91, 29);
-            this.btnDelete.TabIndex = 14;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseSelectable = true;
+            this.dtmDateBegin.Location = new System.Drawing.Point(107, 95);
+            this.dtmDateBegin.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dtmDateBegin.Name = "dtmDateBegin";
+            this.dtmDateBegin.Size = new System.Drawing.Size(200, 29);
+            this.dtmDateBegin.TabIndex = 8;
             // 
-            // btnRead
+            // txtProfessor
             // 
-            this.btnRead.Location = new System.Drawing.Point(204, 248);
-            this.btnRead.Name = "btnRead";
-            this.btnRead.Size = new System.Drawing.Size(91, 29);
-            this.btnRead.TabIndex = 15;
-            this.btnRead.Text = "Read";
-            this.btnRead.UseSelectable = true;
+            // 
+            // 
+            // 
+            this.txtProfessor.CustomButton.Image = null;
+            this.txtProfessor.CustomButton.Location = new System.Drawing.Point(260, 2);
+            this.txtProfessor.CustomButton.Margin = new System.Windows.Forms.Padding(1);
+            this.txtProfessor.CustomButton.Name = "";
+            this.txtProfessor.CustomButton.Size = new System.Drawing.Size(15, 15);
+            this.txtProfessor.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtProfessor.CustomButton.TabIndex = 1;
+            this.txtProfessor.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtProfessor.CustomButton.UseSelectable = true;
+            this.txtProfessor.CustomButton.Visible = false;
+            this.txtProfessor.Lines = new string[0];
+            this.txtProfessor.Location = new System.Drawing.Point(107, 63);
+            this.txtProfessor.Margin = new System.Windows.Forms.Padding(1);
+            this.txtProfessor.MaxLength = 32767;
+            this.txtProfessor.Name = "txtProfessor";
+            this.txtProfessor.PasswordChar = '\0';
+            this.txtProfessor.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtProfessor.SelectedText = "";
+            this.txtProfessor.SelectionLength = 0;
+            this.txtProfessor.SelectionStart = 0;
+            this.txtProfessor.ShortcutsEnabled = true;
+            this.txtProfessor.Size = new System.Drawing.Size(278, 20);
+            this.txtProfessor.TabIndex = 7;
+            this.txtProfessor.UseSelectable = true;
+            this.txtProfessor.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtProfessor.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // lblProfessor
+            // 
+            this.lblProfessor.AutoSize = true;
+            this.lblProfessor.Location = new System.Drawing.Point(28, 63);
+            this.lblProfessor.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblProfessor.Name = "lblProfessor";
+            this.lblProfessor.Size = new System.Drawing.Size(64, 19);
+            this.lblProfessor.TabIndex = 6;
+            this.lblProfessor.Text = "Professor";
+            // 
+            // lblDateEnd
+            // 
+            this.lblDateEnd.AutoSize = true;
+            this.lblDateEnd.Location = new System.Drawing.Point(28, 142);
+            this.lblDateEnd.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblDateEnd.Name = "lblDateEnd";
+            this.lblDateEnd.Size = new System.Drawing.Size(62, 19);
+            this.lblDateEnd.TabIndex = 5;
+            this.lblDateEnd.Text = "Date End";
+            // 
+            // lblDateBegin
+            // 
+            this.lblDateBegin.AutoSize = true;
+            this.lblDateBegin.Location = new System.Drawing.Point(28, 105);
+            this.lblDateBegin.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblDateBegin.Name = "lblDateBegin";
+            this.lblDateBegin.Size = new System.Drawing.Size(73, 19);
+            this.lblDateBegin.TabIndex = 4;
+            this.lblDateBegin.Text = "Date Begin";
+            // 
+            // txtName
+            // 
+            // 
+            // 
+            // 
+            this.txtName.CustomButton.Image = null;
+            this.txtName.CustomButton.Location = new System.Drawing.Point(278, 2);
+            this.txtName.CustomButton.Margin = new System.Windows.Forms.Padding(1);
+            this.txtName.CustomButton.Name = "";
+            this.txtName.CustomButton.Size = new System.Drawing.Size(15, 15);
+            this.txtName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtName.CustomButton.TabIndex = 1;
+            this.txtName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtName.CustomButton.UseSelectable = true;
+            this.txtName.CustomButton.Visible = false;
+            this.txtName.Lines = new string[0];
+            this.txtName.Location = new System.Drawing.Point(89, 22);
+            this.txtName.Margin = new System.Windows.Forms.Padding(1);
+            this.txtName.MaxLength = 32767;
+            this.txtName.Name = "txtName";
+            this.txtName.PasswordChar = '\0';
+            this.txtName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtName.SelectedText = "";
+            this.txtName.SelectionLength = 0;
+            this.txtName.SelectionStart = 0;
+            this.txtName.ShortcutsEnabled = true;
+            this.txtName.Size = new System.Drawing.Size(296, 20);
+            this.txtName.TabIndex = 3;
+            this.txtName.UseSelectable = true;
+            this.txtName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(28, 22);
+            this.lblName.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(45, 19);
+            this.lblName.TabIndex = 2;
+            this.lblName.Text = "Name";
             // 
             // frmCurso
             // 
@@ -435,9 +436,9 @@
             this.ClientSize = new System.Drawing.Size(912, 469);
             this.Controls.Add(this.pnlDatos);
             this.Controls.Add(this.grdDatos);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "frmCurso";
-            this.Padding = new System.Windows.Forms.Padding(6, 21, 6, 7);
+            this.Padding = new System.Windows.Forms.Padding(6, 60, 6, 7);
             this.Text = "Curso";
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).EndInit();

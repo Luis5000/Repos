@@ -172,7 +172,7 @@
             this.pnlDatos.Location = new System.Drawing.Point(434, 70);
             this.pnlDatos.Margin = new System.Windows.Forms.Padding(1);
             this.pnlDatos.Name = "pnlDatos";
-            this.pnlDatos.Size = new System.Drawing.Size(403, 472);
+            this.pnlDatos.Size = new System.Drawing.Size(403, 249);
             this.pnlDatos.TabIndex = 1;
             this.pnlDatos.VerticalScrollbarBarColor = true;
             this.pnlDatos.VerticalScrollbarHighlightOnWheel = false;
@@ -315,7 +315,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1103, 733);
+            this.ClientSize = new System.Drawing.Size(962, 437);
             this.Controls.Add(this.pnlDatos);
             this.Controls.Add(this.grdDatos);
             this.Margin = new System.Windows.Forms.Padding(1);
