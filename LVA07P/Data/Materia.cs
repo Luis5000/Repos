@@ -55,7 +55,7 @@ namespace LVA07P.Data
         private void grdDatos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             Subject Subject = SubjectBindingSource.Current as Subject;
-            if (Subject != null && Curso.ImageUrl != null)
+            if (Subject != null && frmCurso.ImageUrl != null)
                 pctFoto.Image = Image.FromFile(Subject.ImageUrl);
             else
                 pctFoto.Image = null;
