@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Entity;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -18,8 +19,8 @@ namespace LVA07P.Data
             {
                 using (DataContext dataContext = new DataContext())
                 {
-                    ExamBindingSource.DataSource =
-                        dataContext.Exam.ToList();
+                    examBindingSource.DataSource =
+                        dataContext.Exams.ToList();
                 }
             }
             private void btnGuardar_Click(object sender, EventArgs e)
@@ -27,12 +28,12 @@ namespace LVA07P.Data
                 using (DataContext dataContext = new DataContext())
                 {
                     Exam Exam =
-                        ExamBindingSource.Current as Exam;
+                        examBindingSource.Current as Exam;
                     if (Exam != null)
                     {
                         if (dataContext.Entry<Exam>(Exam).State == EntityState.Detached)
-                            dataContext.Set<Exam>().Attach(Course);
-                        if (Course.Id == 0)
+                            dataContext.Set<Exam>().Attach(Exam);
+                        if (Exam.Id == 0)
                             dataContext.Entry<Exam>(Exam).State = EntityState.Added;
                         else
                             dataContext.Entry<Exam>(Exam).State = EntityState.Modified;
@@ -46,12 +47,12 @@ namespace LVA07P.Data
             private void btnCancelar_Click(object sender, EventArgs e)
             {
                 pnlDatos.Enabled = false;
-                ExamBindingSource.ResetBindings(false);
+                examBindingSource.ResetBindings(false);
                 frmExamen_Load(sender, e);
             }
             private void grdDatos_CellClick(object sender, DataGridViewCellEventArgs e)
             {
-                Exam Exam = ExamBindingSource.Current as Course;
+                Exam Exam = examBindingSource.Current as Exam;
             }
     }
 }

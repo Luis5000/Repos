@@ -62,17 +62,16 @@ namespace LVA07P.Data
             {
                 using (DataContext dataContext = new DataContext())
                 {
-                    Employee employee =
-                        employeeBindingSource.Current as Employee;
-                    if (employee != null)
+                    Course Course =
+                        courseBindingSource.Current as Course;
+                    if (Course != null)
                     {
-                        if (dataContext.Entry<Course>(employee).State == EntityState.Detached)
-                            dataContext.Set<Course>().Attach(employee);
-                        dataContext.Entry<Course>(employee).State = EntityState.Deleted;
+                        if (dataContext.Entry<Course>(Course).State == EntityState.Detached)
+                            dataContext.Set<Course>().Attach(Course);
+                        dataContext.Entry<Course>(Course).State = EntityState.Deleted;
                         dataContext.SaveChanges();
                         MetroFramework.MetroMessageBox.Show(this, "Empleado eliminado");
                         courseBindingSource.RemoveCurrent();
-                        pctFoto.Image = null;
                         pnlDatos.Enabled = false;
                     }
                 }
@@ -82,4 +81,4 @@ namespace LVA07P.Data
 
     }
 }
-}
+

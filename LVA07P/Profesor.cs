@@ -36,32 +36,6 @@ namespace LVA07P.Data
                 Professor Professor =
                     professorBindingSource.Current as Professor;
             }
-            private void btnEliminar_Click(object sender, EventArgs e)
-            {
-                if (MetroFramework.MetroMessageBox.Show(this,
-                    "¿Deseas el registro del Docente",
-                    "Eliminar",
-                    MessageBoxButtons.OKCancel,
-                    MessageBoxIcon.Question) == DialogResult.OK)
-                {
-                    using (DataContext dataContext = new DataContext())
-                    {
-                        Professor Professor =
-                            professorBindingSource.Current as Professor;
-                        if (Professor != null)
-                        {
-                            if (dataContext.Entry<Professor>(Professor).State == EntityState.Detached)
-                                dataContext.Set<Professor>().Attach(Professor);
-                            dataContext.Entry<Professor>(Professor).State = EntityState.Deleted;
-                            dataContext.SaveChanges();
-                            MetroFramework.MetroMessageBox.Show(this, "Docente eliminado");
-                            professorBindingSource.RemoveCurrent();
-                            pnlDatos.Enabled = false;
-                        }
-                    }
-                }
-            }
-
             private void btnCancelar_Click(object sender, EventArgs e)
             {
                 pnlDatos.Enabled = false;
@@ -93,5 +67,31 @@ namespace LVA07P.Data
             {
                 Professor Professor = professorBindingSource.Current as Professor;
             }
+
+        private void btnEliminar_Click_1(object sender, EventArgs e)
+        {
+            if (MetroFramework.MetroMessageBox.Show(this,
+                    "¿Deseas el registro del Docente",
+                    "Eliminar",
+                    MessageBoxButtons.OKCancel,
+                    MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                using (DataContext dataContext = new DataContext())
+                {
+                    Professor Professor =
+                        professorBindingSource.Current as Professor;
+                    if (Professor != null)
+                    {
+                        if (dataContext.Entry<Professor>(Professor).State == EntityState.Detached)
+                            dataContext.Set<Professor>().Attach(Professor);
+                        dataContext.Entry<Professor>(Professor).State = EntityState.Deleted;
+                        dataContext.SaveChanges();
+                        MetroFramework.MetroMessageBox.Show(this, "Docente eliminado");
+                        professorBindingSource.RemoveCurrent();
+                        pnlDatos.Enabled = false;
+                    }
+                }
+            }
+        }
     }
 }

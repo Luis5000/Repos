@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -15,8 +16,8 @@ namespace LVA07P.Data
         {
             using (DataContext dataContext = new DataContext())
             {
-                SubjectBindingSource.DataSource =
-                    dataContext.Subject.ToList();
+                subjectBindingSource.DataSource =
+                    dataContext.Subjects.ToList();
             }
         }
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -24,12 +25,12 @@ namespace LVA07P.Data
             using (DataContext dataContext = new DataContext())
             {
                 Subject Subject =
-                    SubjectBindingSource.Current as Subject;
+                    subjectBindingSource.Current as Subject;
                 if (Subject != null)
                 {
                     if (dataContext.Entry<Subject>(Subject).State == EntityState.Detached)
-                        dataContext.Set<Subject>().Attach(Course);
-                    if (Course.Id == 0)
+                        dataContext.Set<Subject>().Attach(Subject);
+                    if (Subject.Id == 0)
                         dataContext.Entry<Subject>(Subject).State = EntityState.Added;
                     else
                         dataContext.Entry<Subject>(Subject).State = EntityState.Modified;
@@ -43,12 +44,12 @@ namespace LVA07P.Data
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             pnlDatos.Enabled = false;
-            SubjectBindingSource.ResetBindings(false);
-            frmCourse(sender, e);
+            subjectBindingSource.ResetBindings(false);
+            frmMateria_Load(sender, e);
         }
         private void grdDatos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            Subject Subject = SubjectBindingSource.Current as Subject;
+            Subject Subject = subjectBindingSource.Current as Subject;
         }
     }
 }

@@ -65,8 +65,7 @@ namespace LVA07P.Data
         {
             using (DataContext dataContext = new DataContext())
             {
-                studentBindingSource.DataSource =
-                    dataContext.Students.ToList();
+                studentBindingSource.DataSource = dataContext.Students.ToList();
             }
             pnlDatos.Enabled = false;
             Student Student = studentBindingSource.Current as Student;

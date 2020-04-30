@@ -16,14 +16,14 @@ namespace LVA07P.Data
         {
             using (DataContext dataContext = new DataContext())
             {
-                ResponseBindingSource.DataSource =
-                    dataContext.Response.ToList();
+                responseBindingSource.DataSource =
+                    dataContext.Responses.ToList();
             }
         }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             pnlDatos.Enabled = false;
-            ResponseBindingSource.ResetBindings(false);
+            responseBindingSource.ResetBindings(false);
             frmRespuesta_Load(sender, e);
         }
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -31,12 +31,12 @@ namespace LVA07P.Data
             using (DataContext dataContext = new DataContext())
             {
                 Response Response =
-                    ResponseBindingSource.Current as Response;
+                    responseBindingSource.Current as Response;
                 if (Response != null)
                 {
                     if (dataContext.Entry<Response>(Response).State == EntityState.Detached)
                         dataContext.Set<Response>().Attach(Response);
-                    if (employee.Id == 0)
+                    if (Response.Id == 0)
                         dataContext.Entry<Response>(Response).State = EntityState.Added;
                     else
                         dataContext.Entry<Response>(Response).State = EntityState.Modified;
@@ -50,7 +50,7 @@ namespace LVA07P.Data
 
         private void grdDatos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            Response Response = ResponseBindingSource.Current as Response;
+            Response Response = responseBindingSource.Current as Response;
         }
     }
 }

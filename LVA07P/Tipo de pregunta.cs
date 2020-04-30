@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -15,14 +16,14 @@ namespace LVA07P.Data
         {
             using (DataContext dataContext = new DataContext())
             {
-                QuestionTypeBindingSource.DataSource =
-                    dataContext.QuestionType.ToList();
+                questionTypeBindingSource.DataSource =
+                    dataContext.QuestionTypes.ToList();
             }
         }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             pnlDatos.Enabled = false;
-            QuestionTypeBindingSource.ResetBindings(false);
+            questionTypeBindingSource.ResetBindings(false);
             FrmTipoDePregunta_Load(sender, e);
         }
 
@@ -31,12 +32,12 @@ namespace LVA07P.Data
             using (DataContext dataContext = new DataContext())
             {
                 QuestionType QuestionType =
-                    QuestionTypeBindingSource.Current as QuestionType;
+                    questionTypeBindingSource.Current as QuestionType;
                 if (QuestionType != null)
                 {
                     if (dataContext.Entry<QuestionType>(QuestionType).State == EntityState.Detached)
                         dataContext.Set<QuestionType>().Attach(QuestionType);
-                    if (employee.Id == 0)
+                    if (QuestionType.Id == 0)
                         dataContext.Entry<QuestionType>(QuestionType).State = EntityState.Added;
                     else
                         dataContext.Entry<QuestionType>(QuestionType).State = EntityState.Modified;
@@ -49,7 +50,7 @@ namespace LVA07P.Data
         }
         private void grdDatos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            QuestionType QuestionType = QuestionTypeBindingSource.Current as QuestionType;
+            QuestionType QuestionType = questionTypeBindingSource.Current as QuestionType;
         }
     }
 }

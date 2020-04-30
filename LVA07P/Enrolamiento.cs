@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Entity;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -14,14 +15,14 @@ namespace LVA07P.Data
         {
             using (DataContext dataContext = new DataContext())
             {
-                EnrollmentBindingSource.DataSource =
-                    dataContext.Enrollment.ToList();
+                enrollmentBindingSource.DataSource =
+                    dataContext.Enrollments.ToList();
             }
         }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             pnlDatos.Enabled = false;
-            EnrollmentBindingSource.ResetBindings(false);
+            enrollmentBindingSource.ResetBindings(false);
             frmEnrolamiento_Load(sender, e);
         }
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -29,12 +30,12 @@ namespace LVA07P.Data
             using (DataContext dataContext = new DataContext())
             {
                 Enrollment Enrollment =
-                    EnrollmentBindingSource.Current as Enrollment;
+                    enrollmentBindingSource.Current as Enrollment;
                 if (Enrollment != null)
                 {
                     if (dataContext.Entry<Enrollment>(Enrollment).State == EntityState.Detached)
                         dataContext.Set<Enrollment>().Attach(Enrollment);
-                    if (employee.Id == 0)
+                    if (Enrollment.Id == 0)
                         dataContext.Entry<Enrollment>(Enrollment).State = EntityState.Added;
                     else
                         dataContext.Entry<Enrollment>(Enrollment).State = EntityState.Modified;
@@ -47,7 +48,7 @@ namespace LVA07P.Data
         }
         private void grdDatos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            Enrollment Enrollment = EnrollmentBindingSource.Current as Enrollment;
+            Enrollment Enrollment = enrollmentBindingSource.Current as Enrollment;
         }
     }
 }
