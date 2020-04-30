@@ -90,7 +90,8 @@
             this.grdDatos.EnableHeadersVisualStyles = false;
             this.grdDatos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.grdDatos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.grdDatos.Location = new System.Drawing.Point(73, 196);
+            this.grdDatos.Location = new System.Drawing.Point(23, 69);
+            this.grdDatos.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.grdDatos.Name = "grdDatos";
             this.grdDatos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -105,7 +106,7 @@
             this.grdDatos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.grdDatos.RowTemplate.Height = 46;
             this.grdDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdDatos.Size = new System.Drawing.Size(1226, 780);
+            this.grdDatos.Size = new System.Drawing.Size(387, 274);
             this.grdDatos.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn
@@ -175,32 +176,29 @@
             this.pnlDatos.Controls.Add(this.lblOpenAnswer);
             this.pnlDatos.HorizontalScrollbarBarColor = true;
             this.pnlDatos.HorizontalScrollbarHighlightOnWheel = false;
-            this.pnlDatos.HorizontalScrollbarSize = 28;
-            this.pnlDatos.Location = new System.Drawing.Point(1441, 196);
-            this.pnlDatos.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.pnlDatos.HorizontalScrollbarSize = 10;
+            this.pnlDatos.Location = new System.Drawing.Point(455, 69);
             this.pnlDatos.Name = "pnlDatos";
-            this.pnlDatos.Size = new System.Drawing.Size(1530, 780);
+            this.pnlDatos.Size = new System.Drawing.Size(483, 274);
             this.pnlDatos.TabIndex = 1;
             this.pnlDatos.VerticalScrollbarBarColor = true;
             this.pnlDatos.VerticalScrollbarHighlightOnWheel = false;
-            this.pnlDatos.VerticalScrollbarSize = 32;
+            this.pnlDatos.VerticalScrollbarSize = 10;
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(814, 635);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.btnCancelar.Location = new System.Drawing.Point(257, 223);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(238, 65);
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseSelectable = true;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(434, 635);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.btnGuardar.Location = new System.Drawing.Point(137, 223);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(238, 65);
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 8;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseSelectable = true;
@@ -211,18 +209,16 @@
             // 
             // 
             this.txtClosedAnswer.CustomButton.Image = null;
-            this.txtClosedAnswer.CustomButton.Location = new System.Drawing.Point(1583, 3);
-            this.txtClosedAnswer.CustomButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtClosedAnswer.CustomButton.Location = new System.Drawing.Point(49, 0);
             this.txtClosedAnswer.CustomButton.Name = "";
-            this.txtClosedAnswer.CustomButton.Size = new System.Drawing.Size(200, 179);
+            this.txtClosedAnswer.CustomButton.Size = new System.Drawing.Size(7, 7);
             this.txtClosedAnswer.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtClosedAnswer.CustomButton.TabIndex = 1;
             this.txtClosedAnswer.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtClosedAnswer.CustomButton.UseSelectable = true;
             this.txtClosedAnswer.CustomButton.Visible = false;
             this.txtClosedAnswer.Lines = new string[0];
-            this.txtClosedAnswer.Location = new System.Drawing.Point(592, 430);
-            this.txtClosedAnswer.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtClosedAnswer.Location = new System.Drawing.Point(187, 151);
             this.txtClosedAnswer.MaxLength = 32767;
             this.txtClosedAnswer.Name = "txtClosedAnswer";
             this.txtClosedAnswer.PasswordChar = '\0';
@@ -231,7 +227,7 @@
             this.txtClosedAnswer.SelectionLength = 0;
             this.txtClosedAnswer.SelectionStart = 0;
             this.txtClosedAnswer.ShortcutsEnabled = true;
-            this.txtClosedAnswer.Size = new System.Drawing.Size(564, 65);
+            this.txtClosedAnswer.Size = new System.Drawing.Size(178, 23);
             this.txtClosedAnswer.TabIndex = 7;
             this.txtClosedAnswer.UseSelectable = true;
             this.txtClosedAnswer.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -243,18 +239,16 @@
             // 
             // 
             this.txtMultipleChoice.CustomButton.Image = null;
-            this.txtMultipleChoice.CustomButton.Location = new System.Drawing.Point(1583, 3);
-            this.txtMultipleChoice.CustomButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtMultipleChoice.CustomButton.Location = new System.Drawing.Point(49, 0);
             this.txtMultipleChoice.CustomButton.Name = "";
-            this.txtMultipleChoice.CustomButton.Size = new System.Drawing.Size(200, 179);
+            this.txtMultipleChoice.CustomButton.Size = new System.Drawing.Size(7, 7);
             this.txtMultipleChoice.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtMultipleChoice.CustomButton.TabIndex = 1;
             this.txtMultipleChoice.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtMultipleChoice.CustomButton.UseSelectable = true;
             this.txtMultipleChoice.CustomButton.Visible = false;
             this.txtMultipleChoice.Lines = new string[0];
-            this.txtMultipleChoice.Location = new System.Drawing.Point(592, 242);
-            this.txtMultipleChoice.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtMultipleChoice.Location = new System.Drawing.Point(187, 85);
             this.txtMultipleChoice.MaxLength = 32767;
             this.txtMultipleChoice.Name = "txtMultipleChoice";
             this.txtMultipleChoice.PasswordChar = '\0';
@@ -263,7 +257,7 @@
             this.txtMultipleChoice.SelectionLength = 0;
             this.txtMultipleChoice.SelectionStart = 0;
             this.txtMultipleChoice.ShortcutsEnabled = true;
-            this.txtMultipleChoice.Size = new System.Drawing.Size(564, 65);
+            this.txtMultipleChoice.Size = new System.Drawing.Size(178, 23);
             this.txtMultipleChoice.TabIndex = 6;
             this.txtMultipleChoice.UseSelectable = true;
             this.txtMultipleChoice.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -275,18 +269,16 @@
             // 
             // 
             this.txtOpenAnswer.CustomButton.Image = null;
-            this.txtOpenAnswer.CustomButton.Location = new System.Drawing.Point(1583, 3);
-            this.txtOpenAnswer.CustomButton.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtOpenAnswer.CustomButton.Location = new System.Drawing.Point(49, 0);
             this.txtOpenAnswer.CustomButton.Name = "";
-            this.txtOpenAnswer.CustomButton.Size = new System.Drawing.Size(200, 179);
+            this.txtOpenAnswer.CustomButton.Size = new System.Drawing.Size(7, 7);
             this.txtOpenAnswer.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtOpenAnswer.CustomButton.TabIndex = 1;
             this.txtOpenAnswer.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtOpenAnswer.CustomButton.UseSelectable = true;
             this.txtOpenAnswer.CustomButton.Visible = false;
             this.txtOpenAnswer.Lines = new string[0];
-            this.txtOpenAnswer.Location = new System.Drawing.Point(592, 40);
-            this.txtOpenAnswer.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.txtOpenAnswer.Location = new System.Drawing.Point(187, 14);
             this.txtOpenAnswer.MaxLength = 32767;
             this.txtOpenAnswer.Name = "txtOpenAnswer";
             this.txtOpenAnswer.PasswordChar = '\0';
@@ -295,7 +287,7 @@
             this.txtOpenAnswer.SelectionLength = 0;
             this.txtOpenAnswer.SelectionStart = 0;
             this.txtOpenAnswer.ShortcutsEnabled = true;
-            this.txtOpenAnswer.Size = new System.Drawing.Size(564, 65);
+            this.txtOpenAnswer.Size = new System.Drawing.Size(178, 23);
             this.txtOpenAnswer.TabIndex = 5;
             this.txtOpenAnswer.UseSelectable = true;
             this.txtOpenAnswer.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -304,8 +296,7 @@
             // lblClosedAnswer
             // 
             this.lblClosedAnswer.AutoSize = true;
-            this.lblClosedAnswer.Location = new System.Drawing.Point(146, 444);
-            this.lblClosedAnswer.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblClosedAnswer.Location = new System.Drawing.Point(46, 156);
             this.lblClosedAnswer.Name = "lblClosedAnswer";
             this.lblClosedAnswer.Size = new System.Drawing.Size(95, 19);
             this.lblClosedAnswer.TabIndex = 4;
@@ -314,8 +305,7 @@
             // lblMultipleChoice
             // 
             this.lblMultipleChoice.AutoSize = true;
-            this.lblMultipleChoice.Location = new System.Drawing.Point(146, 256);
-            this.lblMultipleChoice.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblMultipleChoice.Location = new System.Drawing.Point(46, 90);
             this.lblMultipleChoice.Name = "lblMultipleChoice";
             this.lblMultipleChoice.Size = new System.Drawing.Size(100, 19);
             this.lblMultipleChoice.TabIndex = 3;
@@ -324,8 +314,7 @@
             // lblOpenAnswer
             // 
             this.lblOpenAnswer.AutoSize = true;
-            this.lblOpenAnswer.Location = new System.Drawing.Point(146, 54);
-            this.lblOpenAnswer.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lblOpenAnswer.Location = new System.Drawing.Point(46, 19);
             this.lblOpenAnswer.Name = "lblOpenAnswer";
             this.lblOpenAnswer.Size = new System.Drawing.Size(88, 19);
             this.lblOpenAnswer.TabIndex = 2;
@@ -333,13 +322,14 @@
             // 
             // frmTipoDePregunta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(3170, 2103);
+            this.ClientSize = new System.Drawing.Size(1000, 428);
             this.Controls.Add(this.pnlDatos);
             this.Controls.Add(this.grdDatos);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "frmTipoDePregunta";
-            this.Padding = new System.Windows.Forms.Padding(19, 171, 19, 20);
+            this.Padding = new System.Windows.Forms.Padding(6, 60, 6, 7);
             this.Text = "Tipo_de_pregunta";
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.questionTypeBindingSource)).EndInit();
